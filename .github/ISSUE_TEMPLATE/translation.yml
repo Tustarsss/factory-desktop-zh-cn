@@ -1,0 +1,26 @@
+name: 翻译修订
+description: 报告误译、术语不一致或遗漏
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 页面位置或词条键
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Factory 版本和补丁版本
+    validations:
+      required: true
+  - type: textarea
+    id: translation
+    attributes:
+      label: 原文、当前译文和建议译文
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 说明或截图
+      description: 请说明当前译文的问题；截图请遮去个人信息。

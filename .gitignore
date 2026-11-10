@@ -1,0 +1,10 @@
+node_modules/
+work/
+*.asar
+*.exe
+*.pak
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "name": "factory-desktop-zh-cn",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Factory Desktop 简体中文语言补丁与翻译维护工具",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "inspect": "node scripts/patch.mjs inspect",
+    "install:patch": "node scripts/patch.mjs install",
+    "restore": "node scripts/patch.mjs restore",
+    "extract": "node scripts/extract.mjs",
+    "translate": "node scripts/translate.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "@electron/asar": "^3.4.1",
+    "@electron/fuses": "^1.8.0",
+    "acorn": "^8.15.0",
+    "resedit": "^3.1.0"
+  }
+}

@@ -1,0 +1,34 @@
+name: 安装或兼容性问题
+description: 报告安装、恢复或版本适配问题
+body:
+  - type: input
+    id: factory-version
+    attributes:
+      label: Factory 版本
+      placeholder: 例如 1.6.1
+    validations:
+      required: true
+  - type: input
+    id: patch-version
+    attributes:
+      label: 补丁版本
+      placeholder: 例如 0.2.0
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows 版本
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 复现步骤、实际结果和预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 补充信息
+      description: 可附相关错误提示或截图。请移除 API Key、账户信息和会话内容。

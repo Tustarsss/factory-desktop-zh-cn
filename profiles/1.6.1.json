@@ -1,0 +1,8 @@
+{
+  "factoryVersion": "1.6.1",
+  "platform": "win32",
+  "bundles": {
+    ".vite/renderer/main_window/assets/index-dsp1_4Oq.js": "d34142f6ad040c32d43cdf50015c02de5aebc2c2cf0af8816f87dab5e9a16834",
+    ".vite/build/initLifecycle-CzCb-L5h.js": "a884bf5ddc5995d6d06fea9f1aabe46ca3ff058c09fbc1c67830e688dcf2fdc6"
+  }
+}
