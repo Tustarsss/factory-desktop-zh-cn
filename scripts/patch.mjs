@@ -49,10 +49,11 @@ async function main() {
     await fs.copyFile(path.join(appDir, relative), path.join(backup, relative), fs.constants.COPYFILE_EXCL);
   }
   await fs.writeFile(path.join(backup, 'backup.json'), JSON.stringify({ version: analysis.version, created: new Date().toISOString() }, null, 2));
+  const { version: patchVersion } = JSON.parse(await fs.readFile(path.join(root, 'package.json'), 'utf8'));
   try {
     await fs.copyFile(path.join(buildDir, 'app.asar'), inputArchive);
     await fs.copyFile(path.join(buildDir, 'factory-desktop.exe'), path.join(appDir, 'factory-desktop.exe'));
-    await fs.writeFile(path.join(appDir, markerName), JSON.stringify({ patchVersion: '0.2.0', factoryVersion: analysis.version, locale: 'zh-CN', matching: report, installed: new Date().toISOString() }, null, 2));
+    await fs.writeFile(path.join(appDir, markerName), JSON.stringify({ patchVersion, factoryVersion: analysis.version, locale: 'zh-CN', matching: report, installed: new Date().toISOString() }, null, 2));
   } catch (error) {
     for (const relative of ['resources/app.asar', 'factory-desktop.exe']) await fs.copyFile(path.join(backup, relative), path.join(appDir, relative));
     throw error;

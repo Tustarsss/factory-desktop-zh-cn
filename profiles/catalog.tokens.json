@@ -379,6 +379,11 @@
   "analytics.effectivenessPage.outputDescription": [],
   "analytics.effectivenessPage.noEpdMembers": [],
   "analytics.effectivenessPage.emptyAttributedScope": [],
+  "analytics.effectivenessPage.issueTracker.title": [],
+  "analytics.effectivenessPage.issueTracker.description": [],
+  "analytics.effectivenessPage.issueTracker.askAdmin": [],
+  "analytics.effectivenessPage.issueTracker.connectJira": [],
+  "analytics.effectivenessPage.issueTracker.connectLinear": [],
   "analytics.effectivenessPage.attributionCoverage.noneLinkedStatus": [],
   "analytics.effectivenessPage.attributionCoverage.noneLinkedNote": [],
   "analytics.effectivenessPage.attributionCoverage.sessionsStatus_one": [
@@ -478,6 +483,10 @@
   "analytics.columns.toolCalls": [],
   "analytics.columns.sessions": [],
   "analytics.columns.messages": [],
+  "analytics.sessionAttributionExport.notReady": [],
+  "analytics.sessionAttributionExport.windowClamped": [],
+  "analytics.sessionAttributionExport.noMatchesInLoadedRows": [],
+  "analytics.sessionAttributionExport.unknownMember": [],
   "analytics.usageEventsExplorer.deactivatedOrganization": [
     "{{name}}"
   ],
@@ -1090,9 +1099,8 @@
     "{{userName}}"
   ],
   "analytics2.toolUsageUsers.userItemsDescription": [
-    "{{endDate}}",
     "{{invocations}}",
-    "{{startDate}}"
+    "{{windowLabel}}"
   ],
   "analytics2.toolUsageUsers.truncatedItems": [
     "{{shown}}",
@@ -1113,14 +1121,11 @@
     "{{total}}"
   ],
   "analytics2.toolUsageUsers.description": [
-    "{{limit}}",
     "{{plural}}",
     "{{usage}}"
   ],
   "analytics2.toolUsageUsers.subtitle": [
-    "{{limit}}",
-    "{{perPage}}",
-    "{{plural}}"
+    "{{perPage}}"
   ],
   "analytics2.toolUsageUsers.title": [
     "{{usage}}"
@@ -1130,27 +1135,6 @@
   ],
   "analytics2.toolUsageUsers.itemsUsed": [
     "{{singular}}"
-  ],
-  "analytics2.toolUsageUsers.showTop": [
-    "{{plural}}",
-    "{{userName}}"
-  ],
-  "analytics2.toolUsageUsers.hideTop": [
-    "{{plural}}",
-    "{{userName}}"
-  ],
-  "analytics2.toolUsageUsers.topHeading": [
-    "{{limit}}",
-    "{{plural}}"
-  ],
-  "analytics2.toolUsageUsers.topTable": [
-    "{{plural}}",
-    "{{userName}}"
-  ],
-  "analytics2.toolUsageUsers.remaining": [
-    "{{invocations}}",
-    "{{items}}",
-    "{{plural}}"
   ],
   "analytics2.toolUsageUsers.pagination": [
     "{{singular}}"
@@ -2025,7 +2009,6 @@
   "automations.shared.low": [],
   "automations.shared.medium": [],
   "automations.shared.high": [],
-  "automations.shared.scheduleUtc": [],
   "automations.shared.setsTheAutoFlagPassedTo": [
     "</code>",
     "</code>",
@@ -2034,7 +2017,6 @@
   ],
   "automations.sharedV2.enabled": [],
   "automations.sharedV2.autonomyLevel": [],
-  "automations.sharedV2.scheduleUtc": [],
   "automations.sharedV2.setsTheAutoFlagPassedTo": [
     "</code>",
     "</code>",
@@ -2132,7 +2114,6 @@
     "{{timeout}}"
   ],
   "automations.securityAuditMode.disableToKeepTheSecurityAudit": [],
-  "automations.securityAuditMode.defaultsToWeeklyMonday0600": [],
   "automations.securityAuditMode.customInstructions": [],
   "automations.securityAuditMode.eGFocusOnAuthenticationAnd": [],
   "automations.securityAuditMode.optionalAppendedToTheSlashCommand": [
@@ -2140,10 +2121,14 @@
     "<code>"
   ],
   "automations.securityAuditModeV2.disableToKeepTheSecurityAudit": [],
-  "automations.securityAuditModeV2.defaultsToWeeklyMonday0600": [],
   "automations.securityAuditModeV2.customInstructions": [],
   "automations.securityAuditModeV2.eGFocusOnAuthenticationAnd": [],
   "automations.securityAuditModeV2.optionalAppendedToTheSlashCommand": [
+    "</code>",
+    "<code>"
+  ],
+  "automations.securityAuditModeV2.customInstructionsOptional": [],
+  "automations.securityAuditModeV2.addedToTheEndOfTheCommand": [
     "</code>",
     "<code>"
   ],
@@ -2167,6 +2152,11 @@
   "automations.wikiModeV2.customInstructions": [],
   "automations.wikiModeV2.eGIncludePackages": [],
   "automations.wikiModeV2.optionalAppendedToTheSlashCommand": [
+    "</code>",
+    "<code>"
+  ],
+  "automations.wikiModeV2.customInstructionsOptional": [],
+  "automations.wikiModeV2.addedToTheEndOfTheCommand": [
     "</code>",
     "<code>"
   ],
@@ -2642,6 +2632,7 @@
   "automations.createAutomationCoreV2.submit.openingWorkstream": [],
   "automations.createAutomationCoreV2.next": [],
   "automations.createAutomationCoreV2.validation.setValidSchedule": [],
+  "automations.createAutomationCoreV2.validation.chooseWorkflow": [],
   "automations.createAutomationCoreV2.validation.pickRepoToScaffoldQa": [],
   "automations.createAutomationCoreV2.validation.pickEventOrSchedule": [],
   "automations.createAutomationCoreV2.validation.pickComputerForQaSetup": [],
@@ -2719,10 +2710,6 @@
   "automations.createAutomationCoreV2.runAsDescriptionWithNote": [
     "{{note}}"
   ],
-  "automations.createAutomationCoreV2.runAsDescriptionIncidentResponse": [],
-  "automations.createAutomationCoreV2.runAsDescriptionIncidentResponseWithNote": [
-    "{{note}}"
-  ],
   "automations.createAutomationCoreV2.qaComputerDescription": [],
   "automations.createAutomationCoreV2.setupComputer": [],
   "automations.createAutomationCoreV2.triggerStep.schedulePrefilled": [
@@ -2732,7 +2719,6 @@
   "automations.createAutomationCoreV2.triggerStep.slack": [],
   "automations.createAutomationCoreV2.triggerStep.webhook": [],
   "automations.createAutomationCoreV2.triggerStep.chained": [],
-  "automations.createAutomationCoreV2.triggerStep.title": [],
   "automations.createAutomationCoreV2.instructionsStep.slack": [],
   "automations.createAutomationCoreV2.instructionsStep.webhook": [],
   "automations.createAutomationCoreV2.instructionsStep.chained": [],
@@ -2741,6 +2727,7 @@
     "{{placeholder}}"
   ],
   "automations.createAutomationCoreV2.instructionsStep.prefilled": [],
+  "automations.createAutomationCoreV2.fixedInstructions": [],
   "automations.createAutomationCoreV2.templates": [],
   "automations.createAutomationCoreV2.whereStep.chained": [],
   "automations.createAutomationCoreV2.whereStep.default": [],
@@ -2798,7 +2785,7 @@
   "automations.createAutomationCoreV2.schedule": [],
   "automations.createAutomationCoreV2.selectTrigger": [],
   "automations.createAutomationCoreV2.addGithubEventTriggers": [],
-  "automations.createAutomationCoreV2.scheduleCi": [],
+  "automations.createAutomationCoreV2.githubEventTriggers": [],
   "automations.createAutomationCoreV2.triggerOptions.schedule": [],
   "automations.createAutomationCoreV2.triggerOptions.slack": [],
   "automations.createAutomationCoreV2.triggerOptions.webhook": [],
@@ -2806,58 +2793,13 @@
   "automations.createAutomationCoreV2.triggerOptions.github": [],
   "automations.createAutomationCoreV2.triggerHelper.schedule": [],
   "automations.createAutomationCoreV2.triggerHelper.github": [],
-  "automations.createTriageAutomationV2.automationName": [],
-  "automations.createTriageAutomationV2.description": [],
-  "automations.createTriageAutomationV2.shortSummaryShownInTheAutomation": [],
-  "automations.createTriageAutomationV2.theIdentityComputerAndVisibilityOf": [],
-  "automations.createTriageAutomationV2.whereShouldItRun": [],
-  "automations.createTriageAutomationV2.whereDroidLooksForActionableMessages": [],
-  "automations.createTriageAutomationV2.whatShouldDroidDoEachRun": [],
-  "automations.createTriageAutomationV2.whichChannelsShouldDroidScan": [],
-  "automations.createTriageAutomationV2.scanChannelsDescription": [],
-  "automations.createTriageAutomationV2.whereShouldDroidPostEachRun": [],
-  "automations.createTriageAutomationV2.summaryChannel": [],
-  "automations.createTriageAutomationV2.ticketingSystem": [],
-  "automations.createTriageAutomationV2.defaultDestination": [],
-  "automations.createTriageAutomationV2.eGEngOrEngineering": [],
-  "automations.createTriageAutomationV2.ticketCreationGuidance": [],
-  "automations.createTriageAutomationV2.ticketGuidance": [],
-  "automations.createTriageAutomationV2.noComputersAvailableAddOneIn": [],
-  "automations.createTriageAutomationV2.descriptionMustBeCharactersOrFewer": [
-    "{{max}}"
-  ],
-  "automations.createTriageAutomationV2.addAName": [],
-  "automations.createTriageAutomationV2.pickADifferentComputer": [],
-  "automations.createTriageAutomationV2.pickAComputerOrTemplateForTheServiceAccount": [],
-  "automations.createTriageAutomationV2.connectToTheSelectedComputerToContinue": [],
-  "automations.createTriageAutomationV2.pickAComputerOrTemplateForThisAutomation": [],
-  "automations.createTriageAutomationV2.describeTheChannelsToScan": [],
-  "automations.createTriageAutomationV2.nameTheChannelForRunSummaries": [],
-  "automations.createTriageAutomationV2.nameADefaultJiraProject": [],
-  "automations.createTriageAutomationV2.nameADefaultLinearTeam": [],
-  "automations.createTriageAutomationV2.addTicketCreationGuidance": [],
-  "automations.createTriageAutomationV2.connectToTheSelectedComputerToRun": [],
-  "automations.createTriageAutomationV2.pickAComputerOrTemplateToRun": [],
-  "automations.createTriageAutomationV2.templates": [],
-  "automations.createTriageAutomationV2.creating": [],
-  "automations.createTriageAutomationV2.createWithSession": [],
-  "automations.createTriageAutomationV2.next": [],
-  "automations.createTriageAutomationV2.helpsTeammatesUnderstandWhatThisAutomation": [],
-  "automations.createTriageAutomationV2.usePlainWordsOrACronExpression": [
-    "{{templateName}}"
-  ],
-  "automations.createTriageAutomationV2.identityAndBillingThisAutomationRunsUnder": [
-    "{{note}}"
-  ],
-  "automations.createTriageAutomationV2.listTheChannelsOrDescribeThem": [],
-  "automations.createTriageAutomationV2.nameTheChannelWellConfirmAndJoin": [],
-  "automations.createTriageAutomationV2.whereTicketsGoWhenTheresNoClearOwner": [],
-  "automations.createTriageAutomationV2.defaultJiraProject": [],
-  "automations.createTriageAutomationV2.defaultLinearTeam": [],
-  "automations.createTriageAutomationV2.routingRulesAndWhichLabelsToApply": [],
-  "automations.createTriageAutomationV2.additionalSettings": [],
-  "automations.createTriageAutomationV2.optional": [],
-  "automations.createTriageAutomationV2.fineTuneHowThisAutomationRuns": [],
+  "automations.createAutomationCoreV2.workflowSection.label": [],
+  "automations.createAutomationCoreV2.workflowSection.description": [],
+  "automations.createAutomationCoreV2.workflowSection.customName": [],
+  "automations.createAutomationCoreV2.workflowSection.wikiDescription": [],
+  "automations.createAutomationCoreV2.workflowInstructions.codeReview": [],
+  "automations.createAutomationCoreV2.workflowInstructions.qa": [],
+  "automations.createAutomationCoreV2.workflowInstructions.codeWalkthrough": [],
   "automations.forkAutomationModalV2.computerOrTemplateTheForkedAutomation": [],
   "automations.forkAutomationModalV2.fork": [],
   "automations.forkAutomationModalV2.forkOptions": [],
@@ -3016,6 +2958,9 @@
   "automations.triggersFieldV2.schedule": [],
   "automations.triggersFieldV2.addAtLeastOneGithubEventOrSchedule": [],
   "automations.triggersFieldV2.addAtLeastOneGithubEvent": [],
+  "automations.triggersFieldV2.scheduleOnly": [],
+  "automations.triggersFieldV2.fixedTriggers": [],
+  "automations.triggersFieldV2.addSchedule": [],
   "automations.triggersFieldV2.eventsConfigured_one": [
     "{{count}}"
   ],
@@ -3380,7 +3325,6 @@
   "automations.constants.deleteUnknownHostWarning": [],
   "automations.constants.deleteOtherHostWarning": [],
   "automations.constants.runAsSelfOptionLabel": [],
-  "automations.constants.incidentResponseMcpSetupDescription": [],
   "automations.constants.computerConnectFailure": [],
   "automations.constants.computerConnectionLost": [],
   "automations.constants.computerPickerRequired": [],
@@ -3512,8 +3456,8 @@
   "automations.constants.templates.triage.name": [],
   "automations.constants.templates.triage.description": [],
   "automations.constants.templates.incidentResponse.name": [],
+  "automations.constants.templates.incidentResponse.defaultName": [],
   "automations.constants.templates.incidentResponse.description": [],
-  "automations.constants.templates.incidentResponse.detailedDescription": [],
   "automations.constants.templates.incidentResponse.connectorPurposes.slack": [],
   "automations.constants.templates.slack.name": [],
   "automations.constants.templates.slack.description": [],
@@ -3550,8 +3494,6 @@
   "automations.constants.templates.slackDigest.connectorPurposes.slack": [],
   "automations.constants.templates.slackBugFixer.name": [],
   "automations.constants.templates.slackBugFixer.description": [],
-  "automations.constants.templates.slackBugFixer.connectorPurposes.slack": [],
-  "automations.constants.templates.slackBugFixer.connectorPurposes.linear": [],
   "automations.constants.templates.channelQa.name": [],
   "automations.constants.templates.channelQa.description": [],
   "automations.constants.templates.channelQa.connectorPurposes.slack": [],
@@ -3591,7 +3533,6 @@
   "automations.constants.templateFlow.output.notionOrTracker": [],
   "automations.constants.templateFlow.output.slackOrPr": [],
   "automations.constants.templateFlow.output.slackDm": [],
-  "automations.constants.templateFlow.output.threadReplyOrPr": [],
   "automations.constants.templateFlow.output.threadReply": [],
   "automations.constants.templateFlow.output.ticketAndThreadReply": [],
   "automations.constants.templateFlow.output.ticketCommentOrPr": [],
@@ -3599,15 +3540,11 @@
   "automations.constants.templateFlow.output.commitAndComment": [],
   "automations.constants.marketplaceSections.useCases.title": [],
   "automations.constants.marketplaceSections.useCases.description": [],
-  "automations.constants.marketplaceSections.guidedSetups.title": [],
-  "automations.constants.marketplaceSections.guidedSetups.description": [],
+  "automations.constants.marketplaceSections.ciWorkflows.title": [],
+  "automations.constants.marketplaceSections.ciWorkflows.description": [],
   "automations.constants.createWithDroidSuggestions.mergedPrDigest": [],
   "automations.constants.createWithDroidSuggestions.sentryFix": [],
   "automations.constants.createWithDroidSuggestions.dependencyAdvisories": [],
-  "automations.constants.triageDefaults.description": [],
-  "automations.constants.triageDefaults.scanChannelsPlaceholder": [],
-  "automations.constants.triageDefaults.summaryChannelPlaceholder": [],
-  "automations.constants.triageDefaults.ticketGuidancePlaceholder": [],
   "automations.constants.createWithDroidPrompt.openingNamed": [
     "{{name}}"
   ],
@@ -3946,6 +3883,10 @@
   "common.alertBanner.requestId": [
     "{{id}}"
   ],
+  "common.connectorRateLimit.user": [],
+  "common.connectorRateLimit.organization": [],
+  "common.connectorRateLimit.upstream": [],
+  "common.connectorRateLimit.unknown": [],
   "common.organizationRouting.incorrectRegion": [],
   "common.organizationRouting.goToRegion": [
     "{{region}}"
@@ -4177,11 +4118,6 @@
   "common.debug.enterTextToEchoBack": [],
   "common.debug.send": [],
   "common.debug.noDebugDataAvailable": [],
-  "common.customize.customize": [],
-  "common.customize.customizeSections": [],
-  "common.customize.skills": [],
-  "common.customize.connectors": [],
-  "common.customize.plugins": [],
   "common.cookieBanner.deny": [],
   "common.cookieBanner.agree": [],
   "common.cookieBanner.message": [
@@ -4248,7 +4184,7 @@
   "common.coreUi.toast.close": [],
   "common.coreUi.toast.dismiss": [],
   "common.cloudDeprecationBanner.message": [],
-  "common.cloudDeprecationBanner.goToDroidComputers": [],
+  "common.cloudDeprecationBanner.goToEnvironments": [],
   "common.subscriptionBanner.gracePeriod": [
     "</billingLink>",
     "<billingLink>",
@@ -4393,9 +4329,6 @@
   "inbox.cta.skillSuggestion.dismissWrong": [],
   "inbox.cta.skillSuggestion.dismissNotWorthIt": [],
   "inbox.skillSuggestionPrompt.intro": [],
-  "inbox.skillSuggestionPrompt.sourceSession": [
-    "{{session}}"
-  ],
   "inbox.skillSuggestionPrompt.alreadyFixed": [],
   "inbox.skillSuggestionPrompt.instructions": [
     "{{trailer}}"
@@ -5008,8 +4941,6 @@
   "lessons.content.automations.triggerScenarios.externalAlert.whyNot.scheduled": [],
   "lessons.content.automations.triggerScenarios.externalAlert.whyNot.slack": [],
   "lessons.content.automations.triggerScenarios.externalAlert.whyNot.github": [],
-  "lessons.content.automations.starterGalleryTour.tourCreateWithDroid.title": [],
-  "lessons.content.automations.starterGalleryTour.tourCreateWithDroid.body": [],
   "lessons.content.automations.starterGalleryTour.tourStarters.title": [],
   "lessons.content.automations.starterGalleryTour.tourStarters.body": [],
   "lessons.content.automations.starterGalleryTour.tourStarters.chips.0": [],
@@ -6350,11 +6281,8 @@
   "onboarding.desktopAuthCallback.youreAllSetReturnToYour": [],
   "onboarding.desktopAuthCallback.youreAlreadyInTheDesktopApp": [],
   "onboarding.desktopAuthCallback.goToSessions": [],
-  "onboarding.desktopAuthCallback.returnToDesktopApp": [],
   "onboarding.desktopAuthCallback.missingSignInDetails": [],
-  "onboarding.desktopAuthCallback.openDesktopApp": [],
   "onboarding.desktopAuthCallback.manageAccount": [],
-  "onboarding.desktopAuthCallback.signedInToFactory": [],
   "onboarding.desktopAuthCallback.authenticationFailed": [],
   "onboarding.desktopAuthCallback.backToFactory": [],
   "onboarding.onboarding.finishSettingUpInYourBrowser": [],
@@ -6386,31 +6314,30 @@
   ],
   "onboarding.webEnvironmentSetup.welcome.capabilities": [],
   "onboarding.webEnvironmentSetup.welcome.question": [],
-  "onboarding.onboardingDesktopFirst.title": [
-    "{{name}}"
-  ],
-  "onboarding.onboardingDesktopFirst.titleNoName": [],
   "onboarding.onboardingDesktopFirst.finishDownloadTitle": [],
   "onboarding.onboardingDesktopFirst.finishOpenTitle": [],
   "onboarding.onboardingDesktopFirst.finishSubtitle": [],
+  "onboarding.onboardingDesktopFirst.paidFinishSubtitle": [],
   "onboarding.onboardingDesktopFirst.cliFinishTitle": [],
   "onboarding.onboardingDesktopFirst.cliFinishSubtitle": [],
   "onboarding.onboardingDesktopFirst.retryDownload": [],
   "onboarding.onboardingDesktopFirst.retryCli": [],
   "onboarding.onboardingDesktopFirst.retryOpen": [],
-  "onboarding.onboardingDesktopFirst.backToFactoryFree": [],
-  "onboarding.onboardingDesktopFirst.audience.label": [],
-  "onboarding.onboardingDesktopFirst.audience.individual": [],
-  "onboarding.onboardingDesktopFirst.audience.teams": [],
-  "onboarding.onboardingDesktopFirst.morePlans.title": [],
-  "onboarding.onboardingDesktopFirst.morePlans.subtitle": [],
+  "onboarding.onboardingDesktopFirst.planCheckout.title": [
+    "{{planName}}"
+  ],
+  "onboarding.onboardingDesktopFirst.planCheckout.subtitle": [],
+  "onboarding.onboardingDesktopFirst.planCheckout.freeTitle": [],
   "onboarding.addModels.factoryPlan": [],
   "onboarding.addModels.customName": [],
   "onboarding.addModels.subtitles.chatgpt": [],
-  "onboarding.addModels.subtitles.factoryPlan": [],
   "onboarding.addModels.subtitles.openrouter": [],
+  "onboarding.addModels.subtitles.githubCopilot": [],
+  "onboarding.addModels.subtitles.factoryPlan": [],
   "onboarding.addModels.subtitles.bedrock": [],
   "onboarding.addModels.subtitles.ollama": [],
+  "onboarding.addModels.subtitles.anthropic": [],
+  "onboarding.addModels.subtitles.openai": [],
   "onboarding.addModels.subtitles.custom": [],
   "onboarding.addModels.signedIn": [],
   "onboarding.addModels.planActive": [],
@@ -7099,6 +7026,7 @@
   ],
   "sessions.activeSession.needsYourAttention": [],
   "sessions.activeSession.wakeDelayed": [],
+  "sessions.activeSession.connectingForLatestMessages": [],
   "sessions.activeSession.untitledSession": [],
   "sessions.activeSession.continue": [],
   "sessions.activeSession.stopAgentConfirm": [],
@@ -7226,6 +7154,23 @@
   "sessions.missionV2PullRequestList.emptyTitle": [],
   "sessions.missionV2PullRequestList.emptyDescription": [],
   "sessions.missionV2PullRequestList.noAutomationPullRequests": [],
+  "sessions.missionTasks.loading": [],
+  "sessions.missionTasks.missingTitle": [],
+  "sessions.missionTasks.missingDescription": [],
+  "sessions.missionTasks.unreadableTitle": [],
+  "sessions.missionTasks.unreadableDescription": [],
+  "sessions.missionTasks.openTasksFile": [
+    "{{path}}"
+  ],
+  "sessions.missionTasks.unavailableTitle": [],
+  "sessions.missionTasks.unavailableDescription": [],
+  "sessions.missionTasks.taskMissingTitle": [],
+  "sessions.missionTasks.taskMissingDescription": [],
+  "sessions.missionTasks.taskUnreadableTitle": [],
+  "sessions.missionTasks.taskUnreadableDescription": [],
+  "sessions.missionTasks.showTasks": [],
+  "sessions.missionTasks.closeTab": [],
+  "sessions.missionTasks.signInToDecide": [],
   "sessions.missionAutomationsPane.description": [],
   "sessions.missionAutomationsPane.sources": [],
   "sessions.missionAutomationsPane.resources": [],
@@ -7309,8 +7254,8 @@
     "{{environmentName}}"
   ],
   "sessions.newSession.cloudDeprecationTooltip": [
-    "</droidComputersLink>",
-    "<droidComputersLink>"
+    "</environmentsLink>",
+    "<environmentsLink>"
   ],
   "sessions.newSession.templateBeingPreparedCustomize": [
     "</settingsLink>",
@@ -7420,13 +7365,18 @@
   "sessions.sessionManager.droidComputer": [],
   "sessions.sessionManager.unregisteredComputer": [],
   "sessions.sessionManager.untitledAutomation": [],
+  "sessions.sessionManager.automationCount_one": [
+    "{{count}}"
+  ],
+  "sessions.sessionManager.automationCount_other": [
+    "{{count}}"
+  ],
   "sessions.sessionManager.unregisteredComputerNumbered": [
     "{{index}}"
   ],
   "sessions.sessionMarkdownImage.previewFile": [
     "{{fileName}}"
   ],
-  "sessions.sessionShareDialog.failedToRenameTryAgain": [],
   "sessions.sessionShareDialog.sharedCopyTitle": [
     "{{title}}"
   ],
@@ -7437,6 +7387,20 @@
   "sessions.sessionShareDialog.sharedCopySourceOutdated": [],
   "sessions.sessionShareDialog.sharedCopyProfileComputerOutdated": [],
   "sessions.sessionShareDialog.sharedCopyProfilesFailed": [],
+  "sessions.sessionShareDialog.sharedCopyCodeGitNotAvailable": [],
+  "sessions.sessionShareDialog.sharedCopyCodeNoRemote": [],
+  "sessions.sessionShareDialog.sharedCopyCodeTooLarge": [],
+  "sessions.sessionShareDialog.sharedCopyCodeSubmoduleChanges": [],
+  "sessions.sessionShareDialog.sharedCopyCodeLfsChanges": [],
+  "sessions.sessionShareDialog.sharedCopyCodeRepositoryNotInProfile": [
+    "{{profile}}",
+    "{{repository}}"
+  ],
+  "sessions.sessionShareDialog.sharedCopyCodeCheckFailed": [],
+  "sessions.sessionShareDialog.sharedCopyRepositoryNotFound": [],
+  "sessions.sessionShareDialog.sharedCopyCodeNotApplicable": [],
+  "sessions.sessionShareDialog.sharedCopyCodeBlocked": [],
+  "sessions.sessionShareDialog.sharedCopyCodeOperationInProgress": [],
   "sessions.moveWorkstreamDialog.untitledSession": [],
   "sessions.moveWorkstreamDialog.untitledAutomation": [],
   "sessions.moveWorkstreamDialog.stopping": [],
@@ -7684,6 +7648,8 @@
   "sessions.rightPaneV2Launcher.browser.label": [],
   "sessions.rightPaneV2Launcher.progress.label": [],
   "sessions.rightPaneV2Launcher.progress.description": [],
+  "sessions.rightPaneV2Launcher.tasks.label": [],
+  "sessions.rightPaneV2Launcher.tasks.description": [],
   "sessions.rightPaneV2Launcher.settings.label": [],
   "sessions.rightPaneV2Launcher.settings.description": [],
   "sessions.rightPaneV2Launcher.settings.unknownMachine": [],
@@ -7961,6 +7927,29 @@
   "settings.openComputeBaseImages.customAdded": [],
   "settings.openComputeBaseImages.customUpdated": [],
   "settings.openComputeBaseImages.customDeleted": [],
+  "settings.openComputeOperations.title": [],
+  "settings.openComputeOperations.description": [],
+  "settings.openComputeOperations.loading": [],
+  "settings.openComputeOperations.failedToLoad": [],
+  "settings.openComputeOperations.retry": [],
+  "settings.openComputeOperations.installedRelease": [],
+  "settings.openComputeOperations.notReported": [],
+  "settings.openComputeOperations.rollBack": [],
+  "settings.openComputeOperations.rollBackBlocked": [],
+  "settings.openComputeOperations.rollBackUnknownState": [],
+  "settings.openComputeOperations.rollBackTitle": [],
+  "settings.openComputeOperations.rollBackDescription": [
+    "{{release}}"
+  ],
+  "settings.openComputeOperations.rollBackConfirm": [],
+  "settings.openComputeOperations.rollBackIssued": [],
+  "settings.openComputeOperations.rollBackStale": [],
+  "settings.openComputeOperations.notNow": [],
+  "settings.openComputeOperations.cancelTitle": [],
+  "settings.openComputeOperations.cancelDescription": [],
+  "settings.openComputeOperations.cancelConfirm": [],
+  "settings.openComputeOperations.keepRunning": [],
+  "settings.openComputeOperations.cancelSent": [],
   "settings.groupsSettings.title": [],
   "settings.groupsSettings.titleWithCount": [
     "{{count}}"
@@ -8367,6 +8356,9 @@
   "settings.auditLogSettings.dateRangeLast30Days": [],
   "settings.auditLogSettings.dateRangeLast90Days": [],
   "settings.auditLogSettings.system": [],
+  "settings.auditLogSettings.targetAgentProfile": [
+    "{{name}}"
+  ],
   "settings.auditLogSettings.allActors": [],
   "settings.auditLogSettings.allEvents": [],
   "settings.auditLogSettings.allScopes": [],
@@ -9040,9 +9032,9 @@
   "settings.constants.pages.appearance.label": [],
   "settings.constants.pages.appearance.guardDescription": [],
   "settings.constants.pages.appearance.description": [],
-  "settings.constants.pages.apiKeys.label": [],
-  "settings.constants.pages.apiKeys.guardDescription": [],
-  "settings.constants.pages.apiKeys.description": [],
+  "settings.constants.pages.identity.label": [],
+  "settings.constants.pages.identity.guardDescription": [],
+  "settings.constants.pages.identity.description": [],
   "settings.constants.pages.secrets.label": [],
   "settings.constants.pages.secrets.guardDescription": [],
   "settings.constants.pages.secrets.description": [],
@@ -9089,9 +9081,6 @@
   "settings.constants.pages.members.description": [],
   "settings.constants.pages.enterpriseControls.label": [],
   "settings.constants.pages.enterpriseControls.guardDescription": [],
-  "settings.constants.pages.agentProfiles.label": [],
-  "settings.constants.pages.agentProfiles.guardDescription": [],
-  "settings.constants.pages.agentProfiles.description": [],
   "settings.constants.pages.remoteDelegations.label": [],
   "settings.constants.pages.remoteDelegations.guardDescription": [],
   "settings.constants.pages.remoteDelegations.description": [],
@@ -9232,12 +9221,14 @@
   "settings.constants.auditEventType.connectorAvailabilityChange": [],
   "settings.constants.auditEventType.computeDeploymentChange": [],
   "settings.constants.auditEventType.sandboxEnvironmentChange": [],
+  "settings.constants.auditEventType.sessionCreated": [],
   "settings.constants.auditEventType.computerSecretsChange": [],
   "settings.constants.auditEventType.computerProvisioningChange": [],
   "settings.constants.auditEventType.organizationMonthlyUsageSettingsChange": [],
   "settings.constants.auditEventType.delegationActivity": [],
   "settings.constants.auditEventType.agentProfileChange": [],
   "settings.constants.auditEventType.agentReadinessReportChange": [],
+  "settings.constants.auditEventType.agentReadinessCriterionChange": [],
   "settings.constants.auditEventType.contextSpaceMemberChange": [],
   "settings.constants.auditEventType.workstreamOwnershipTransfer": [],
   "settings.constants.auditEventType.computerOwnerTransfer": [],
@@ -9245,6 +9236,7 @@
   "settings.constants.auditEventType.workstreamMemberInvite": [],
   "settings.constants.auditEventType.workstreamMemberRemove": [],
   "settings.constants.auditEventType.workstreamMemberLeave": [],
+  "settings.constants.auditEventType.providerCredentialChange": [],
   "settings.constants.auditScope.organization": [],
   "settings.constants.auditScope.user": [],
   "settings.constants.auditSource.scim": [],
@@ -9258,6 +9250,8 @@
   "settings.constants.auditSource.webSettingsAdminConsole": [],
   "settings.constants.auditSource.webAnalyticsReadiness": [],
   "settings.constants.auditSource.publicApiV0": [],
+  "settings.constants.auditSource.sessionStorage": [],
+  "settings.constants.auditSource.scmStorage": [],
   "settings.constants.auditSource.openComputeEnrollment": [],
   "settings.constants.auditSource.workosEvent": [],
   "settings.constants.auditSource.admin": [],
@@ -9289,6 +9283,18 @@
   "settings.createApiKeyFormFields.enterADescriptiveName": [],
   "settings.createApiKeyFormFields.expirationMustBeAFutureDate": [],
   "settings.createApiKeyFormFields.leaveBlankForAKeyThat": [],
+  "settings.createApiKeyFormFields.leaveBlankToExpireInDays_one": [
+    "{{count}}"
+  ],
+  "settings.createApiKeyFormFields.leaveBlankToExpireInDays_other": [
+    "{{count}}"
+  ],
+  "settings.createApiKeyFormFields.expirationMustBeWithinDays_one": [
+    "{{count}}"
+  ],
+  "settings.createApiKeyFormFields.expirationMustBeWithinDays_other": [
+    "{{count}}"
+  ],
   "settings.createApiKeyFormFields.expiresAtLabel": [
     "{{timeZoneName}}"
   ],
@@ -9526,6 +9532,9 @@
   "settings.delegationIntegrationsSection.configure": [],
   "settings.delegationIntegrationsSection.comingSoon": [],
   "settings.delegationIntegrationsSection.requiresAPaidPlan": [],
+  "settings.ambientRepliesSection.title": [],
+  "settings.ambientRepliesSection.description": [],
+  "settings.ambientRepliesSection.descriptionReadOnly": [],
   "settings.delegationAgentProfiles.menuItem": [],
   "settings.delegationAgentProfiles.modalTitle": [
     "{{app}}"
@@ -9811,6 +9820,8 @@
   "settings.inboxSection.agentTurnCompleteDescription": [],
   "settings.inboxSection.skillSuggestionsTitle": [],
   "settings.inboxSection.skillSuggestionsDescription": [],
+  "settings.inboxSection.agentMessagesTitle": [],
+  "settings.inboxSection.agentMessagesDescription": [],
   "settings.inboxSection.missionNeedsInputTitle": [],
   "settings.inboxSection.missionNeedsInputDescription": [],
   "settings.inboxSection.missionCompleteTitle": [],
@@ -10158,7 +10169,6 @@
     "{{name}}"
   ],
   "settings.sandboxEnvironmentsSection.viewDetails": [],
-  "settings.sandboxEnvironmentsSection.prebuiltDevEnvironmentsForDroid": [],
   "settings.sandboxEnvironmentDetailsPage.failedToLoadThisTemplate": [],
   "settings.sandboxEnvironmentDetailsPage.retry": [],
   "settings.factoryRouterGuidanceSection.remove": [],
@@ -10212,6 +10222,7 @@
   "settings.generalSettings.modelProviders.rowDescriptions.chatgpt": [],
   "settings.generalSettings.modelProviders.rowDescriptions.openrouter": [],
   "settings.generalSettings.modelProviders.rowDescriptions.githubCopilot": [],
+  "settings.generalSettings.modelProviders.rowDescriptions.vercelAiGateway": [],
   "settings.generalSettings.modelProviders.connectedAs": [
     "{{account}}"
   ],
@@ -10221,9 +10232,7 @@
   "settings.generalSettings.modelProviders.disabledByOrganization": [
     "{{provider}}"
   ],
-  "settings.generalSettings.modelProviders.desktopOnly": [
-    "{{provider}}"
-  ],
+  "settings.generalSettings.modelProviders.desktopOnly": [],
   "settings.generalSettings.modelProviders.continueWith": [
     "{{provider}}"
   ],
@@ -11169,6 +11178,7 @@
   "settings.rawConfigSection.viewAndEditAllSettingsAsJson": [],
   "settings.rawConfigSection.rawConfiguration": [],
   "settings.rawConfigSection.validationErrors": [],
+  "settings.agentProfileSection.builtInCannotBeDeleted": [],
   "settings.agentProfileSection.plugins": [],
   "settings.agentProfileSection.installedForEveryDelegatedSessionThat": [],
   "settings.agentProfileSection.enabledOrgWide": [],
@@ -11184,28 +11194,18 @@
   "settings.agentProfileSection.thatPluginIsAlreadyListed": [],
   "settings.agentProfileSection.thatPluginIsAlreadyEnabledOrg": [],
   "settings.agentProfileSection.thatPluginIsTurnedOffFor": [],
-  "settings.agentProfileSection.failedToLoadServiceAccountsRefresh": [],
-  "settings.agentProfileSection.loadingServiceAccounts": [],
-  "settings.agentProfileSection.identity": [],
-  "settings.agentProfileSection.delegatedSessionsRunAsThisService": [],
-  "settings.agentProfileSection.useExistingServiceAccount": [],
-  "settings.agentProfileSection.newServiceAccount": [],
-  "settings.agentProfileSection.theRemoteDelegationsServiceAccountIs": [],
-  "settings.agentProfileSection.noActiveServiceAccountsYetCreate": [],
-  "settings.agentProfileSection.serviceAccount": [],
   "settings.agentProfileSection.name": [],
-  "settings.agentProfileSection.eGDelegationWorker": [],
-  "settings.agentProfileSection.namesArePermanentIdentifiersAndCannot": [],
-  "settings.agentProfileSection.descriptionOptional": [],
-  "settings.agentProfileSection.couldNotCreateTheServiceAccount": [],
-  "settings.agentProfileSection.addManagedComputer": [],
-  "settings.agentProfileSection.type": [],
-  "settings.agentProfileSection.status": [],
   "settings.agentProfileSection.loadingComputers": [],
   "settings.agentProfileSection.failedToLoadComputersRefreshThe": [],
-  "settings.agentProfileSection.noComputersYetAddAManaged": [],
-  "settings.agentProfileSection.chooseAnIdentityFirst": [],
   "settings.agentProfileSection.failedToSaveTryAgain": [],
+  "settings.agentProfileSection.profileChangedReopen": [],
+  "settings.agentProfileSection.profileChangedReopenWithDetail": [
+    "{{message}}"
+  ],
+  "settings.agentProfileSection.identityInUse": [],
+  "settings.agentProfileSection.customProfileLimit": [
+    "{{max}}"
+  ],
   "settings.agentProfileSection.next": [],
   "settings.agentProfileSection.access": [],
   "settings.agentProfileSection.everyone": [],
@@ -11213,33 +11213,32 @@
   "settings.agentProfileSection.defaultReasoningLevel": [],
   "settings.agentProfileSection.customInstructionsOptional": [],
   "settings.agentProfileSection.eGAlwaysReplyInThe": [],
-  "settings.agentProfileSection.compute": [],
   "settings.agentProfileSection.machineType": [],
   "settings.agentProfileSection.useExistingTemplate": [],
   "settings.agentProfileSection.newTemplate": [],
   "settings.agentProfileSection.removeSelectedTemplate": [],
   "settings.agentProfileSection.templateUnavailable": [],
   "settings.agentProfileSection.templateInaccessible": [],
+  "settings.agentProfileSection.serviceAccountTemplateInaccessible": [],
   "settings.agentProfileSection.perMachineParallelWorkerLimit": [],
   "settings.agentProfileSection.perMachineParallelWorkerLimitHelp": [],
   "settings.agentProfileSection.dynamicRecommended": [],
   "settings.agentProfileSection.agentProfiles": [],
-  "settings.agentProfileSection.computerTypes.bringYourOwnMachine": [],
-  "settings.agentProfileSection.computerTypes.managedByFactory": [],
-  "settings.agentProfileSection.computerStatuses.provisioning": [],
-  "settings.agentProfileSection.computerStatuses.active": [],
-  "settings.agentProfileSection.computerStatuses.error": [],
-  "settings.agentProfileSection.computerStatuses.unknown": [],
+  "settings.agentProfileSection.assignments": [],
   "settings.agentProfileSection.sectionDescription": [],
   "settings.agentProfileSection.machineTypes.dynamic": [],
   "settings.agentProfileSection.machineTypes.persistent": [],
   "settings.agentProfileSection.general": [],
   "settings.agentProfileSection.untitledConfig": [],
-  "settings.agentProfileSection.editConfig": [
-    "{{title}}"
+  "settings.agentProfileSection.edit": [],
+  "settings.agentProfileSection.editProfile": [
+    "{{name}}"
   ],
-  "settings.agentProfileSection.setUpConfig": [
-    "{{title}}"
+  "settings.agentProfileSection.setUpProfile": [
+    "{{name}}"
+  ],
+  "settings.agentProfileSection.deleteProfile": [
+    "{{name}}"
   ],
   "settings.agentProfileSection.removePlugin": [
     "{{pluginId}}"
@@ -11256,16 +11255,12 @@
   "settings.agentProfileSection.pluginCatalogUnavailable": [
     "{{marketplace}}"
   ],
-  "settings.agentProfileSection.creating": [],
-  "settings.agentProfileSection.createServiceAccount": [],
   "settings.agentProfileSection.seeByomGuide": [
     "</anchor>",
     "<anchor>"
   ],
   "settings.agentProfileSection.saveBlocked.enterName": [],
   "settings.agentProfileSection.saveBlocked.choosePersonOrGroup": [],
-  "settings.agentProfileSection.saveBlocked.chooseIdentity": [],
-  "settings.agentProfileSection.saveBlocked.identityInactive": [],
   "settings.agentProfileSection.saveBlocked.chooseTemplate": [],
   "settings.agentProfileSection.saveBlocked.templateUnavailable": [],
   "settings.agentProfileSection.saveBlocked.failedToLoadMachines": [],
@@ -11296,26 +11291,6 @@
   ],
   "settings.agentProfileSection.newModalTitle": [],
   "settings.agentProfileSection.eGBackendReviewers": [],
-  "settings.agentProfileSection.profileDescriptionPlaceholder": [],
-  "settings.agentProfileSection.availableToEveryone": [],
-  "settings.agentProfileSection.restrictedAudience": [
-    "{{audience}}"
-  ],
-  "settings.agentProfileSection.groupCount_one": [
-    "{{count}}"
-  ],
-  "settings.agentProfileSection.groupCount_other": [
-    "{{count}}"
-  ],
-  "settings.agentProfileSection.peopleCount_one": [
-    "{{count}}"
-  ],
-  "settings.agentProfileSection.peopleCount_other": [
-    "{{count}}"
-  ],
-  "settings.agentProfileSection.deleteConfig": [
-    "{{title}}"
-  ],
   "settings.agentProfileSection.deleteModalTitle": [],
   "settings.agentProfileSection.deleteModalBody": [
     "{{name}}"
@@ -11323,7 +11298,19 @@
   "settings.agentProfileSection.cancel": [],
   "settings.agentProfileSection.delete": [],
   "settings.agentProfileSection.deleting": [],
+  "settings.agentProfileSection.saveBeforeResources": [],
+  "settings.agentProfileSection.serviceAccountIdCaption": [
+    "{{id}}"
+  ],
+  "settings.agentProfileSection.sharedProfileAccess": [],
+  "settings.agentProfileSection.connectorSharedAccessWarning": [
+    "{{connector}}"
+  ],
+  "settings.agentProfileSection.resourcesUnavailable": [],
+  "settings.agentProfileSection.loadingResources": [],
+  "settings.agentProfileSection.ownersDescription": [],
   "settings.agentProfileTag.delegationApps": [],
+  "settings.agentProfileAccounts.orgDefaultName": [],
   "settings.agentProfilesSettings.loadingAgentProfiles": [],
   "settings.agentProfilesSettings.failedToLoadAgentProfiles": [],
   "settings.agentProfilesSettings.movedNotice": [
@@ -11537,6 +11524,11 @@
   "settings.securitySection.restrictMemberVisibility": [],
   "settings.securitySection.whenEnabledOnlyOwnersAndManagers": [],
   "settings.securitySection.restrictApiKeyCreation": [],
+  "settings.securitySection.limitApiKeyLifetime": [],
+  "settings.securitySection.limitApiKeyLifetimeDescription": [],
+  "settings.securitySection.maximumLifetime": [],
+  "settings.securitySection.maximumLifetimeDescription": [],
+  "settings.securitySection.days": [],
   "settings.securitySection.shield20Description": [],
   "settings.securitySection.shield20RegionUnavailable": [],
   "settings.securitySection.shield20UsOnlyUnavailable": [],
@@ -11544,6 +11536,7 @@
   "settings.serviceAccountApiKeysModal.creationUncertain": [],
   "settings.serviceAccountApiKeysModal.reviewKeys": [],
   "settings.serviceAccountApiKeysModal.inactiveAccount": [],
+  "settings.serviceAccountApiKeysModal.managersOnlyCreate": [],
   "settings.serviceAccountApiKeysModal.failedToLoadKeys": [],
   "settings.serviceAccountApiKeysModal.cancel": [],
   "settings.serviceAccountApiKeysModal.close": [],
@@ -11674,11 +11667,13 @@
   "settings.serviceAccountGitCredentialsModal.description": [
     "{{name}}"
   ],
+  "settings.serviceAccountGitCredentialsModal.embeddedDescription": [],
   "settings.serviceAccountGitCredentialsModal.couldNotLoadGitCredentials": [],
   "settings.serviceAccountRow.privateDeleteDescription": [],
   "settings.serviceAccountRow.editServiceAccount": [],
   "settings.serviceAccountRow.name": [],
   "settings.serviceAccountRow.namesAreImmutableIdentifiersCreateA": [],
+  "settings.serviceAccountRow.statusManagedByAgentProfile": [],
   "settings.serviceAccountRow.descriptionOptional": [],
   "settings.serviceAccountRow.status": [],
   "settings.serviceAccountRow.active": [],
@@ -11707,6 +11702,7 @@
   ],
   "settings.serviceAccountRow.checkingWhetherRemoteDelegationsUseThisAccount": [],
   "settings.serviceAccountRow.usedByRemoteDelegationsChooseADifferentIdentity": [],
+  "settings.serviceAccountRow.ownersDescription": [],
   "settings.serviceAccountsSection.createServiceAccount": [],
   "settings.serviceAccountsSection.failedToLoadServiceAccountsRefresh": [],
   "settings.serviceAccountsSection.name": [],
@@ -12007,6 +12003,7 @@
   "settings.deploymentSection.title": [],
   "settings.deploymentSection.factoryPrivate": [],
   "settings.deploymentSection.signOut": [],
+  "settings.deploymentSection.signedIn": [],
   "settings.deploymentSection.signedInAs": [
     "{{identity}}"
   ],
@@ -12193,6 +12190,7 @@
   "settings.settingsSearch.inbox.categories.questionsAndApprovals": [],
   "settings.settingsSearch.inbox.categories.agentTurnComplete": [],
   "settings.settingsSearch.inbox.categories.skillSuggestions": [],
+  "settings.settingsSearch.inbox.categories.agentMessages": [],
   "settings.settingsSearch.inbox.categories.missionNeedsInput": [],
   "settings.settingsSearch.inbox.categories.missionComplete": [],
   "settings.settingsSearch.appearance.appearanceMode.title": [],
@@ -12965,16 +12963,27 @@
   "settings.providerConnectionsSection.pending.ready.description": [
     "{{source}}"
   ],
+  "settings.providerConnectionsSection.pending.ready.liveDescription": [
+    "{{source}}"
+  ],
   "settings.providerConnectionsSection.pending.applying.title": [
     "{{label}}"
   ],
   "settings.providerConnectionsSection.pending.applying.description": [],
+  "settings.providerConnectionsSection.pending.activating.title": [
+    "{{label}}"
+  ],
+  "settings.providerConnectionsSection.pending.activating.description": [],
   "settings.providerConnectionsSection.pending.invalid.title": [
     "{{label}}"
   ],
   "settings.providerConnectionsSection.pending.invalid.description": [
     "{{source}}"
   ],
+  "settings.providerConnectionsSection.pending.activationFailed.title": [
+    "{{label}}"
+  ],
+  "settings.providerConnectionsSection.pending.activationFailed.description": [],
   "settings.providerConnectionsSection.pending.applyFailed.title": [
     "{{label}}"
   ],
@@ -12987,6 +12996,10 @@
   "settings.providerConnectionsSection.confirmMaintenance.copyReference": [],
   "settings.providerConnectionsSection.confirmMaintenance.recoveryNote": [],
   "settings.providerConnectionsSection.confirmMaintenance.stale": [],
+  "settings.providerConnectionsSection.confirmLive.title": [],
+  "settings.providerConnectionsSection.confirmLive.description": [],
+  "settings.providerConnectionsSection.confirmLive.submit": [],
+  "settings.providerConnectionsSection.confirmLive.recoveryNote": [],
   "settings.providerConnectionEditor.tag.configured": [],
   "settings.providerConnectionEditor.tag.notAvailable": [],
   "settings.providerConnectionEditor.errors.configurationChanged": [],
@@ -13079,6 +13092,220 @@
   "settings.sandboxEnvironmentRepositoriesEmpty.connectHintManager": [],
   "settings.sandboxEnvironmentRepositoriesEmpty.connectHintMember": [],
   "settings.timeRangeSelector.timeRange": [],
+  "settings.scmCloudApps.section": [],
+  "settings.scmCloudApps.sectionPersonal": [],
+  "settings.scmCloudApps.managedByPlatform": [],
+  "settings.scmCloudApps.stepHeading": [
+    "{{current}}",
+    "{{title}}",
+    "{{total}}"
+  ],
+  "settings.scmCloudApps.back": [],
+  "settings.scmCloudApps.next": [],
+  "settings.scmCloudApps.cancel": [],
+  "settings.scmCloudApps.connect": [],
+  "settings.scmCloudApps.steps.register": [],
+  "settings.scmCloudApps.steps.vault": [],
+  "settings.scmCloudApps.steps.point": [],
+  "settings.scmCloudApps.steps.confirm": [],
+  "settings.scmCloudApps.row.blocked": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.row.manageApp": [],
+  "settings.scmCloudApps.row.manageAppTarget": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.register.githubIntro": [],
+  "settings.scmCloudApps.register.githubOrganization": [],
+  "settings.scmCloudApps.register.githubOrganizationPlaceholder": [],
+  "settings.scmCloudApps.register.createGithubApp": [],
+  "settings.scmCloudApps.register.webhookSecret": [],
+  "settings.scmCloudApps.register.copyWebhookSecret": [],
+  "settings.scmCloudApps.register.webhookSecretHelp": [],
+  "settings.scmCloudApps.register.githubAfterCreate": [],
+  "settings.scmCloudApps.register.gitlab": [],
+  "settings.scmCloudApps.register.gitlabPersonal": [],
+  "settings.scmCloudApps.register.bitbucket": [],
+  "settings.scmCloudApps.register.bitbucketWorkspace": [],
+  "settings.scmCloudApps.register.bitbucketWorkspacePlaceholder": [
+    "<workspace>"
+  ],
+  "settings.scmCloudApps.register.azureDevops": [],
+  "settings.scmCloudApps.register.openRegistration": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.register.scopes": [],
+  "settings.scmCloudApps.register.copyScopes": [],
+  "settings.scmCloudApps.register.permissions": [],
+  "settings.scmCloudApps.register.copyPermissions": [],
+  "settings.scmCloudApps.register.redirectUri": [
+    "{{integration}}"
+  ],
+  "settings.scmCloudApps.register.copyRedirectUri": [
+    "{{integration}}"
+  ],
+  "settings.scmCloudApps.register.redirectUnavailable": [],
+  "settings.scmCloudApps.vault.intro": [],
+  "settings.scmCloudApps.vault.placeholder": [
+    "{{field}}"
+  ],
+  "settings.scmCloudApps.vault.copyEntry": [],
+  "settings.scmCloudApps.vault.noSecretsInFactory": [],
+  "settings.scmCloudApps.point.intro": [],
+  "settings.scmCloudApps.point.secretStore": [],
+  "settings.scmCloudApps.point.selectSecretStore": [],
+  "settings.scmCloudApps.point.storeOption": [
+    "{{kind}}",
+    "{{name}}"
+  ],
+  "settings.scmCloudApps.point.noStores": [],
+  "settings.scmCloudApps.point.noStoresDescription": [],
+  "settings.scmCloudApps.point.secretKey": [],
+  "settings.scmCloudApps.point.jsonProperty": [],
+  "settings.scmCloudApps.point.version": [],
+  "settings.scmCloudApps.point.keyPlaceholder": [
+    "<secret-key>"
+  ],
+  "settings.scmCloudApps.point.save": [],
+  "settings.scmCloudApps.point.selectStoreHint": [],
+  "settings.scmCloudApps.point.keyRequiredHint": [],
+  "settings.scmCloudApps.point.gitOpsDescription": [],
+  "settings.scmCloudApps.point.operatorTooOld": [],
+  "settings.scmCloudApps.point.copyHelm": [],
+  "settings.scmCloudApps.confirm.waiting": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.confirm.waitingDescription": [],
+  "settings.scmCloudApps.confirm.readingDescription": [],
+  "settings.scmCloudApps.confirm.checkingDescription": [],
+  "settings.scmCloudApps.confirm.invalid": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.confirm.invalidDescription": [],
+  "settings.scmCloudApps.confirm.invalidFields": [
+    "{{fields}}"
+  ],
+  "settings.scmCloudApps.confirm.detected": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.confirm.pingIntro": [],
+  "settings.scmCloudApps.confirm.pingSent": [],
+  "settings.scmCloudApps.confirm.pingWaiting": [],
+  "settings.scmCloudApps.confirm.pingWaitingDescription": [
+    "{{url}}"
+  ],
+  "settings.scmCloudApps.confirm.pingReceived": [],
+  "settings.scmCloudApps.confirm.pingUnavailable": [
+    "{{url}}"
+  ],
+  "settings.scmCloudApps.confirm.webhookUrlFallback": [],
+  "settings.scmCloudApps.confirm.connectHint": [],
+  "settings.scmCloudApps.identity.clientId": [],
+  "settings.scmCloudApps.identity.appId": [],
+  "settings.scmCloudApps.identity.slug": [],
+  "settings.scmCloudApps.identity.tenantId": [],
+  "settings.scmCloudApps.identity.row": [
+    "{{label}}",
+    "{{value}}"
+  ],
+  "settings.scmCloudApps.manage.reference": [],
+  "settings.scmCloudApps.manage.referenceValue": [
+    "{{key}}",
+    "{{kind}}",
+    "{{store}}"
+  ],
+  "settings.scmCloudApps.manage.noReference": [],
+  "settings.scmCloudApps.manage.sync": [],
+  "settings.scmCloudApps.manage.syncValue": [
+    "{{phase}}",
+    "{{time}}"
+  ],
+  "settings.scmCloudApps.manage.syncUnknown": [],
+  "settings.scmCloudApps.manage.checkNow": [],
+  "settings.scmCloudApps.manage.checkRequested": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.manage.changeReference": [],
+  "settings.scmCloudApps.manage.remove": [],
+  "settings.scmCloudApps.manage.removeTitle": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.manage.removeDescription": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.manage.removeDetail": [],
+  "settings.scmCloudApps.manage.removed": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.manage.readOnlyGitOps": [],
+  "settings.scmCloudApps.manage.readOnlyHelm": [],
+  "settings.scmCloudApps.manage.readOnlyRole": [],
+  "settings.scmCloudApps.syncWarning.title": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.syncWarning.description": [
+    "{{reason}}"
+  ],
+  "settings.scmCloudApps.stale.banner_one": [
+    "{{count}}",
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.stale.banner_other": [
+    "{{count}}",
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.stale.identityChanged": [],
+  "settings.scmCloudApps.stale.disconnect": [],
+  "settings.scmCloudApps.stale.keep": [],
+  "settings.scmCloudApps.stale.confirmTitle": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.stale.confirmDescription_one": [
+    "{{count}}",
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.stale.confirmDescription_other": [
+    "{{count}}",
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.stale.confirmDetail": [],
+  "settings.scmCloudApps.stale.disconnected": [
+    "{{provider}}"
+  ],
+  "settings.scmCloudApps.errors.forbidden": [],
+  "settings.scmCloudApps.errors.conflict": [],
+  "settings.scmCloudApps.errors.unavailable": [],
+  "settings.scmCloudApps.errors.notSaved": [],
+  "settings.scmCloudApps.errors.loadFailed": [],
+  "settings.scmCloudApps.errors.loadFailedDescription": [],
+  "settings.scmCloudApps.reasons.AwaitingOperator": [],
+  "settings.scmCloudApps.reasons.InstallValuesUnavailable": [],
+  "settings.scmCloudApps.reasons.SecretSynced": [],
+  "settings.scmCloudApps.reasons.SecretNotFound": [],
+  "settings.scmCloudApps.reasons.VaultReadFailed": [],
+  "settings.scmCloudApps.reasons.SecretOwnedByOther": [],
+  "settings.scmCloudApps.reasons.SecretSyncFailed": [],
+  "settings.scmCloudApps.reasons.WaitingForSecretSync": [],
+  "settings.scmCloudApps.reasons.RemovingApp": [],
+  "settings.scmCloudApps.reasons.ManagementDisabled": [],
+  "settings.scmCloudApps.reasons.SecretReferenceNotApproved": [],
+  "settings.scmCloudApps.reasons.HelmManaged": [],
+  "settings.scmCloudApps.reasons.ExternalSecretOwnershipConflict": [],
+  "settings.scmCloudApps.reasons.SecretOwnershipConflict": [],
+  "settings.scmCloudApps.reasons.ExternalSecretsUnavailable": [],
+  "settings.scmCloudApps.reasons.unknown": [
+    "{{code}}"
+  ],
+  "settings.scmCloudApps.providers.github": [],
+  "settings.scmCloudApps.providers.gitlab": [],
+  "settings.scmCloudApps.providers.bitbucket": [],
+  "settings.scmCloudApps.providers.azureDevops": [],
+  "settings.scmCloudApps.phases.Pending": [],
+  "settings.scmCloudApps.phases.Synced": [],
+  "settings.scmCloudApps.phases.NotFound": [],
+  "settings.scmCloudApps.phases.AccessDenied": [],
+  "settings.scmCloudApps.phases.Rejected": [],
+  "settings.scmCloudApps.phases.Failed": [],
   "sharing.repositoryArtifactAccessNudge.privateShareLinksRequireRepoAccess": [],
   "sharing.repositoryArtifactAccessNudge.organizationSharingUsesYourFactoryOrg": [],
   "sharing.repositoryArtifactAccessNudge.privateWikisAndReadinessReportsAre": [],
@@ -13582,6 +13809,11 @@
     "{{title}}"
   ],
   "components.analytics.attributionInventoryTable.automationSession": [],
+  "components.analytics.attributionInventoryTable.foldedSessionsAria": [
+    "{{formattedCount}}",
+    "{{title}}"
+  ],
+  "components.analytics.attributionInventoryTable.foldedSessions": [],
   "components.analytics.attributionInventoryTable.userIntentAria": [
     "{{intent}}"
   ],
@@ -13620,9 +13852,13 @@
   "components.analytics.attributionInventoryTable.openUserDetails": [
     "{{name}}"
   ],
+  "components.analytics.attributionInventoryTable.openUserSessions": [
+    "{{name}}"
+  ],
   "components.analytics.attributionInventoryTable.headers.project": [],
   "components.analytics.attributionInventoryTable.headers.sessions": [],
   "components.analytics.attributionInventoryTable.headers.issues": [],
+  "components.analytics.attributionInventoryTable.headers.linkedTickets": [],
   "components.analytics.attributionInventoryTable.headers.contributors": [],
   "components.analytics.attributionInventoryTable.headers.deadline": [],
   "components.analytics.attributionInventoryTable.headers.issue": [],
@@ -13999,7 +14235,6 @@
   "components.automations.automationManagedModelField.checking": [],
   "components.automations.automationManagedModelField.noModel": [],
   "components.automations.automationMarketplace.searchTemplates": [],
-  "components.automations.automationMarketplace.createAutomation": [],
   "components.automations.automationMarketplace.describeItToDroidInsteadAnd": [],
   "components.automations.automationMarketplace.describeItToDroid": [],
   "components.automations.automationMarketplace.clearSearch": [],
@@ -14007,9 +14242,17 @@
     "{{query}}"
   ],
   "components.automations.automationMarketplace.noTemplatesYet": [],
+  "components.automations.automationMarketplace.templateSections": [],
+  "components.automations.automationMarketplace.noSectionTemplatesMatch": [
+    "{{query}}",
+    "{{section}}"
+  ],
+  "components.automations.automationMarketplace.showMatchesInSection": [
+    "{{section}}",
+    "{{total}}"
+  ],
   "components.automations.automationMarketplaceHero.automateTheWorkThatKeepsComing": [],
   "components.automations.automationMarketplaceHero.startFromAProvenUseCase": [],
-  "components.automations.automationMarketplaceHero.createWithDroid": [],
   "components.automations.automationMarketplaceHero.howAutomationsWork": [],
   "components.automations.automationMarketplaceHero.worksWith": [],
   "components.automations.automationRepoPicker.cancel": [],
@@ -14839,27 +15082,48 @@
   "components.chat.moveWorkstreamDialog.move": [],
   "components.chat.moveWorkstreamDialog.tryAgain": [],
   "components.chat.sessionShareDialog.shareSession": [],
-  "components.chat.sessionShareDialog.sessionVisibility": [],
-  "components.chat.sessionShareDialog.private": [],
-  "components.chat.sessionShareDialog.privateDescription": [],
-  "components.chat.sessionShareDialog.organization": [],
-  "components.chat.sessionShareDialog.organizationDescription": [],
   "components.chat.sessionShareDialog.shareLink": [],
-  "components.chat.sessionShareDialog.updateSessionDetails": [],
-  "components.chat.sessionShareDialog.sessionTitle": [],
-  "components.chat.sessionShareDialog.save": [],
   "components.chat.sessionShareDialog.copy": [],
   "components.chat.sessionShareDialog.copied": [],
-  "components.chat.sessionShareDialog.sharedCopy": [],
-  "components.chat.sessionShareDialog.sharedCopyDescription": [],
+  "components.chat.sessionShareDialog.workTogetherDescription": [],
+  "components.chat.sessionShareDialog.viewOnlyLink": [],
+  "components.chat.sessionShareDialog.viewOnlyLinkOff": [],
+  "components.chat.sessionShareDialog.viewOnlyLinkOn": [],
   "components.chat.sessionShareDialog.agentProfile": [],
   "components.chat.sessionShareDialog.selectAgentProfile": [],
-  "components.chat.sessionShareDialog.createSharedCopy": [],
+  "components.chat.sessionShareDialog.createSharedSession": [],
   "components.chat.sessionShareDialog.tryAgain": [],
   "components.chat.sessionShareDialog.dismiss": [],
-  "components.chat.sessionShareDialog.creatingSharedCopy": [],
+  "components.chat.sessionShareDialog.creatingSharedSession": [],
   "components.chat.sessionShareDialog.gettingLinkReady": [],
-  "components.chat.sessionShareDialog.sharedCopyReady": [],
+  "components.chat.sessionShareDialog.sharedSessionReady": [],
+  "components.chat.sessionShareDialog.codeChecking": [],
+  "components.chat.sessionShareDialog.codeReady": [
+    "{{branch}}",
+    "{{commits}}",
+    "{{files}}",
+    "{{repository}}"
+  ],
+  "components.chat.sessionShareDialog.codeDetached": [],
+  "components.chat.sessionShareDialog.codeUnpushedCommits_one": [
+    "{{formattedCount}}"
+  ],
+  "components.chat.sessionShareDialog.codeUnpushedCommits_other": [
+    "{{formattedCount}}"
+  ],
+  "components.chat.sessionShareDialog.codeChangedFiles_one": [
+    "{{formattedCount}}"
+  ],
+  "components.chat.sessionShareDialog.codeChangedFiles_other": [
+    "{{formattedCount}}"
+  ],
+  "components.chat.sessionShareDialog.bringUnpushedChanges": [],
+  "components.chat.sessionShareDialog.shareWithoutCode": [],
+  "components.chat.sharedCopyMarker.named": [
+    "{{name}}"
+  ],
+  "components.chat.sharedCopyMarker.you": [],
+  "components.chat.sharedCopyMarker.unknown": [],
   "components.chat.mcpAddServer.registry": [],
   "components.chat.mcpAddServer.addNewMcpServer": [],
   "components.chat.mcpAddServer.serverName": [],
@@ -15087,6 +15351,8 @@
   "components.chat.skillBrowserModal.selectASkillToViewDetails": [],
   "components.chat.skillsBrowser.modelOnly": [],
   "components.chat.skillsBrowser.noDetailedDocumentationAvailableForThis": [],
+  "components.chat.skillsBrowser.loadingDetails": [],
+  "components.chat.skillsBrowser.failedToLoadDetails": [],
   "components.chat.skillsBrowser.references": [],
   "components.chat.skillsBrowser.assets": [],
   "components.chat.skillsBrowser.selectASkillToViewDetails": [],
@@ -15280,6 +15546,9 @@
   "components.chat.droidMessageV3.toolSummary.extra.thought_other": [
     "{{count}}"
   ],
+  "components.chat.droidCoreSwitchCard.title": [],
+  "components.chat.droidCoreSwitchCard.description": [],
+  "components.chat.droidCoreSwitchCard.switch": [],
   "components.chat.subscriptionRequiredNotice.message": [],
   "components.chat.subscriptionRequiredNotice.addOwnKey": [],
   "components.chat.subscriptionRequiredNotice.upgrade": [],
@@ -15313,6 +15582,9 @@
     "{{name}}"
   ],
   "components.chat.toolCallDisplayV3.failed": [],
+  "components.chat.toolCallDisplayV3.openPreview": [
+    "{{filePath}}"
+  ],
   "components.chat.v3DeliverableCard.openIn": [],
   "components.chat.v3DeliverableCard.sidebar": [],
   "components.chat.v3DeliverableCard.download": [],
@@ -15412,6 +15684,8 @@
   "components.chat.activeSessionBanner.openSidebar": [],
   "components.chat.activeSessionBanner.sessionMenu": [],
   "components.chat.activeSessionBanner.share": [],
+  "components.chat.activeSessionBanner.copyViewOnlyLink": [],
+  "components.chat.activeSessionBanner.turnOffViewOnlyLink": [],
   "components.chat.activeSessionBanner.rename": [],
   "components.chat.activeSessionBanner.changeTeam": [],
   "components.chat.activeSessionBanner.missionSettings": [],
@@ -15730,10 +16004,6 @@
     "{{shortcut}}"
   ],
   "components.chat.chatComposerReasoningPickerV3.cycleHintLabel": [],
-  "components.chat.chatComposerModelDefaultsV3.autonomyDetail": [
-    "{{description}}",
-    "{{label}}"
-  ],
   "components.chat.chatComposerModelDefaultsV3.title": [
     "{{mode}}"
   ],
@@ -16070,6 +16340,10 @@
   "components.chat.sessionArtifactsPanel.group.notion": [],
   "components.chat.sessionArtifactsPanel.group.specs": [],
   "components.chat.sessionArtifactsPanel.group.web": [],
+  "components.chat.sessionPaneLauncher.recent": [],
+  "components.chat.sessionPaneLauncher.recentEmpty": [],
+  "components.chat.sessionPaneLauncher.tools": [],
+  "components.chat.sessionPaneLauncher.viewAll": [],
   "components.chat.sessionDetailsModal.sessionDetails": [],
   "components.chat.sessionDetailsModal.sessionInfo": [],
   "components.chat.sessionDetailsModal.sessionId": [],
@@ -16091,7 +16365,7 @@
   "components.chat.sessionDetailsModal.status": [],
   "components.chat.sessionDetailsModal.loading": [],
   "components.chat.sessionDetailsModal.close": [],
-  "components.chat.sessionEnvironmentPanel.selectGitAction": [],
+  "components.chat.sessionEnvironmentPanel.gitActions": [],
   "components.chat.sessionEnvironmentPanel.environment": [],
   "components.chat.sessionEnvironmentPanel.noRepository": [],
   "components.chat.sessionEnvironmentPanel.changes": [],
@@ -16715,6 +16989,9 @@
   ],
   "components.chat.todoPlanVisualizer.collapsePlanProgress": [],
   "components.chat.todoPlanVisualizer.expandPlanProgress": [],
+  "components.chat.todoPlanVisualizer.statusCompleted": [],
+  "components.chat.todoPlanVisualizer.statusInProgress": [],
+  "components.chat.todoPlanVisualizer.statusPending": [],
   "components.chat.applyPatchTool.patchApplied": [],
   "components.chat.createTool.fileCreated": [],
   "components.chat.defaultTool.noResult": [],
@@ -16724,6 +17001,10 @@
   "components.chat.exitSpecModeTool.noPlanProvided": [],
   "components.chat.fetchUrlTool.fetchFailed": [
     "{{error}}"
+  ],
+  "components.chat.fetchUrlTool.signInRequired": [],
+  "components.chat.fetchUrlTool.signInConnectReason": [
+    "{{host}}"
   ],
   "components.chat.fetchUrlTool.contentRetrieved_one": [
     "{{count}}"
@@ -17468,6 +17749,31 @@
   "components.chat.prAutofixCard.tooltipTitle": [],
   "components.chat.prAutofixCard.tooltipDescription": [],
   "components.chat.prAutofixCard.openSettings": [],
+  "components.chat.prAutofixCard.summary_one": [
+    "{{count}}",
+    "{{enabled}}"
+  ],
+  "components.chat.prAutofixCard.summary_other": [
+    "{{count}}",
+    "{{enabled}}"
+  ],
+  "components.chat.prAutofixCard.summaryAll_one": [
+    "{{count}}"
+  ],
+  "components.chat.prAutofixCard.summaryAll_other": [
+    "{{count}}"
+  ],
+  "components.chat.prAutofixCard.summaryNone_one": [
+    "{{count}}"
+  ],
+  "components.chat.prAutofixCard.summaryNone_other": [
+    "{{count}}"
+  ],
+  "components.chat.prAutofixCard.summaryPaused": [
+    "{{paused}}"
+  ],
+  "components.chat.prAutofixCard.expand": [],
+  "components.chat.prAutofixCard.collapse": [],
   "components.chat.sessionNotice.dismiss": [],
   "components.chat.providerReconnectNotice.title": [
     "{{provider}}"
@@ -17621,6 +17927,7 @@
   "components.common.clipboardToast.items.sessionId": [],
   "components.common.clipboardToast.items.workingDirectory": [],
   "components.common.clipboardToast.items.sessionLink": [],
+  "components.common.clipboardToast.items.viewOnlyLink": [],
   "components.common.clipboardToast.items.sessionAsMarkdown": [],
   "components.common.unsavedChangesBar.label": [],
   "components.common.unsavedChangesBar.message": [],
@@ -17735,6 +18042,26 @@
   "components.desktopRepoPicker.trust.confirm": [],
   "components.desktopRepoPicker.trust.saving": [],
   "components.desktopRepoPicker.trust.cancel": [],
+  "components.docReview.agentAuthor": [],
+  "components.docReview.cancel": [],
+  "components.docReview.comment": [],
+  "components.docReview.commentPlaceholder": [],
+  "components.docReview.commentWithShortcut": [
+    "{{shortcut}}"
+  ],
+  "components.docReview.commentsLabel": [],
+  "components.docReview.couldNotLoad": [],
+  "components.docReview.couldNotPost": [],
+  "components.docReview.emptyHint": [],
+  "components.docReview.hideComments": [],
+  "components.docReview.newComment": [],
+  "components.docReview.noComments": [],
+  "components.docReview.retry": [],
+  "components.docReview.showComments": [],
+  "components.docReview.showCommentsWithCount": [
+    "{{threads}}"
+  ],
+  "components.docReview.unknownAuthor": [],
   "components.evaluations.evaluationDatasetHub.searchTasks": [],
   "components.evaluations.evaluationDatasetHub.searchTasksPlaceholder": [],
   "components.evaluations.evaluationDatasetHub.noMatchingTasks": [],
@@ -17743,16 +18070,8 @@
   "components.evaluations.evaluationDatasetHub.category": [],
   "components.evaluations.evaluationDatasetHub.difficulty": [],
   "components.evaluations.evaluationDatasetHub.taskNotFound": [],
-  "components.evaluations.evaluationDatasetHub.removeFromLibrary": [],
-  "components.evaluations.evaluationDatasetHub.import": [],
-  "components.evaluations.evaluationDatasetHub.importThisVersionToPinIt": [],
-  "components.evaluations.evaluationDatasetHub.thisRevisionWasWithdrawnByIts": [],
   "components.evaluations.evaluationDatasetHub.allTasks": [],
-  "components.evaluations.evaluationDatasetHub.datasetRevision": [],
   "components.evaluations.evaluationDatasetHub.datasetVersion": [],
-  "components.evaluations.evaluationDatasetHub.latest": [],
-  "components.evaluations.evaluationDatasetHub.withdrawn": [],
-  "components.evaluations.evaluationDatasetHub.notImported": [],
   "components.evaluations.evaluationDatasetHub.tabs.runs": [],
   "components.evaluations.evaluationDatasetHub.tabs.tasks": [],
   "components.evaluations.evaluationDatasetHub.tabs.presets": [],
@@ -17760,7 +18079,6 @@
   "components.evaluations.evaluationDatasetHub.runEvaluation": [],
   "components.evaluations.evaluationDatasetHub.copyReference": [],
   "components.evaluations.evaluationDatasetHub.published": [],
-  "components.evaluations.evaluationDatasetHub.imported": [],
   "components.evaluations.evaluationDatasetHub.gpu": [],
   "components.evaluations.evaluationDatasetHub.noGpus": [],
   "components.evaluations.evaluationDatasetHub.noTasks": [],
@@ -17782,7 +18100,6 @@
   "components.evaluations.evaluationDatasetImport.version": [],
   "components.evaluations.evaluationDatasetImport.visibility": [],
   "components.evaluations.evaluationDatasetImport.copyNotice": [],
-  "components.evaluations.evaluationDatasetLibrary.withdrawn": [],
   "components.evaluations.evaluationDatasetLibrary.datasetsUnavailable": [],
   "components.evaluations.evaluationDatasetLibrary.noMatchingDatasets": [],
   "components.evaluations.evaluationDatasetLibrary.you": [],
@@ -17804,14 +18121,7 @@
     "{{count}}",
     "{{visible}}"
   ],
-  "components.evaluations.evaluationDatasetLibrary.scope": [],
   "components.evaluations.evaluationDatasetLibrary.loading": [],
-  "components.evaluations.evaluationDatasetLibrary.taskCount_one": [
-    "{{count}}"
-  ],
-  "components.evaluations.evaluationDatasetLibrary.taskCount_other": [
-    "{{count}}"
-  ],
   "components.evaluations.evaluationDatasetLibrary.versionSummary_one": [
     "{{count}}",
     "{{version}}"
@@ -17828,8 +18138,6 @@
   "components.evaluations.evaluationDatasetLibrary.headers.dataset": [],
   "components.evaluations.evaluationDatasetLibrary.headers.visibility": [],
   "components.evaluations.evaluationDatasetLibrary.headers.creator": [],
-  "components.evaluations.evaluationDatasetLibrary.headers.source": [],
-  "components.evaluations.evaluationDatasetLibrary.headers.latestVersion": [],
   "components.evaluations.evaluationDatasetLibrary.headers.updated": [],
   "components.evaluations.evaluationDatasetLibrary.headers.actions": [],
   "components.evaluations.evaluationListToolbar.filter": [],
@@ -17865,7 +18173,6 @@
     "{{max}}"
   ],
   "components.evaluations.evaluationPresetEditor.saving": [],
-  "components.evaluations.evaluationPresetEditor.revisionWithdrawn": [],
   "components.evaluations.evaluationPresetEditor.datasetHasNoTasks": [],
   "components.evaluations.evaluationPresetEditor.details": [],
   "components.evaluations.evaluationPresetEditor.tasks": [],
@@ -17983,12 +18290,6 @@
   "components.evaluations.evaluationRunPanel.model": [],
   "components.evaluations.evaluationRunPanel.noModelsAvailable": [],
   "components.evaluations.evaluationRunPanel.preset": [],
-  "components.evaluations.evaluationRunPanel.taskCount_one": [
-    "{{count}}"
-  ],
-  "components.evaluations.evaluationRunPanel.taskCount_other": [
-    "{{count}}"
-  ],
   "components.evaluations.evaluationRunPanel.starting": [],
   "components.evaluations.evaluationRunPanel.startRun": [],
   "components.evaluations.evaluationRunPanel.noPreset": [],
@@ -18102,9 +18403,6 @@
   "components.evaluations.common.organizationDataset": [
     "{{name}}"
   ],
-  "components.evaluations.common.publicDataset": [
-    "{{name}}"
-  ],
   "components.evaluations.common.runStatus.dispatched": [],
   "components.evaluations.common.runStatus.running": [],
   "components.evaluations.common.runStatus.finished": [],
@@ -18119,29 +18417,11 @@
   "components.evaluations.common.requiresGpus": [],
   "components.evaluations.common.exceedsCpuLimit": [],
   "components.evaluations.common.exceedsMemoryLimit": [],
-  "components.evaluations.common.sources.harborHub": [],
-  "components.evaluations.common.sources.harborRegistry": [],
-  "components.evaluations.datasetSections.organization.title": [],
   "components.evaluations.datasetSections.organization.label": [],
   "components.evaluations.datasetSections.organization.searchLabel": [],
   "components.evaluations.datasetSections.organization.emptyTitle": [],
-  "components.evaluations.datasetSections.public.title": [],
-  "components.evaluations.datasetSections.public.label": [],
-  "components.evaluations.datasetSections.public.searchLabel": [],
-  "components.evaluations.datasetSections.public.emptyTitle": [],
   "components.evaluations.datasetVisibility.private": [],
   "components.evaluations.datasetVisibility.shared": [],
-  "components.evaluations.datasetVersion.revision": [
-    "{{revision}}"
-  ],
-  "components.evaluations.datasetVersion.revisionWithTags_one": [
-    "{{revision}}",
-    "{{tags}}"
-  ],
-  "components.evaluations.datasetVersion.revisionWithTags_other": [
-    "{{revision}}",
-    "{{tags}}"
-  ],
   "components.featureFlags.featureFlagMenu.featureFlags": [],
   "components.featureFlags.featureFlagMenu.showFeatureFlagButtonOnPage": [],
   "components.featureFlags.featureFlagMenu.searchFeatureFlags": [],
@@ -18277,10 +18557,35 @@
   "components.fleet.openComputeManaged.lockLabel": [],
   "components.fleet.openComputeManaged.noticeTitle": [],
   "components.fleet.openComputeManaged.noticeDescription": [],
+  "components.fleet.openComputeOperations.history": [],
+  "components.fleet.openComputeOperations.noOperations": [],
+  "components.fleet.openComputeOperations.columns.operation": [],
+  "components.fleet.openComputeOperations.columns.status": [],
+  "components.fleet.openComputeOperations.columns.release": [],
+  "components.fleet.openComputeOperations.columns.issued": [],
+  "components.fleet.openComputeOperations.columns.actions": [],
+  "components.fleet.openComputeOperations.types.upgrade": [],
+  "components.fleet.openComputeOperations.types.rollback": [],
+  "components.fleet.openComputeOperations.states.open": [],
+  "components.fleet.openComputeOperations.states.succeeded": [],
+  "components.fleet.openComputeOperations.states.failed": [],
+  "components.fleet.openComputeOperations.states.rejected": [],
+  "components.fleet.openComputeOperations.states.canceled": [],
+  "components.fleet.openComputeOperations.states.expired": [],
+  "components.fleet.openComputeOperations.withdrawn": [],
+  "components.fleet.openComputeOperations.cancelRequested": [],
+  "components.fleet.openComputeOperations.reason": [
+    "{{reason}}"
+  ],
+  "components.fleet.openComputeOperations.cancel": [],
+  "components.fleet.openComputeOperations.cancelFor": [
+    "{{release}}"
+  ],
   "components.inbox.inboxFilterBar.inboxFilters": [],
   "components.inbox.inboxFilterBar.markAllRead": [],
   "components.inbox.inboxFilterBar.archiveResolved": [],
   "components.inbox.inboxFilterBar.queueActions": [],
+  "components.inbox.inboxFilterBar.filterByType": [],
   "components.inbox.inboxItemMenu.snooze": [
     "{{time}}"
   ],
@@ -18300,7 +18605,29 @@
   "components.inbox.inboxReader.detail.folder": [],
   "components.inbox.inboxReader.detail.machine": [],
   "components.inbox.inboxReader.detail.received": [],
+  "components.inbox.inboxReader.detail.receivedAt": [
+    "{{age}}",
+    "{{time}}"
+  ],
   "components.inbox.inboxReader.detail.snoozedUntil": [],
+  "components.inbox.inboxReader.detail.from": [],
+  "components.inbox.inboxReader.sender.nameAndEmail": [
+    "{{email}}",
+    "{{name}}"
+  ],
+  "components.inbox.inboxReader.sender.serviceAccount": [
+    "{{id}}",
+    "{{name}}"
+  ],
+  "components.inbox.inboxReader.sender.unnamedMember": [
+    "{{id}}"
+  ],
+  "components.inbox.inboxReader.sender.unnamedServiceAccount": [
+    "{{id}}"
+  ],
+  "components.inbox.inboxReader.sender.you": [
+    "{{sender}}"
+  ],
   "components.inbox.inboxReader.nothingSelected": [],
   "components.inbox.inboxReader.chooseAnItem": [],
   "components.inbox.inboxReader.notListed.primary": [],
@@ -18433,6 +18760,18 @@
   "components.inbox.sourceDomain.automation": [],
   "components.inbox.sourceDomain.usage": [],
   "components.inbox.sourceDomain.remoteDelegation": [],
+  "components.inbox.itemType.askUser": [],
+  "components.inbox.itemType.permission": [],
+  "components.inbox.itemType.sessionCompleted": [],
+  "components.inbox.itemType.missionAttention": [],
+  "components.inbox.itemType.missionCompleted": [],
+  "components.inbox.itemType.changeReview": [],
+  "components.inbox.itemType.specificationReview": [],
+  "components.inbox.itemType.pullRequestReview": [],
+  "components.inbox.itemType.changeFailed": [],
+  "components.inbox.itemType.workstreamError": [],
+  "components.inbox.itemType.skillSuggestion": [],
+  "components.inbox.itemType.message": [],
   "components.inbox.inboxQueueRow.ariaLabelSeparator": [],
   "components.inbox.inboxQueueRow.unread": [],
   "components.inbox.inboxQueueRow.now": [],
@@ -18494,6 +18833,11 @@
     "<lead/>",
     "<verb>"
   ],
+  "components.inbox.inboxQueueRow.verb.sentYouAMessage": [
+    "</verb>",
+    "<lead/>",
+    "<verb>"
+  ],
   "components.inbox.inboxQueueRow.indicator.needsYou": [],
   "components.inbox.inboxQueueRow.indicator.noOutcomeYet": [],
   "components.inbox.inboxQueueRow.indicator.decided": [],
@@ -18522,6 +18866,7 @@
   ],
   "components.layout.missionAgentAutomation.active": [],
   "components.layout.missionAgentAutomation.paused": [],
+  "components.layout.missionAgentAutomation.automations": [],
   "components.layout.missionAgentAutomation.nextRun": [
     "{{nextRun}}"
   ],
@@ -18529,7 +18874,6 @@
     "{{nextRun}}",
     "{{schedule}}"
   ],
-  "components.layout.missionAgentAutomation.openAutomation": [],
   "components.layout.missionAgentAutomation.openAutomationNamed": [
     "{{name}}"
   ],
@@ -18540,8 +18884,6 @@
     "{{item}}",
     "{{source}}"
   ],
-  "components.layout.missionAgentAutomation.filterAgents": [],
-  "components.layout.missionAgentAutomation.filterPullRequests": [],
   "components.layout.missionAgentOrigin.inResponseTo": [
     "<signal/>"
   ],
@@ -18775,6 +19117,9 @@
   "components.layout.pullRequestControls.reviewComment": [],
   "components.layout.pullRequestControls.leaveAReviewComment": [],
   "components.layout.pullRequestControls.merge": [],
+  "components.layout.pullRequestControls.stateMenu.trigger": [
+    "{{state}}"
+  ],
   "components.layout.pullRequestControls.stateLabels.merged": [],
   "components.layout.pullRequestControls.stateLabels.closed": [],
   "components.layout.pullRequestControls.stateLabels.draft": [],
@@ -20285,6 +20630,10 @@
     "{{kind}}",
     "{{name}}"
   ],
+  "components.missions.missionFilesExplorer.fileDetailWithSize": [
+    "{{detail}}",
+    "{{size}}"
+  ],
   "components.missions.missionFilesExplorer.backToFiles": [],
   "components.missions.missionFilesExplorer.fileTree": [],
   "components.missions.missionFilesExplorer.showFileTree": [],
@@ -20292,6 +20641,9 @@
   "components.missions.missionFilesExplorer.loadingFile": [],
   "components.missions.missionFilesExplorer.couldNotLoadFile": [],
   "components.missions.missionFilesExplorer.couldNotShowFile": [],
+  "components.missions.missionFilesExplorer.archiveNoPreview": [
+    "{{size}}"
+  ],
   "components.missions.missionFilesExplorer.emptyFile": [],
   "components.missions.missionFilesExplorer.fileDeletedTitle": [],
   "components.missions.missionFilesExplorer.fileDeletedDescription": [],
@@ -20301,6 +20653,7 @@
   "components.missions.missionFilesExplorer.reloadFile": [],
   "components.missions.missionFilesExplorer.reloadingFile": [],
   "components.missions.missionFilesExplorer.downloadFile": [],
+  "components.missions.missionFilesExplorer.downloadingFile": [],
   "components.missions.missionFilesExplorer.menu.download": [],
   "components.missions.missionFilesExplorer.menu.downloadFolder": [],
   "components.missions.missionFilesExplorer.download.listing": [
@@ -20337,6 +20690,7 @@
   "components.missions.missionFilesExplorer.kinds.code": [],
   "components.missions.missionFilesExplorer.kinds.image": [],
   "components.missions.missionFilesExplorer.kinds.pdf": [],
+  "components.missions.missionFilesExplorer.kinds.archive": [],
   "components.missions.missionFilesExplorer.kinds.other": [],
   "components.missions.missionFilesExplorer.add.label": [],
   "components.missions.missionFilesExplorer.add.uploadFiles": [],
@@ -20385,6 +20739,9 @@
     "{{path}}",
     "{{reason}}"
   ],
+  "components.missions.missionFilesExplorer.add.bytes": [
+    "{{size}}"
+  ],
   "components.missions.missionFilesExplorer.add.kilobytes": [
     "{{size}}"
   ],
@@ -20404,7 +20761,8 @@
   "components.missions.missionFilesExplorer.add.skipReason.secret": [],
   "components.missions.missionFilesExplorer.add.skipReason.deleted-at-path": [],
   "components.missions.missionFilesExplorer.add.skipReason.extension-mismatch": [],
-  "components.missions.missionFilesExplorer.add.skipReason.binary-unsupported": [],
+  "components.missions.missionFilesExplorer.add.skipReason.type-unsupported": [],
+  "components.missions.missionFilesExplorer.add.skipReason.zip-based": [],
   "components.missions.missionFilesExplorer.add.skipReason.metadata-not-removed": [],
   "components.missions.missionFilesExplorer.add.failure.too-many-files": [
     "{{count}}"
@@ -20689,15 +21047,532 @@
   "components.missions.prAutofixUpdateTypes.reviewsAndComments": [],
   "components.missions.prAutofixUpdateTypes.botComments": [],
   "components.missions.prAutofixUpdateTypes.mergeConflicts": [],
+  "components.missions.cveTasks.action.answer": [],
+  "components.missions.cveTasks.action.approve": [],
+  "components.missions.cveTasks.action.approvePlan": [],
+  "components.missions.cveTasks.action.askOwner": [],
+  "components.missions.cveTasks.action.closePr": [],
+  "components.missions.cveTasks.action.continueInChat": [],
+  "components.missions.cveTasks.action.discard": [],
+  "components.missions.cveTasks.action.mergePr": [],
+  "components.missions.cveTasks.action.notDuplicate": [],
+  "components.missions.cveTasks.action.reconnect": [],
+  "components.missions.cveTasks.action.reopen": [],
+  "components.missions.cveTasks.action.requestChanges": [],
+  "components.missions.cveTasks.action.retry": [],
+  "components.missions.cveTasks.action.retryWithGuidance": [],
+  "components.missions.cveTasks.action.reviewOnGithub": [],
+  "components.missions.cveTasks.action.viewOnGithub": [],
+  "components.missions.cveTasks.action.watchSession": [],
+  "components.missions.cveTasks.callout.agent.body": [
+    "{{returns}}"
+  ],
+  "components.missions.cveTasks.callout.agent.bodyPlain": [],
+  "components.missions.cveTasks.callout.agent.forTime": [
+    "{{time}}"
+  ],
+  "components.missions.cveTasks.callout.agent.merging": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.callout.approvePlan.body": [],
+  "components.missions.cveTasks.callout.approvePlan.title": [],
+  "components.missions.cveTasks.callout.approvePlan.titleRevision": [
+    "{{revision}}"
+  ],
+  "components.missions.cveTasks.callout.blockedAction.body": [
+    "{{id}}"
+  ],
+  "components.missions.cveTasks.callout.blockedWait.body": [],
+  "components.missions.cveTasks.callout.blockedWait.bodyReason": [
+    "{{reason}}"
+  ],
+  "components.missions.cveTasks.callout.closed.noNote": [],
+  "components.missions.cveTasks.callout.closed.reopenHint": [],
+  "components.missions.cveTasks.callout.closed.title": [
+    "{{resolution}}"
+  ],
+  "components.missions.cveTasks.callout.closed.titleBy": [
+    "{{name}}",
+    "{{resolution}}"
+  ],
+  "components.missions.cveTasks.callout.decide.body_one": [
+    "{{count}}",
+    "{{sources}}"
+  ],
+  "components.missions.cveTasks.callout.decide.body_other": [
+    "{{count}}",
+    "{{sources}}"
+  ],
+  "components.missions.cveTasks.callout.decide.bodyNoFindings": [],
+  "components.missions.cveTasks.callout.decide.checkTitle": [],
+  "components.missions.cveTasks.callout.decide.title": [],
+  "components.missions.cveTasks.callout.decide.titleRecommends": [
+    "{{choice}}"
+  ],
+  "components.missions.cveTasks.callout.duplicate.body": [],
+  "components.missions.cveTasks.callout.duplicate.title": [],
+  "components.missions.cveTasks.callout.fixFailed.cannotFixTitle": [],
+  "components.missions.cveTasks.callout.fixFailed.ciTitle": [],
+  "components.missions.cveTasks.callout.fixFailed.guidanceBody": [
+    "{{reason}}"
+  ],
+  "components.missions.cveTasks.callout.fixFailed.prClosedTitle": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.callout.fixFailed.retryBody": [
+    "{{reason}}"
+  ],
+  "components.missions.cveTasks.callout.fixFailed.validationTitle": [],
+  "components.missions.cveTasks.callout.fixed.body": [
+    "{{vuln}}"
+  ],
+  "components.missions.cveTasks.callout.fixed.bodyNoVuln": [],
+  "components.missions.cveTasks.callout.fixed.title": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.callout.fixed.titleNoPr": [],
+  "components.missions.cveTasks.callout.mergePr.body": [
+    "{{name}}"
+  ],
+  "components.missions.cveTasks.callout.mergePr.bodyNoApprover": [],
+  "components.missions.cveTasks.callout.mergePr.title": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.callout.noReason": [],
+  "components.missions.cveTasks.callout.question.noQuestion": [],
+  "components.missions.cveTasks.callout.question.title": [],
+  "components.missions.cveTasks.callout.returns.planReady": [],
+  "components.missions.cveTasks.callout.returns.prReady": [],
+  "components.missions.cveTasks.callout.returns.prReadyAgain": [],
+  "components.missions.cveTasks.callout.returns.triaging": [],
+  "components.missions.cveTasks.callout.reviewPr.body": [],
+  "components.missions.cveTasks.callout.reviewPr.title": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.callout.waiting.fix": [
+    "{{busy}}"
+  ],
+  "components.missions.cveTasks.callout.waiting.nextScan": [],
+  "components.missions.cveTasks.callout.waiting.paused": [],
+  "components.missions.cveTasks.callout.waiting.triage": [
+    "{{busy}}"
+  ],
+  "components.missions.cveTasks.callout.waiting.validate": [
+    "{{busy}}"
+  ],
+  "components.missions.cveTasks.choice.acceptRisk": [],
+  "components.missions.cveTasks.choice.defer": [],
+  "components.missions.cveTasks.choice.fix": [],
+  "components.missions.cveTasks.choice.notAffected": [],
+  "components.missions.cveTasks.choice.other": [],
+  "components.missions.cveTasks.choice.retry": [],
+  "components.missions.cveTasks.choice.wontFix": [],
+  "components.missions.cveTasks.compose.answer.label": [],
+  "components.missions.cveTasks.compose.answer.placeholder": [],
+  "components.missions.cveTasks.compose.answer.send": [],
+  "components.missions.cveTasks.compose.approveFailing.label_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.compose.approveFailing.label_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.compose.approveFailing.send": [],
+  "components.missions.cveTasks.compose.decide.label": [
+    "{{choice}}"
+  ],
+  "components.missions.cveTasks.compose.decide.placeholder.acceptRisk": [],
+  "components.missions.cveTasks.compose.decide.placeholder.defer": [],
+  "components.missions.cveTasks.compose.decide.placeholder.fix": [],
+  "components.missions.cveTasks.compose.decide.placeholder.notAffected": [],
+  "components.missions.cveTasks.compose.decide.placeholder.wontFix": [],
+  "components.missions.cveTasks.compose.optional": [],
+  "components.missions.cveTasks.compose.planChanges.label": [],
+  "components.missions.cveTasks.compose.planChanges.placeholder": [],
+  "components.missions.cveTasks.compose.planChanges.send": [],
+  "components.missions.cveTasks.compose.prChanges.label": [],
+  "components.missions.cveTasks.compose.prChanges.placeholder": [],
+  "components.missions.cveTasks.compose.prChanges.send": [],
+  "components.missions.cveTasks.compose.retry.label": [],
+  "components.missions.cveTasks.compose.retry.placeholder": [],
+  "components.missions.cveTasks.compose.retry.send": [],
+  "components.missions.cveTasks.droid.fix": [],
+  "components.missions.cveTasks.droid.triage": [],
+  "components.missions.cveTasks.droid.validate": [],
+  "components.missions.cveTasks.empty.plan.closedBody": [],
+  "components.missions.cveTasks.empty.plan.closedTitle": [],
+  "components.missions.cveTasks.empty.plan.loadingBody": [],
+  "components.missions.cveTasks.empty.plan.loadingTitle": [],
+  "components.missions.cveTasks.empty.plan.notYetBody": [],
+  "components.missions.cveTasks.empty.plan.notYetTitle": [],
+  "components.missions.cveTasks.empty.plan.unavailableBody": [
+    "{{path}}"
+  ],
+  "components.missions.cveTasks.empty.plan.unavailableTitle": [],
+  "components.missions.cveTasks.empty.plan.writingBody": [],
+  "components.missions.cveTasks.empty.plan.writingTitle": [],
+  "components.missions.cveTasks.empty.pr.closedBody": [],
+  "components.missions.cveTasks.empty.pr.closedTitle": [],
+  "components.missions.cveTasks.empty.pr.creatingBody": [],
+  "components.missions.cveTasks.empty.pr.creatingTitle": [],
+  "components.missions.cveTasks.empty.pr.failedBody": [],
+  "components.missions.cveTasks.empty.pr.failedTitle": [],
+  "components.missions.cveTasks.empty.pr.fixedBody": [],
+  "components.missions.cveTasks.empty.pr.fixedTitle": [],
+  "components.missions.cveTasks.empty.pr.notYetBody": [],
+  "components.missions.cveTasks.empty.pr.notYetTitle": [],
+  "components.missions.cveTasks.empty.pr.queuedBody": [],
+  "components.missions.cveTasks.empty.pr.queuedBodyBusy": [
+    "{{busy}}"
+  ],
+  "components.missions.cveTasks.empty.pr.queuedTitle": [],
+  "components.missions.cveTasks.emptyState.progress": [],
+  "components.missions.cveTasks.facts.foundBy": [],
+  "components.missions.cveTasks.facts.inKev": [],
+  "components.missions.cveTasks.facts.notInKev": [],
+  "components.missions.cveTasks.facts.package": [],
+  "components.missions.cveTasks.facts.packageUpgrade": [
+    "{{component}}",
+    "{{from}}",
+    "{{to}}"
+  ],
+  "components.missions.cveTasks.facts.plan": [],
+  "components.missions.cveTasks.facts.planBy": [],
+  "components.missions.cveTasks.facts.prBy": [],
+  "components.missions.cveTasks.facts.pullRequest": [],
+  "components.missions.cveTasks.facts.repo": [],
+  "components.missions.cveTasks.facts.severity": [],
+  "components.missions.cveTasks.facts.slaDue": [
+    "{{when}}"
+  ],
+  "components.missions.cveTasks.facts.stage": [],
+  "components.missions.cveTasks.facts.triageBy": [],
+  "components.missions.cveTasks.facts.validatedBy": [],
+  "components.missions.cveTasks.facts.vulnerability_one": [],
+  "components.missions.cveTasks.facts.vulnerability_other": [],
+  "components.missions.cveTasks.findings.count_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.findings.count_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.footer.approvedBy": [
+    "{{name}}"
+  ],
+  "components.missions.cveTasks.footer.cancel": [],
+  "components.missions.cveTasks.footer.closeAs": [],
+  "components.missions.cveTasks.footer.closeTab": [],
+  "components.missions.cveTasks.footer.next": [
+    "{{title}}"
+  ],
+  "components.missions.cveTasks.footer.nothingElseWaitingOnYou": [],
+  "components.missions.cveTasks.footer.nothingNeedsYou": [],
+  "components.missions.cveTasks.footer.otherChoices": [],
+  "components.missions.cveTasks.list.ageNow": [],
+  "components.missions.cveTasks.list.closedCount": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.list.closedWithoutFix": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.list.emptyAgent": [],
+  "components.missions.cveTasks.list.emptyAgentPaused": [],
+  "components.missions.cveTasks.list.emptyNone": [],
+  "components.missions.cveTasks.list.emptyYou": [],
+  "components.missions.cveTasks.list.fixedCount": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.list.noTasksMatch": [
+    "{{query}}"
+  ],
+  "components.missions.cveTasks.list.olderNotShown_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.list.olderNotShown_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.list.searchTasks": [],
+  "components.missions.cveTasks.list.tasksBeingWorkedOn_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.list.tasksBeingWorkedOn_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.outcome.applied": [],
+  "components.missions.cveTasks.outcome.askedOwner": [],
+  "components.missions.cveTasks.outcome.closedAcceptedRisk": [],
+  "components.missions.cveTasks.outcome.closedDeferred": [],
+  "components.missions.cveTasks.outcome.closedNotAffected": [],
+  "components.missions.cveTasks.outcome.closedPr": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.outcome.closedWontFix": [],
+  "components.missions.cveTasks.outcome.decided": [
+    "{{choice}}"
+  ],
+  "components.missions.cveTasks.outcome.discarded": [],
+  "components.missions.cveTasks.outcome.fixChosen": [],
+  "components.missions.cveTasks.outcome.mergeRequested": [],
+  "components.missions.cveTasks.outcome.planApproved": [],
+  "components.missions.cveTasks.outcome.planApprovedPaused": [],
+  "components.missions.cveTasks.outcome.reconnected": [],
+  "components.missions.cveTasks.outcome.reopened": [],
+  "components.missions.cveTasks.outcome.retrying": [],
+  "components.missions.cveTasks.outcome.reviewApproved": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.outcome.reviewApprovedNoNumber": [],
+  "components.missions.cveTasks.outcome.sentToFixDroid": [],
+  "components.missions.cveTasks.outcome.sentToTriage": [],
+  "components.missions.cveTasks.outcome.unblocked": [],
+  "components.missions.cveTasks.overview.findings": [],
+  "components.missions.cveTasks.overview.openPlan": [],
+  "components.missions.cveTasks.overview.openPlanRevision": [
+    "{{revision}}"
+  ],
+  "components.missions.cveTasks.overview.openPullRequest": [
+    "{{number}}"
+  ],
+  "components.missions.cveTasks.overview.showLess": [],
+  "components.missions.cveTasks.overview.showMore": [],
+  "components.missions.cveTasks.overview.showMoreFindings_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.overview.showMoreFindings_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.overview.viewOverview": [],
+  "components.missions.cveTasks.overview.viewPlan": [],
+  "components.missions.cveTasks.overview.viewPullRequest": [],
+  "components.missions.cveTasks.overview.viewSession": [],
+  "components.missions.cveTasks.parts.avatar.agent": [],
+  "components.missions.cveTasks.parts.avatar.human": [],
+  "components.missions.cveTasks.parts.avatar.integration": [],
+  "components.missions.cveTasks.parts.openSession": [
+    "{{sessionId}}"
+  ],
+  "components.missions.cveTasks.parts.openSessionAt": [
+    "{{label}}",
+    "{{sessionId}}"
+  ],
+  "components.missions.cveTasks.parts.plan": [],
+  "components.missions.cveTasks.parts.planRevision": [
+    "{{revision}}"
+  ],
+  "components.missions.cveTasks.parts.planRevisionShort": [
+    "{{revision}}"
+  ],
+  "components.missions.cveTasks.parts.prStatus.checksFailed": [],
+  "components.missions.cveTasks.parts.prStatus.checksPassed": [],
+  "components.missions.cveTasks.parts.prStatus.checksRunning": [],
+  "components.missions.cveTasks.pipeline.fixed": [],
+  "components.missions.cveTasks.pipeline.plan": [],
+  "components.missions.cveTasks.pipeline.pullRequest": [],
+  "components.missions.cveTasks.pipeline.triage": [],
+  "components.missions.cveTasks.plan.approvedBy": [
+    "{{name}}"
+  ],
+  "components.missions.cveTasks.plan.draft": [],
+  "components.missions.cveTasks.plan.needsApproval": [],
+  "components.missions.cveTasks.plan.openFile": [
+    "{{path}}"
+  ],
+  "components.missions.cveTasks.plan.revising": [],
+  "components.missions.cveTasks.plan.revision": [
+    "{{revision}}"
+  ],
+  "components.missions.cveTasks.plan.writtenBy": [],
+  "components.missions.cveTasks.queue.agentsPaused": [],
+  "components.missions.cveTasks.queue.blockedWait": [
+    "{{title}}"
+  ],
+  "components.missions.cveTasks.queue.busyFix": [
+    "{{busy}}",
+    "{{slots}}"
+  ],
+  "components.missions.cveTasks.queue.busyTriage": [
+    "{{busy}}",
+    "{{slots}}"
+  ],
+  "components.missions.cveTasks.queue.busyValidate": [
+    "{{busy}}",
+    "{{slots}}"
+  ],
+  "components.missions.cveTasks.queue.footerFix": [],
+  "components.missions.cveTasks.queue.footerNextScan": [],
+  "components.missions.cveTasks.queue.footerPaused": [],
+  "components.missions.cveTasks.queue.footerTriage": [],
+  "components.missions.cveTasks.queue.footerValidate": [],
+  "components.missions.cveTasks.queue.inLine_ordinal_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.queue.inLine_ordinal_two": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.queue.inLine_ordinal_few": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.queue.inLine_ordinal_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.queue.startsWhenFix": [],
+  "components.missions.cveTasks.queue.startsWhenResumed": [],
+  "components.missions.cveTasks.queue.startsWhenTriage": [],
+  "components.missions.cveTasks.queue.startsWhenValidate": [],
+  "components.missions.cveTasks.queue.startsWithNextScan": [],
+  "components.missions.cveTasks.queue.unknownBlocker": [],
+  "components.missions.cveTasks.resolution.acceptedRisk": [],
+  "components.missions.cveTasks.resolution.deferred": [],
+  "components.missions.cveTasks.resolution.duplicate": [],
+  "components.missions.cveTasks.resolution.fixed": [],
+  "components.missions.cveTasks.resolution.notAffected": [],
+  "components.missions.cveTasks.resolution.wontFix": [],
+  "components.missions.cveTasks.row.closedWithoutFix": [],
+  "components.missions.cveTasks.row.waitingForYourResponse": [],
+  "components.missions.cveTasks.section.agentsWorking": [],
+  "components.missions.cveTasks.section.done": [],
+  "components.missions.cveTasks.section.waitingOnAgents": [],
+  "components.missions.cveTasks.section.waitingOnYou": [],
+  "components.missions.cveTasks.sectionBody.allChecks": [],
+  "components.missions.cveTasks.sectionBody.checkState.failed": [],
+  "components.missions.cveTasks.sectionBody.checkState.passed": [],
+  "components.missions.cveTasks.sectionBody.checkState.running": [],
+  "components.missions.cveTasks.sectionBody.checkState.skipped": [],
+  "components.missions.cveTasks.sectionBody.checksPassed": [
+    "{{passed}}",
+    "{{total}}"
+  ],
+  "components.missions.cveTasks.sectionBody.exploitCheck": [],
+  "components.missions.cveTasks.sectionBody.fileCount_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.sectionBody.fileCount_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.sectionBody.openOnGithub": [],
+  "components.missions.cveTasks.sections.approvals": [],
+  "components.missions.cveTasks.sections.approvedBy": [
+    "{{name}}"
+  ],
+  "components.missions.cveTasks.sections.checks": [],
+  "components.missions.cveTasks.sections.fullPlan": [],
+  "components.missions.cveTasks.sections.inLine": [],
+  "components.missions.cveTasks.sections.inLineBody": [
+    "{{busy}}",
+    "{{inLine}}"
+  ],
+  "components.missions.cveTasks.sections.mergedBy": [
+    "{{name}}"
+  ],
+  "components.missions.cveTasks.sections.nextSteps.approveLead": [],
+  "components.missions.cveTasks.sections.nextSteps.planDetail": [],
+  "components.missions.cveTasks.sections.nextSteps.planLead": [],
+  "components.missions.cveTasks.sections.nextSteps.prDetail": [],
+  "components.missions.cveTasks.sections.nextSteps.prLead": [],
+  "components.missions.cveTasks.sections.noApprovals": [],
+  "components.missions.cveTasks.sections.problem": [],
+  "components.missions.cveTasks.sections.proposedChange": [],
+  "components.missions.cveTasks.sections.pullRequest": [],
+  "components.missions.cveTasks.sections.viewPr": [],
+  "components.missions.cveTasks.sections.whatHappensNext": [],
+  "components.missions.cveTasks.sections.whyFlagged": [],
+  "components.missions.cveTasks.send.dismiss": [],
+  "components.missions.cveTasks.send.failed": [],
+  "components.missions.cveTasks.send.failedLead": [],
+  "components.missions.cveTasks.send.movedTo": [
+    "{{outcome}}",
+    "{{section}}"
+  ],
+  "components.missions.cveTasks.send.noResponse": [],
+  "components.missions.cveTasks.send.noResponseLead": [],
+  "components.missions.cveTasks.send.notAppliedLead": [],
+  "components.missions.cveTasks.send.notAppliedNoReply": [],
+  "components.missions.cveTasks.send.retry": [],
+  "components.missions.cveTasks.send.rev": [
+    "{{rev}}"
+  ],
+  "components.missions.cveTasks.send.reviewAgain": [],
+  "components.missions.cveTasks.send.sendAgain": [],
+  "components.missions.cveTasks.send.sending": [],
+  "components.missions.cveTasks.send.waiting": [],
+  "components.missions.cveTasks.severity.critical": [],
+  "components.missions.cveTasks.severity.high": [],
+  "components.missions.cveTasks.severity.low": [],
+  "components.missions.cveTasks.severity.medium": [],
+  "components.missions.cveTasks.severity.unknown": [],
+  "components.missions.cveTasks.stage.closed": [],
+  "components.missions.cveTasks.stage.confirm": [],
+  "components.missions.cveTasks.stage.done": [],
+  "components.missions.cveTasks.stage.fix": [],
+  "components.missions.cveTasks.stage.intake": [],
+  "components.missions.cveTasks.stage.plan": [],
+  "components.missions.cveTasks.stage.review": [],
+  "components.missions.cveTasks.stage.triage": [],
+  "components.missions.cveTasks.stage.validate": [],
+  "components.missions.cveTasks.status.addressingComments": [],
+  "components.missions.cveTasks.status.approvePlan": [],
+  "components.missions.cveTasks.status.blocked": [],
+  "components.missions.cveTasks.status.blockedBy": [
+    "{{title}}"
+  ],
+  "components.missions.cveTasks.status.closed": [],
+  "components.missions.cveTasks.status.creatingPr": [],
+  "components.missions.cveTasks.status.decide": [],
+  "components.missions.cveTasks.status.duplicate": [],
+  "components.missions.cveTasks.status.fixFailed": [],
+  "components.missions.cveTasks.status.fixed": [],
+  "components.missions.cveTasks.status.fixingCi": [],
+  "components.missions.cveTasks.status.mergePr": [],
+  "components.missions.cveTasks.status.merging": [],
+  "components.missions.cveTasks.status.question": [],
+  "components.missions.cveTasks.status.queuedPr": [],
+  "components.missions.cveTasks.status.queuedRescan": [],
+  "components.missions.cveTasks.status.queuedRevise": [],
+  "components.missions.cveTasks.status.queuedTriage": [],
+  "components.missions.cveTasks.status.queuedValidate": [],
+  "components.missions.cveTasks.status.reviewPr": [],
+  "components.missions.cveTasks.status.revisingPlan": [],
+  "components.missions.cveTasks.status.revisingPr": [],
+  "components.missions.cveTasks.status.triaging": [],
+  "components.missions.cveTasks.status.validating": [],
+  "components.missions.cveTasks.status.watchingCi": [],
+  "components.missions.cveTasks.status.writingPlan": [],
+  "components.missions.cveTasks.timeline.board": [],
+  "components.missions.cveTasks.timeline.title": [],
+  "components.missions.cveTasks.variant.cannotFix": [],
+  "components.missions.cveTasks.variant.check": [],
+  "components.missions.cveTasks.variant.ciFailing": [],
+  "components.missions.cveTasks.variant.prClosed": [],
+  "components.missions.cveTasks.variant.validationFailed": [],
+  "components.missions.cveTasks.variant.validationFailedTimes_one": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.variant.validationFailedTimes_other": [
+    "{{count}}"
+  ],
+  "components.missions.cveTasks.view.discardTask": [],
+  "components.missions.cveTasks.view.inThisStatus": [
+    "{{time}}"
+  ],
+  "components.missions.cveTasks.view.live": [],
+  "components.missions.cveTasks.view.loadingTask": [],
+  "components.missions.cveTasks.view.showTasks": [
+    "{{name}}"
+  ],
+  "components.missions.cveTasks.view.tab.overview": [],
+  "components.missions.cveTasks.view.tab.plan": [],
+  "components.missions.cveTasks.view.tab.planRevision": [
+    "{{revision}}"
+  ],
+  "components.missions.cveTasks.view.tab.pullRequest": [],
+  "components.missions.cveTasks.view.task": [],
+  "components.missions.cveTasks.view.taskActions": [],
   "components.onboarding.firstRunOnboarding.skip": [],
   "components.onboarding.firstRunOnboarding.whatDoYouWorkOn": [],
   "components.onboarding.firstRunOnboarding.greeting": [],
   "components.onboarding.firstRunOnboarding.greetingWithName": [
     "{{name}}"
   ],
-  "components.onboarding.firstRunOnboarding.whatDoYouWorkOnWithName": [
-    "{{name}}"
-  ],
+  "components.onboarding.firstRunOnboarding.stageTitle": [],
   "components.onboarding.firstRunOnboarding.stageDescription": [],
   "components.onboarding.firstRunOnboarding.teammateCount_one": [
     "{{count}}"
@@ -21256,42 +22131,7 @@
   ],
   "components.onboarding.byokSetup.web.chatGpt": [],
   "components.onboarding.byokSetup.web.connectChatGpt": [],
-  "components.onboarding.desktopFirstPlanStage.freeTitle": [],
-  "components.onboarding.desktopFirstPlanStage.freePrice": [],
-  "components.onboarding.desktopFirstPlanStage.perMonth": [],
-  "components.onboarding.desktopFirstPlanStage.noCard": [],
-  "components.onboarding.desktopFirstPlanStage.bringYourPlan": [],
-  "components.onboarding.desktopFirstPlanStage.ownKeys": [],
-  "components.onboarding.desktopFirstPlanStage.apps": [],
-  "components.onboarding.desktopFirstPlanStage.appsAndCloud": [],
   "components.onboarding.desktopFirstPlanStage.limitsNote": [],
-  "components.onboarding.desktopFirstPlanStage.modelsLabel": [],
-  "components.onboarding.desktopFirstPlanStage.includedLabel": [],
-  "components.onboarding.desktopFirstPlanStage.upgradeAnytime": [],
-  "components.onboarding.desktopFirstPlanStage.morePlans": [],
-  "components.onboarding.desktopFirstPlanStage.teamsTitle": [],
-  "components.onboarding.desktopFirstPlanStage.teamsPrice": [
-    "{{price}}"
-  ],
-  "components.onboarding.desktopFirstPlanStage.perMonthPerTeam": [],
-  "components.onboarding.desktopFirstPlanStage.teamsSeatPrice": [
-    "{{price}}"
-  ],
-  "components.onboarding.desktopFirstPlanStage.teamsFirstSeatTotal": [
-    "{{total}}"
-  ],
-  "components.onboarding.desktopFirstPlanStage.teamsEverythingInPro": [],
-  "components.onboarding.desktopFirstPlanStage.teamsApps": [],
-  "components.onboarding.desktopFirstPlanStage.teamsAgents": [],
-  "components.onboarding.desktopFirstPlanStage.teamsBilling": [],
-  "components.onboarding.desktopFirstPlanStage.limitationsLabel": [],
-  "components.onboarding.desktopFirstPlanStage.teamsSeatLimit": [
-    "{{seats}}"
-  ],
-  "components.onboarding.desktopFirstPlanStage.teamsNoSso": [],
-  "components.onboarding.desktopFirstPlanStage.teamsNoAudit": [],
-  "components.onboarding.desktopFirstPlanStage.teamsNeedMore": [],
-  "components.onboarding.desktopFirstPlanStage.talkToSales": [],
   "components.onboarding.desktopFirstPlanStage.downloadTitle": [],
   "components.onboarding.desktopFirstPlanStage.openTitle": [],
   "components.onboarding.desktopFirstPlanStage.downloadDescription": [],
@@ -21319,17 +22159,13 @@
   "components.onboarding.desktopFirstPlanStage.cliCopiedTitle": [],
   "components.onboarding.desktopFirstPlanStage.cliCopiedDescription": [],
   "components.onboarding.desktopFirstPlanStage.copyFailed": [],
-  "components.onboarding.addModelsStage.title": [],
-  "components.onboarding.addModelsStage.titleReady": [],
-  "components.onboarding.addModelsStage.titleReadyWithName": [
-    "{{name}}"
-  ],
-  "components.onboarding.addModelsStage.description": [],
-  "components.onboarding.addModelsStage.readyDescription": [],
-  "components.onboarding.addModelsStage.sections.subscriptions": [],
-  "components.onboarding.addModelsStage.sections.gateways": [],
-  "components.onboarding.addModelsStage.sections.apiKeys": [],
-  "components.onboarding.addModelsStage.sections.custom": [],
+  "components.onboarding.addModelsStage.subscriptionsTitle": [],
+  "components.onboarding.addModelsStage.subscriptionsDescription": [],
+  "components.onboarding.addModelsStage.modelsTitle": [],
+  "components.onboarding.addModelsStage.modelsDescription": [],
+  "components.onboarding.addModelsStage.useKeysInstead": [],
+  "components.onboarding.addModelsStage.explorePlans": [],
+  "components.onboarding.addModelsStage.backToSubscriptions": [],
   "components.onboarding.addModelsStage.connected": [],
   "components.onboarding.addModelsStage.addAnotherLabel": [
     "{{provider}}"
@@ -21345,25 +22181,10 @@
   ],
   "components.onboarding.addModelsStage.signInFailed": [],
   "components.onboarding.addModelsStage.needsCheck": [],
-  "components.onboarding.addModelsStage.tryAgain": [],
   "components.onboarding.addModelsStage.tryAgainLabel": [
     "{{provider}}"
   ],
-  "components.onboarding.addModelsStage.searchLabel": [],
-  "components.onboarding.addModelsStage.searchPlaceholder": [],
-  "components.onboarding.addModelsStage.clearSearch": [],
-  "components.onboarding.addModelsStage.searchHint": [],
-  "components.onboarding.addModelsStage.noMatches": [
-    "{{query}}"
-  ],
-  "components.onboarding.addModelsStage.moreProviders": [],
-  "components.onboarding.addModelsStage.fewerProviders": [],
   "components.onboarding.addModelsStage.continue": [],
-  "components.onboarding.addModelsStage.continueHint": [],
-  "components.onboarding.addModelsStage.back": [],
-  "components.onboarding.addModelsStage.signOut": [],
-  "components.onboarding.addModelsStage.closePlan": [],
-  "components.onboarding.addModelsStage.planHeading": [],
   "components.onboarding.addModelsStage.announceConnected": [
     "{{provider}}"
   ],
@@ -21412,18 +22233,79 @@
   "components.onboarding.addModelsStage.connectPanel.connecting": [],
   "components.onboarding.addModelsStage.connectPanel.connect": [],
   "components.onboarding.addModelsStage.connectPanel.tryAgain": [],
-  "components.onboarding.addModelsStage.planDescription": [],
-  "components.onboarding.addModelsStage.planPaysWith": [
-    "{{method}}"
+  "components.onboarding.addModelsStage.connectLabel": [
+    "{{provider}}"
   ],
-  "components.onboarding.addModelsStage.planChangeCard": [],
-  "components.onboarding.addModelsStage.planStart": [
+  "components.onboarding.addModelsStage.clearSearch": [],
+  "components.onboarding.addModelsChoosePlan.title": [],
+  "components.onboarding.addModelsChoosePlan.description": [],
+  "components.onboarding.addModelsChoosePlan.perIndividual": [],
+  "components.onboarding.addModelsChoosePlan.teamsNote": [
+    "{{price}}"
+  ],
+  "components.onboarding.addModelsChoosePlan.getPlan": [
     "{{plan}}"
   ],
-  "components.onboarding.addModelsStage.planAddCard": [],
-  "components.onboarding.addModelsStage.planCardHint": [],
-  "components.onboarding.addModelsStage.planWaitingForCard": [],
-  "components.onboarding.addModelsStage.planStartFailed": [],
+  "components.onboarding.addModelsChoosePlan.continueFree": [],
+  "components.onboarding.addModelsChoosePlan.needEnterprise": [],
+  "components.onboarding.addModelsChoosePlan.checkoutOpen": [],
+  "components.onboarding.addModelsChoosePlan.finishInBrowser": [],
+  "components.onboarding.addModelsChoosePlan.reopen": [],
+  "components.onboarding.addModelsChoosePlan.cancel": [],
+  "components.onboarding.addModelsChoosePlan.checkoutTimedOut": [],
+  "components.onboarding.addModelsChoosePlan.checkoutOpenFailed": [],
+  "components.onboarding.onboardingStep.signedInAs": [
+    "{{email}}"
+  ],
+  "components.onboarding.onboardingStep.logOut": [],
+  "components.onboarding.planCheckout.yourPlan": [],
+  "components.onboarding.planCheckout.payment": [],
+  "components.onboarding.planCheckout.price": [
+    "{{price}}"
+  ],
+  "components.onboarding.planCheckout.perMonth": [],
+  "components.onboarding.planCheckout.perMonthShort": [],
+  "components.onboarding.planCheckout.billedMonthly": [],
+  "components.onboarding.planCheckout.teamsBilling": [
+    "{{price}}"
+  ],
+  "components.onboarding.planCheckout.teamsBillingShort": [
+    "{{price}}"
+  ],
+  "components.onboarding.planCheckout.changePlan": [],
+  "components.onboarding.planCheckout.descriptions.free": [],
+  "components.onboarding.planCheckout.descriptions.pro": [],
+  "components.onboarding.planCheckout.descriptions.plus": [],
+  "components.onboarding.planCheckout.descriptions.max": [],
+  "components.onboarding.planCheckout.descriptions.teams": [],
+  "components.onboarding.planCheckout.features.freeProviders": [],
+  "components.onboarding.planCheckout.features.freeOwnKeys": [],
+  "components.onboarding.planCheckout.features.apps": [],
+  "components.onboarding.planCheckout.features.models": [],
+  "components.onboarding.planCheckout.features.plusUsage": [],
+  "components.onboarding.planCheckout.features.maxUsage": [],
+  "components.onboarding.planCheckout.features.teamsSeats": [
+    "{{seats}}"
+  ],
+  "components.onboarding.planCheckout.changePlanTitle": [],
+  "components.onboarding.planCheckout.changePlanDescription": [
+    "{{planName}}"
+  ],
+  "components.onboarding.planCheckout.individualPlans": [],
+  "components.onboarding.planCheckout.switchTo": [
+    "{{planName}}"
+  ],
+  "components.onboarding.planCheckout.currentPlan": [],
+  "components.onboarding.planCheckout.enterprisePrompt": [],
+  "components.onboarding.planCheckout.contactSales": [],
+  "components.onboarding.planCheckout.close": [],
+  "components.onboarding.planCheckout.freeDownloadTitle": [],
+  "components.onboarding.planCheckout.freeOpenTitle": [],
+  "components.onboarding.planCheckout.openApp": [],
+  "components.onboarding.planCheckout.downloadForMac": [],
+  "components.onboarding.planCheckout.downloadForWindows": [],
+  "components.onboarding.planCheckout.completeTitle": [],
+  "components.onboarding.planCheckout.completeDescription": [],
   "components.privateUsers.table": [],
   "components.privateUsers.loading": [],
   "components.privateUsers.empty": [],
@@ -21467,6 +22349,24 @@
     "{{groups}}",
     "{{people}}"
   ],
+  "components.settings.ownersPicker.owners": [],
+  "components.settings.ownersPicker.add": [],
+  "components.settings.ownersPicker.search": [],
+  "components.settings.ownersPicker.loading": [],
+  "components.settings.ownersPicker.empty": [],
+  "components.settings.ownersPicker.loadMore": [],
+  "components.settings.ownersPicker.error": [],
+  "components.settings.ownersPicker.none": [],
+  "components.settings.ownersPicker.unknownUser": [
+    "{{id}}"
+  ],
+  "components.settings.ownersPicker.remove": [
+    "{{name}}"
+  ],
+  "components.settings.ownersPicker.limit": [
+    "{{max}}"
+  ],
+  "components.settings.ownersPicker.managersOnly": [],
   "components.settings.agentProfileAssignments.title": [],
   "components.settings.agentProfileAssignments.default": [],
   "components.settings.agentProfileAssignments.defaultHelp": [],
@@ -21876,7 +22776,7 @@
   ],
   "components.settings.cloudSessionDeprecationWarning.cloudMachinesHaveBeenSupersededBy": [],
   "components.settings.cloudSessionDeprecationWarning.cloudIsStillSupportedButWe": [],
-  "components.settings.cloudSessionDeprecationWarning.switchToDroidComputers": [],
+  "components.settings.cloudSessionDeprecationWarning.switchToEnvironments": [],
   "components.settings.computerConnectionFailedWarning.tryAgain": [],
   "components.settings.computerConnectionFailedWarning.couldNotConnectTo": [
     "{{name}}"
