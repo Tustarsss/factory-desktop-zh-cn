@@ -265,6 +265,7 @@
     "{{days}}"
   ],
   "analytics.agentEffectiveness.mergedPrsMarkersCaption": [],
+  "analytics.agentEffectiveness.breakdownTruncated": [],
   "analytics.bugAttribution.attributions": [],
   "analytics.bugAttribution.method": [],
   "analytics.bugAttribution.filterByMethod": [],
@@ -358,7 +359,6 @@
   "analytics.effectivenessFilterBar.filtersWithCount": [
     "{{activeCount}}"
   ],
-  "analytics.effectivenessPage.providerFilterUnsupported": [],
   "analytics.effectivenessPage.provider": [],
   "analytics.effectivenessPage.allProviders": [],
   "analytics.effectivenessPage.linear": [],
@@ -484,9 +484,9 @@
   "analytics.columns.sessions": [],
   "analytics.columns.messages": [],
   "analytics.sessionAttributionExport.notReady": [],
-  "analytics.sessionAttributionExport.windowClamped": [],
   "analytics.sessionAttributionExport.noMatchesInLoadedRows": [],
   "analytics.sessionAttributionExport.unknownMember": [],
+  "analytics.sessionAttributionExport.untitledSession": [],
   "analytics.usageEventsExplorer.deactivatedOrganization": [
     "{{name}}"
   ],
@@ -566,7 +566,6 @@
   "analytics.effectivenessMetrics.labels.fscPerPr": [],
   "analytics.effectivenessMetrics.labels.fscPerIssue": [],
   "analytics.effectivenessMetrics.labels.fscPerProject": [],
-  "analytics.effectivenessMetrics.labels.cycleTime": [],
   "analytics.effectivenessMetrics.labels.fscPerPoint": [],
   "analytics.effectivenessMetrics.labels.pointsPerProject": [],
   "analytics.effectivenessMetrics.labels.mergedPrs": [],
@@ -591,9 +590,6 @@
   "analytics.effectivenessMetrics.subtexts.perDenominator": [
     "{{denominator}}"
   ],
-  "analytics.effectivenessMetrics.subtexts.configuredBoundaries": [
-    "{{sampleSize}}"
-  ],
   "analytics.effectivenessMetrics.subtexts.perPoints": [
     "{{points}}"
   ],
@@ -608,21 +604,17 @@
   "analytics.effectivenessMetrics.subtexts.allMatchingPrs": [],
   "analytics.effectivenessMetrics.subtexts.addedDeleted": [],
   "analytics.effectivenessMetrics.unavailable.fscData": [],
-  "analytics.effectivenessMetrics.unavailable.prData": [],
   "analytics.effectivenessMetrics.unavailable.noPrsMerged": [],
   "analytics.effectivenessMetrics.unavailable.issueData": [],
   "analytics.effectivenessMetrics.unavailable.noIssuesCompleted": [],
   "analytics.effectivenessMetrics.unavailable.projectData": [],
   "analytics.effectivenessMetrics.unavailable.noProjectsOrEpicsCompleted": [],
-  "analytics.effectivenessMetrics.unavailable.cycleTimeData": [],
-  "analytics.effectivenessMetrics.unavailable.noValidBoundaryPairs": [],
   "analytics.effectivenessMetrics.unavailable.estimateData": [],
   "analytics.effectivenessMetrics.unavailable.noEstimatesSet": [],
   "analytics.effectivenessMetrics.unavailable.lineStats": [],
   "analytics.effectivenessMetrics.tooltips.fscPerPr": [],
   "analytics.effectivenessMetrics.tooltips.fscPerWorkItem": [],
   "analytics.effectivenessMetrics.tooltips.fscPerEpicProject": [],
-  "analytics.effectivenessMetrics.tooltips.cycleTime": [],
   "analytics.effectivenessMetrics.tooltips.fscPerStoryPoint": [],
   "analytics.effectivenessMetrics.tooltips.pointsPerEpicProject": [],
   "analytics.effectivenessMetrics.tooltips.mergedPrs": [],
@@ -2852,15 +2844,6 @@
   ],
   "automations.promptModelSelectorV2.loadingModels": [],
   "automations.promptModelSelectorV2.noModelsAvailable": [],
-  "automations.promptReasoningSelector.automationReasoningLevel": [],
-  "automations.promptReasoningSelector.loadingReasoningLevel": [],
-  "automations.promptReasoningSelector.reasoningLevelName": [
-    "{{level}}"
-  ],
-  "automations.promptReasoningSelector.default": [],
-  "automations.promptReasoningSelector.defaultWithEffort": [
-    "{{effort}}"
-  ],
   "automations.promptReasoningSelectorV2.automationReasoningLevel": [],
   "automations.promptReasoningSelectorV2.loadingReasoningLevel": [],
   "automations.promptReasoningSelectorV2.reasoningLevelName": [
@@ -3088,6 +3071,8 @@
   "automations.automationsV2.noAccessTokenAvailable": [],
   "automations.automationsV2.failedToWriteForkedAutomationFiles": [],
   "automations.automationsV2.automationForkedSuccessfully": [],
+  "automations.automationsV2.forkedWithoutOthersTriggeredBy": [],
+  "automations.automationsV2.forkedWithoutTriggeredBy": [],
   "automations.automationsV2.failedToForkAutomationV2": [],
   "automations.automationsV2.startFromATemplateOrDescribeTheJob": [],
   "automations.automationsV2.noAutomationsYet": [],
@@ -3098,6 +3083,7 @@
   "automations.scheduleInput.runs": [
     "{{schedule}}"
   ],
+  "automations.scheduleInput.neverRuns": [],
   "automations.scheduleInput.dayNames.sunday": [],
   "automations.scheduleInput.dayNames.monday": [],
   "automations.scheduleInput.dayNames.tuesday": [],
@@ -3880,6 +3866,9 @@
   ],
   "common.toastContainer.reportBug": [],
   "common.toastContainer.checkNetwork": [],
+  "common.toastContainer.signInLinkExpired": [],
+  "common.toastContainer.downloadedFile": [],
+  "common.toastContainer.couldNotShowDownloadedFile": [],
   "common.alertBanner.requestId": [
     "{{id}}"
   ],
@@ -4244,6 +4233,9 @@
   "common.integrationHandoff.didNotOpen": [],
   "common.integrationHandoff.couldNotOpen": [],
   "common.integrationHandoff.invalidLink": [],
+  "common.integrationHandoff.connected": [],
+  "common.integrationHandoff.continueInApp": [],
+  "common.integrationHandoff.canCloseTab": [],
   "errors.customerDeployment.featureUnavailable": [],
   "errors.customerDeployment.signInRequired": [],
   "errors.customerDeployment.authenticationMismatch": [],
@@ -4328,6 +4320,13 @@
   "inbox.cta.skillSuggestion.openFix": [],
   "inbox.cta.skillSuggestion.dismissWrong": [],
   "inbox.cta.skillSuggestion.dismissNotWorthIt": [],
+  "inbox.cta.workstreamInvite.title": [
+    "{{inviter}}"
+  ],
+  "inbox.cta.workstreamInvite.titleUnnamed": [],
+  "inbox.cta.workstreamInvite.description": [],
+  "inbox.cta.workstreamInvite.open": [],
+  "inbox.cta.workstreamInvite.ignore": [],
   "inbox.skillSuggestionPrompt.intro": [],
   "inbox.skillSuggestionPrompt.alreadyFixed": [],
   "inbox.skillSuggestionPrompt.instructions": [
@@ -5692,6 +5691,7 @@
   "missions.missionSettings.inviteeCannotUseAgentProfile": [],
   "missions.missionSettings.workstreamAgentProfileNotFound": [],
   "missions.missionSettings.runsAsAgentProfile": [],
+  "missions.missionSettings.moveToAgentProfileUnavailable": [],
   "missions.prAutofix.paused": [
     "{{limit}}"
   ],
@@ -6285,6 +6285,8 @@
   "onboarding.desktopAuthCallback.manageAccount": [],
   "onboarding.desktopAuthCallback.authenticationFailed": [],
   "onboarding.desktopAuthCallback.backToFactory": [],
+  "onboarding.desktopAuthCallback.relaySentSubtitle": [],
+  "onboarding.desktopAuthCallback.relayFailedSubtitle": [],
   "onboarding.onboarding.finishSettingUpInYourBrowser": [],
   "onboarding.onboarding.wellOpenYourBrowserToComplete": [],
   "onboarding.onboarding.openBrowser": [],
@@ -6353,12 +6355,26 @@
   "pullRequestReview.pullRequestConnectGithub.connectGithubToReviewCodeHere": [],
   "pullRequestReview.pullRequestConnectGithub.changesLoadWithYourOwnGithub": [],
   "pullRequestReview.pullRequestConnectGithub.connectGithub": [],
+  "pullRequestReview.pullRequestConnectGitlab.connectGitlabToReviewCodeHere": [],
+  "pullRequestReview.pullRequestConnectGitlab.changesLoadWithYourOwnGitlab": [],
+  "pullRequestReview.pullRequestConnectGitlab.connectGitlab": [],
+  "pullRequestReview.pullRequestCodeHostSetup.connectionsDisabledTitle": [],
+  "pullRequestReview.pullRequestCodeHostSetup.connectionsDisabledManagerMessage": [],
+  "pullRequestReview.pullRequestCodeHostSetup.connectionsDisabledMemberMessage": [],
+  "pullRequestReview.pullRequestCodeHostSetup.openAppPermissions": [],
+  "pullRequestReview.pullRequestCodeHostSetup.needsAdmin": [],
+  "pullRequestReview.pullRequestCodeHostMenu.label": [
+    "{{host}}"
+  ],
+  "pullRequestReview.pullRequestCodeHostMenu.heading": [],
+  "pullRequestReview.pullRequestCodeHostMenu.current": [],
+  "pullRequestReview.pullRequestCodeHostMenu.connected": [],
+  "pullRequestReview.pullRequestCodeHostMenu.notConnected": [],
+  "pullRequestReview.pullRequestCodeHostMenu.manageConnections": [],
   "pullRequestReview.pullRequestInbox.recentlyViewed.title": [],
   "pullRequestReview.pullRequestInbox.recentlyViewed.emptyMessage": [],
   "pullRequestReview.pullRequestInbox.reviewRequested.title": [],
-  "pullRequestReview.pullRequestInbox.reviewRequested.emptyMessage": [],
   "pullRequestReview.pullRequestInbox.teamReviewRequested.title": [],
-  "pullRequestReview.pullRequestInbox.teamReviewRequested.emptyMessage": [],
   "pullRequestReview.pullRequestInbox.authored.title": [],
   "pullRequestReview.pullRequestInbox.loadingSection": [
     "{{title}}"
@@ -6369,14 +6385,37 @@
   "pullRequestReview.pullRequestInbox.yourPullRequestsLoadFailedWithReason": [
     "{{message}}"
   ],
-  "pullRequestReview.pullRequestInbox.noOpenPullRequests": [],
   "pullRequestReview.pullRequestInbox.loadMoreFailed": [],
   "pullRequestReview.pullRequestInbox.connectGithubTitle": [],
   "pullRequestReview.pullRequestInbox.connectGithubDescription": [],
+  "pullRequestReview.pullRequestInbox.connectGitlabTitle": [],
+  "pullRequestReview.pullRequestInbox.connectGitlabDescription": [],
   "pullRequestReview.pullRequestInbox.connectHostAccount": [
     "{{host}}"
   ],
   "pullRequestReview.pullRequestInbox.loadingCodeHosts": [],
+  "pullRequestReview.pullRequestInboxEmpty.reviewRequestedTitle": [],
+  "pullRequestReview.pullRequestInboxEmpty.reviewRequestedMessage": [],
+  "pullRequestReview.pullRequestInboxEmpty.reviewRequestedMessage_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.teamReviewRequestedTitle": [],
+  "pullRequestReview.pullRequestInboxEmpty.teamReviewRequestedMessage": [],
+  "pullRequestReview.pullRequestInboxEmpty.authoredTitle": [],
+  "pullRequestReview.pullRequestInboxEmpty.authoredTitle_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.authoredMessage": [],
+  "pullRequestReview.pullRequestInboxEmpty.authoredMessage_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.allTitle": [],
+  "pullRequestReview.pullRequestInboxEmpty.allTitle_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.allMessage": [],
+  "pullRequestReview.pullRequestInboxEmpty.allMessage_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.noResultsTitle": [],
+  "pullRequestReview.pullRequestInboxEmpty.noResultsMessage": [],
+  "pullRequestReview.pullRequestInboxEmpty.noResultsMessage_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.viewTitle": [],
+  "pullRequestReview.pullRequestInboxEmpty.viewTitle_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.viewMessage": [],
+  "pullRequestReview.pullRequestInboxEmpty.viewMessage_gitlab": [],
+  "pullRequestReview.pullRequestInboxEmpty.goToAll": [],
+  "pullRequestReview.pullRequestInboxEmpty.clearSearch": [],
   "pullRequestReview.pullRequestInboxTabs.label": [],
   "pullRequestReview.pullRequestInboxTabs.reviewRequests": [],
   "pullRequestReview.pullRequestInboxTabs.teamReviews": [],
@@ -6602,6 +6641,7 @@
   "pullRequestReview.pullRequestReviewWorkspace.pullRequestMergeQueued": [],
   "pullRequestReview.pullRequestReviewWorkspace.pullRequestMergeInProgress": [],
   "pullRequestReview.pullRequestReviewWorkspace.reviewNotSubmitted": [],
+  "pullRequestReview.pullRequestReviewWorkspace.requestedChangesNotRecorded": [],
   "pullRequestReview.pullRequestReviewWorkspace.pullRequestNotRefreshed": [],
   "pullRequestReview.pullRequestReviewWorkspace.linkedPullRequestRequired": [],
   "pullRequestReview.pullRequestReviewWorkspace.inlineCommentsLoadFailed": [],
@@ -6652,11 +6692,12 @@
   "pullRequestReview.pullRequestSearch.noOtherLoadedMatches": [],
   "pullRequestReview.pullRequestSearch.noLoadedMatches": [],
   "pullRequestReview.pullRequestSearch.noOtherMatches": [],
-  "pullRequestReview.pullRequestSearch.noMatches": [],
   "pullRequestReview.pullRequestSearch.searchResultsTitle": [],
   "pullRequestReview.pullRequestSearch.searching": [],
   "pullRequestReview.pullRequestSearch.connectGithubTitle": [],
   "pullRequestReview.pullRequestSearch.connectGithubDescription": [],
+  "pullRequestReview.pullRequestSearch.connectGitlabTitle": [],
+  "pullRequestReview.pullRequestSearch.connectGitlabDescription": [],
   "pullRequestReview.pullRequestSearchQuery.keys.is.label": [],
   "pullRequestReview.pullRequestSearchQuery.keys.is.description": [],
   "pullRequestReview.pullRequestSearchQuery.keys.is.negatedLabel": [],
@@ -6847,7 +6888,6 @@
   "pullRequestReview.review.searchOrPasteALink": [],
   "pullRequestReview.review.pullRequestChat": [],
   "pullRequestReview.review.codeHostsLoadFailed": [],
-  "pullRequestReview.review.noCodeHostConnected": [],
   "pullRequestReview.pullRequestDiffExpansion.contextExpansionFailed": [],
   "pullRequestReview.walkthroughReadError.loadFailed": [],
   "pullRequestReview.walkthroughReadError.noPullRequest": [],
@@ -6911,6 +6951,21 @@
   "sessions.activeSession.tryAgain": [],
   "sessions.activeSession.manageBilling": [],
   "sessions.activeSession.compressingSessionHistoryTheSessionWill": [],
+  "sessions.activeSession.compressingSessionHistory": [],
+  "sessions.activeSession.stoppingAgent": [],
+  "sessions.activeSession.stopAndRunCommandPrompt": [
+    "{{command}}"
+  ],
+  "sessions.activeSession.stopAndRunCommand": [
+    "{{command}}"
+  ],
+  "sessions.activeSession.compressInterruptWarning": [],
+  "sessions.activeSession.sessionContextCompressed": [],
+  "sessions.activeSession.sessionContextCompressedWithInstructions": [
+    "{{instructions}}"
+  ],
+  "sessions.activeSession.compressionAlreadyRunning": [],
+  "sessions.activeSession.compressionContinuesInBackground": [],
   "sessions.activeSession.accessOptions": [],
   "sessions.activeSession.accessOptions2": [],
   "sessions.activeSession.sessionUnavailable": [],
@@ -6922,6 +6977,7 @@
   "sessions.activeSession.sessionTitle": [],
   "sessions.activeSession.enterSessionTitle": [],
   "sessions.activeSession.cancel": [],
+  "sessions.activeSession.ambientSendLeadIn": [],
   "sessions.activeSession.errors.failedToUpdateLoop": [],
   "sessions.activeSession.errors.uploadFailed": [],
   "sessions.activeSession.errors.cannotRenameReadOnly": [],
@@ -6933,6 +6989,7 @@
   "sessions.activeSession.errors.failedToStartSpecHandoff": [],
   "sessions.activeSession.errors.failedToReconnect": [],
   "sessions.activeSession.errors.failedToStopAgent": [],
+  "sessions.activeSession.errors.failedToAskDroidToReply": [],
   "sessions.activeSession.errors.computerDisconnected": [],
   "sessions.activeSession.errors.failedToStartChatFlow": [],
   "sessions.activeSession.errors.failedToSendQueuedAnswers": [],
@@ -6978,6 +7035,22 @@
   "sessions.activeSession.files.failedToFind": [],
   "sessions.activeSession.files.failedToPrepareGenerated": [],
   "sessions.activeSession.files.cannotOpenFolder": [],
+  "sessions.activeSession.files.ambiguousPathCount_one": [
+    "{{count}}",
+    "{{path}}"
+  ],
+  "sessions.activeSession.files.ambiguousPathCount_other": [
+    "{{count}}",
+    "{{path}}"
+  ],
+  "sessions.activeSession.files.pathNotFound": [
+    "{{path}}"
+  ],
+  "sessions.activeSession.files.pathNotChecked": [
+    "{{path}}"
+  ],
+  "sessions.activeSession.files.connectToOpen": [],
+  "sessions.activeSession.files.updateDroidToOpen": [],
   "sessions.activeSession.templateFallbackName": [],
   "sessions.activeSession.usage.userOverQuota": [],
   "sessions.activeSession.usage.orgOverLimit": [],
@@ -7124,7 +7197,6 @@
   "sessions.filesPanel.openFile": [],
   "sessions.filesPanel.openInNewTab": [],
   "sessions.filesPanel.viewInBrowser": [],
-  "sessions.filesPanel.tooLargeToPreview": [],
   "sessions.filesPanel.couldNotPreview": [],
   "sessions.filesPanel.saveConflict": [],
   "sessions.filesPanel.saveAs": [],
@@ -7138,6 +7210,7 @@
   "sessions.filesPanel.openOrDownload": [],
   "sessions.filesPanel.viewSource": [],
   "sessions.filesPanel.viewPreview": [],
+  "sessions.filesPanel.reloadBeforePreview": [],
   "sessions.filesPanel.writeUnsupported": [],
   "sessions.filesPanel.outsideWorkspaceWriteUnsupported": [],
   "sessions.filesPanel.migrationRoot": [],
@@ -7333,7 +7406,6 @@
   "sessions.reportBugModalV2.uploadingBugReportsToFactoryIs": [],
   "sessions.reportBugModalV2.describeTheIssue": [],
   "sessions.reportBugModalV2.whatWentWrongPleaseDescribeThe": [],
-  "sessions.reportBugModalV2.showInFolder": [],
   "sessions.reportBugModalV2.done": [],
   "sessions.reportBugModalV2.bugReportSubmitted": [],
   "sessions.reportBugModalV2.yourBugReportHasBeenSubmitted": [],
@@ -7383,8 +7455,10 @@
   "sessions.sessionShareDialog.sharedCopyTooLong": [],
   "sessions.sessionShareDialog.sharedCopyFailed": [],
   "sessions.sessionShareDialog.sharedCopyTurnInProgress": [],
+  "sessions.sessionShareDialog.sharedCopySummaryFailed": [],
   "sessions.sessionShareDialog.sharedCopyMachineNotConnected": [],
   "sessions.sessionShareDialog.sharedCopySourceOutdated": [],
+  "sessions.sessionShareDialog.sharedCopySummarySourceOutdated": [],
   "sessions.sessionShareDialog.sharedCopyProfileComputerOutdated": [],
   "sessions.sessionShareDialog.sharedCopyProfilesFailed": [],
   "sessions.sessionShareDialog.sharedCopyCodeGitNotAvailable": [],
@@ -7419,8 +7493,8 @@
   "sessions.useProjectArchiveAction.failedToArchiveProject": [],
   "sessions.fileActions.noDaemonConnection": [],
   "sessions.fileActions.downloadFailed": [],
-  "sessions.fileActions.downloadComplete": [],
   "sessions.fileActions.saveFailed": [],
+  "sessions.fileActions.preparingDownload": [],
   "sessions.missionComposer.agentPlaceholder": [],
   "sessions.missionComposer.leadPlaceholder": [],
   "sessions.sessionDetail.cloudSyncOfflineComputer.header": [],
@@ -7452,9 +7526,6 @@
   "sessions.sessionDetail.serviceAccountSession.body": [],
   "sessions.sessionDetail.notFound.header": [],
   "sessions.sessionDetail.notFound.bodyV2": [],
-  "sessions.sessionDetail.notFound.body": [
-    "{{sessionId}}"
-  ],
   "sessions.sessionDetail.unavailable": [],
   "sessions.sessionDetail.catalogSyncFailed": [],
   "sessions.sessionDetail.missingMachineId": [],
@@ -7504,10 +7575,6 @@
   "sessions.filePreviewPanel.binaryFile": [],
   "sessions.filePreviewPanel.binaryFileDownload": [],
   "sessions.filePreviewPanel.binaryFileOpenElsewhere": [],
-  "sessions.filePreviewPanel.tooLargeToShow": [],
-  "sessions.filePreviewPanel.tooLargeToShowDescription": [
-    "{{limitMb}}"
-  ],
   "sessions.filePreviewPanel.folder": [],
   "sessions.filePreviewPanel.folderDescription": [],
   "sessions.pluginSettingsModal.invalidMarketplaceSource": [],
@@ -7759,6 +7826,9 @@
   "sessions.composerDefaults.autonomy": [],
   "sessions.composerDefaults.failedToLoadOrSave": [],
   "sessions.composerDefaults.failedToLoad": [],
+  "sessions.composerDefaults.failedToSaveProviderChoice": [
+    "{{model}}"
+  ],
   "sessions.composerDefaults.noModelsAvailable": [],
   "sessions.composerDefaults.managedByOrganization": [],
   "sessions.composerDefaults.managedByProject": [],
@@ -8273,6 +8343,29 @@
   "settings.appearanceSection.reduceMotionOptions.system": [],
   "settings.appearanceSection.reduceMotionOptions.on": [],
   "settings.appearanceSection.reduceMotionOptions.off": [],
+  "settings.appearanceSection.newSession": [],
+  "settings.appearanceSection.newSessionLogo": [],
+  "settings.appearanceSection.newSessionLogoDescription": [],
+  "settings.appearanceSection.newSessionLogoUploadedDescription": [],
+  "settings.appearanceSection.newSessionLogoOptions.factory": [],
+  "settings.appearanceSection.newSessionLogoOptions.droid": [],
+  "settings.appearanceSection.newSessionLogoOptions.custom": [],
+  "settings.appearanceSection.newSessionLogoOptions.none": [],
+  "settings.appearanceSection.newSessionBackground": [],
+  "settings.appearanceSection.newSessionBackgroundDescription": [],
+  "settings.appearanceSection.newSessionBackgroundUploadedDescription": [],
+  "settings.appearanceSection.newSessionUploadImage": [],
+  "settings.appearanceSection.newSessionReplaceImage": [],
+  "settings.appearanceSection.newSessionRemoveImage": [],
+  "settings.appearanceSection.newSessionUploadLogo": [],
+  "settings.appearanceSection.newSessionReplaceLogo": [],
+  "settings.appearanceSection.newSessionRemoveLogo": [],
+  "settings.appearanceSection.newSessionBackgroundFile": [],
+  "settings.appearanceSection.newSessionLogoFile": [],
+  "settings.appearanceSection.newSessionImageErrors.unsupported": [],
+  "settings.appearanceSection.newSessionImageErrors.tooLarge": [],
+  "settings.appearanceSection.newSessionImageErrors.unreadable": [],
+  "settings.appearanceSection.newSessionImageErrors.failed": [],
   "settings.appearanceThemeEditor.cancel": [],
   "settings.appearanceThemeEditor.import": [],
   "settings.appearanceThemeEditor.pasteAThemeCopiedFromFactory": [],
@@ -9219,9 +9312,12 @@
   "settings.constants.auditEventType.organizationSecuritySettingsChange": [],
   "settings.constants.auditEventType.analyticsSettingsChange": [],
   "settings.constants.auditEventType.connectorAvailabilityChange": [],
+  "settings.constants.auditEventType.connectorToolInvoked": [],
+  "settings.constants.auditEventType.mcpToolInvoked": [],
   "settings.constants.auditEventType.computeDeploymentChange": [],
   "settings.constants.auditEventType.sandboxEnvironmentChange": [],
   "settings.constants.auditEventType.sessionCreated": [],
+  "settings.constants.auditEventType.sessionSurfaceSyncChange": [],
   "settings.constants.auditEventType.computerSecretsChange": [],
   "settings.constants.auditEventType.computerProvisioningChange": [],
   "settings.constants.auditEventType.organizationMonthlyUsageSettingsChange": [],
@@ -9259,6 +9355,8 @@
   "settings.constants.auditSource.delegation": [],
   "settings.constants.auditSource.contextSpaces": [],
   "settings.constants.auditSource.workstreams": [],
+  "settings.constants.auditSource.onboarding": [],
+  "settings.constants.auditSource.session": [],
   "settings.constants.teamsInstallFallbackCopy": [],
   "settings.constants.autoModelCandidateBlockedByPolicyReason": [],
   "settings.constants.autoModelCandidateBlockedUseEndpointReason": [],
@@ -9708,11 +9806,9 @@
   "settings.droidComputerOperation.repositoryModeNone": [],
   "settings.droidComputerOperation.repositoryModeNoneWithEnvironment": [],
   "settings.droidComputerOperation.repositoryModeDescriptionWithEnvironment": [],
-  "settings.droidComputerOperation.repositoriesDescriptionWithEnvironment": [],
   "settings.droidComputerOperation.autoInstallDepsLabel": [],
   "settings.droidComputerOperation.autoInstallDepsDescription": [],
   "settings.droidComputerOperation.repositoriesLabel": [],
-  "settings.droidComputerOperation.repositoriesDescription": [],
   "settings.droidComputerOperation.repositoriesPlaceholder": [],
   "settings.droidComputerOperation.actionPrimary": [],
   "settings.droidComputerOperation.actionInProgress": [],
@@ -9826,6 +9922,8 @@
   "settings.inboxSection.missionNeedsInputDescription": [],
   "settings.inboxSection.missionCompleteTitle": [],
   "settings.inboxSection.missionCompleteDescription": [],
+  "settings.inboxSection.workstreamMembershipTitle": [],
+  "settings.inboxSection.workstreamMembershipDescription": [],
   "settings.inboxSection.inboxEmailsTitle": [],
   "settings.inboxSection.inboxEmailsDescription": [],
   "settings.inboxSection.inboxEmailsUnavailableDescription": [],
@@ -10069,7 +10167,6 @@
     "{{groupName}}"
   ],
   "settings.enterpriseUsage.filterGroup": [],
-  "settings.enterpriseUsage.globalUserLimit": [],
   "settings.enterpriseUsage.bulkUserLimitsUpdateComplete": [],
   "settings.enterpriseUsage.bulkUserLimitsUpdateIncomplete": [
     "{{rejected}}",
@@ -11122,6 +11219,8 @@
   ],
   "settings.preferences.language.title": [],
   "settings.preferences.language.saveFailed": [],
+  "settings.emailComposeAppPreferenceRow.title": [],
+  "settings.emailComposeAppPreferenceRow.description": [],
   "settings.openLinksInDesktopPreferenceRow.title": [],
   "settings.openLinksInDesktopPreferenceRow.description": [],
   "settings.openLinksInDesktopPreferenceRow.sharedLinksDescription": [],
@@ -11302,6 +11401,8 @@
   "settings.agentProfileSection.serviceAccountIdCaption": [
     "{{id}}"
   ],
+  "settings.agentProfileSection.defaultModelManagerOnly": [],
+  "settings.agentProfileSection.pluginsManagerOnly": [],
   "settings.agentProfileSection.sharedProfileAccess": [],
   "settings.agentProfileSection.connectorSharedAccessWarning": [
     "{{connector}}"
@@ -11309,6 +11410,11 @@
   "settings.agentProfileSection.resourcesUnavailable": [],
   "settings.agentProfileSection.loadingResources": [],
   "settings.agentProfileSection.ownersDescription": [],
+  "settings.agentProfileSection.close": [],
+  "settings.agentProfileSection.lockDescription": [],
+  "settings.agentProfileSection.lockedCannotDelete": [],
+  "settings.agentProfileSection.lockedSaveRefused": [],
+  "settings.agentProfileSection.owners": [],
   "settings.agentProfileTag.delegationApps": [],
   "settings.agentProfileAccounts.orgDefaultName": [],
   "settings.agentProfilesSettings.loadingAgentProfiles": [],
@@ -11472,8 +11578,6 @@
     "{{target}}"
   ],
   "settings.scmSetupSection.connected": [],
-  "settings.scmSetupSection.bitbucketPersonalCompletion.connected": [],
-  "settings.scmSetupSection.bitbucketPersonalCompletion.otherOrganization": [],
   "settings.scmSetupSection.targets.personalGithubAccount": [],
   "settings.scmSetupSection.targets.personalGitlabAccount": [],
   "settings.scmSetupSection.targets.personalBitbucketAccount": [],
@@ -11576,7 +11680,6 @@
   "settings.serviceAccountComputersModal.description": [
     "{{name}}"
   ],
-  "settings.serviceAccountConnectorsModal.configure": [],
   "settings.serviceAccountConnectorsModal.close": [],
   "settings.serviceAccountConnectorsModal.connectionsConfiguredHereBelongOnlyTo": [],
   "settings.serviceAccountConnectorsModal.searchConnectors": [],
@@ -11585,8 +11688,6 @@
   "settings.serviceAccountConnectorsModal.noConnectorsMatchYourSearch": [],
   "settings.serviceAccountConnectorsModal.back": [],
   "settings.serviceAccountConnectorsModal.sharedServiceAccountAccess": [],
-  "settings.serviceAccountConnectorsModal.disconnecting": [],
-  "settings.serviceAccountConnectorsModal.disconnect": [],
   "settings.serviceAccountConnectorsModal.connectorsForServiceAccount": [
     "{{name}}"
   ],
@@ -11703,6 +11804,16 @@
   "settings.serviceAccountRow.checkingWhetherRemoteDelegationsUseThisAccount": [],
   "settings.serviceAccountRow.usedByRemoteDelegationsChooseADifferentIdentity": [],
   "settings.serviceAccountRow.ownersDescription": [],
+  "settings.serviceAccountRow.close": [],
+  "settings.serviceAccountRow.lockDescription": [],
+  "settings.serviceAccountRow.lockedCannotDelete": [],
+  "settings.serviceAccountRow.createdByOn": [
+    "{{date}}",
+    "{{name}}"
+  ],
+  "settings.serviceAccountRow.createdBy": [
+    "{{name}}"
+  ],
   "settings.serviceAccountsSection.createServiceAccount": [],
   "settings.serviceAccountsSection.failedToLoadServiceAccountsRefresh": [],
   "settings.serviceAccountsSection.name": [],
@@ -11728,7 +11839,6 @@
   "settings.serviceAccountsSection.newestFirst": [],
   "settings.serviceAccountsSection.oldestFirst": [],
   "settings.serviceAccountsSection.nameAZ": [],
-  "settings.serviceAccountsSection.createdBy": [],
   "settings.serviceAccountsSection.status": [],
   "settings.serviceAccountsSection.searchServiceAccounts": [],
   "settings.serviceAccountsSection.search": [],
@@ -11741,6 +11851,7 @@
     "{{start}}",
     "{{total}}"
   ],
+  "settings.serviceAccountsSection.owners": [],
   "settings.sessionDefaultsSection.model": [],
   "settings.sessionDefaultsSection.reasoningLevel": [],
   "settings.sessionDefaultsSection.setDefaultModelAndAutonomySettings": [],
@@ -12148,6 +12259,7 @@
   "settings.settingsSearch.general.preferences.hideTodoList": [],
   "settings.settingsSearch.general.preferences.loadingStatuses": [],
   "settings.settingsSearch.general.preferences.filePreviews": [],
+  "settings.settingsSearch.general.preferences.emailComposeApp": [],
   "settings.settingsSearch.general.preferences.openWebLinksInBrowserPanel": [],
   "settings.settingsSearch.general.preferences.openPullRequestLinksInSidebar": [],
   "settings.settingsSearch.general.preferences.openLinksInDesktop": [],
@@ -12193,6 +12305,7 @@
   "settings.settingsSearch.inbox.categories.agentMessages": [],
   "settings.settingsSearch.inbox.categories.missionNeedsInput": [],
   "settings.settingsSearch.inbox.categories.missionComplete": [],
+  "settings.settingsSearch.inbox.categories.workstreamMembership": [],
   "settings.settingsSearch.appearance.appearanceMode.title": [],
   "settings.settingsSearch.appearance.appearanceTheme.title": [],
   "settings.settingsSearch.appearance.appearanceTheme.appearancePreset": [],
@@ -12214,6 +12327,9 @@
   "settings.settingsSearch.appearance.appearanceDiffs.appearanceDiffMarkers": [],
   "settings.settingsSearch.appearance.appearanceInteraction.title": [],
   "settings.settingsSearch.appearance.appearanceInteraction.appearanceReduceMotion": [],
+  "settings.settingsSearch.appearance.appearanceNewSession.title": [],
+  "settings.settingsSearch.appearance.appearanceNewSession.appearanceNewSessionLogo": [],
+  "settings.settingsSearch.appearance.appearanceNewSession.appearanceNewSessionBackground": [],
   "settings.settingsSearch.apiKeys.apiKeys.title": [],
   "settings.settingsSearch.apiKeys.apiKeys.createApiKey": [],
   "settings.settingsSearch.apiKeys.apiKeys.revokeApiKey": [],
@@ -13111,6 +13227,9 @@
   "settings.scmCloudApps.row.blocked": [
     "{{provider}}"
   ],
+  "settings.scmCloudApps.row.blockedPersonal": [
+    "{{provider}}"
+  ],
   "settings.scmCloudApps.row.manageApp": [],
   "settings.scmCloudApps.row.manageAppTarget": [
     "{{provider}}"
@@ -13700,11 +13819,6 @@
   "components.analytics.costTable.wipDataGapsExistSeeDescription": [],
   "components.analytics.readinessProgressGraph.noDataAvailable": [],
   "components.analytics.readinessRadarChart.noDataAvailable": [],
-  "components.analytics.sessionAttributionSessionRow.intentBreakdown": [],
-  "components.analytics.sessionAttributionSessionRow.pullRequests": [],
-  "components.analytics.sessionAttributionSessionRow.issues": [],
-  "components.analytics.sessionAttributionSessionRow.links": [],
-  "components.analytics.sessionAttributionSessionRow.pullRequestsPagination": [],
   "components.analytics.sessionAttributionTreemap.backToAllIntents": [],
   "components.analytics.sessionAttributionTreemap.allIntents": [],
   "components.analytics.sessionAttributionTreemap.aboutSessionAttribution": [],
@@ -13752,10 +13866,7 @@
   "components.analytics.attributionInventoryTable.issues": [],
   "components.analytics.attributionInventoryTable.noIssuesAreLinkedToThis": [],
   "components.analytics.attributionInventoryTable.issue": [],
-  "components.analytics.attributionInventoryTable.noIssuesLinkedToProject": [],
-  "components.analytics.attributionInventoryTable.projectIssues": [],
   "components.analytics.attributionInventoryTable.sessions": [],
-  "components.analytics.attributionInventoryTable.assignee": [],
   "components.analytics.attributionInventoryTable.credits": [],
   "components.analytics.attributionInventoryTable.noSessionsAreLinkedToThis": [],
   "components.analytics.attributionInventoryTable.session": [],
@@ -13860,7 +13971,6 @@
   "components.analytics.attributionInventoryTable.headers.issues": [],
   "components.analytics.attributionInventoryTable.headers.linkedTickets": [],
   "components.analytics.attributionInventoryTable.headers.contributors": [],
-  "components.analytics.attributionInventoryTable.headers.deadline": [],
   "components.analytics.attributionInventoryTable.headers.issue": [],
   "components.analytics.attributionInventoryTable.headers.session": [],
   "components.analytics.attributionInventoryTable.headers.user": [],
@@ -13870,10 +13980,6 @@
   "components.analytics.attributionInventoryTable.headers.projects": [],
   "components.analytics.attributionInventoryTable.headers.lastActivity": [],
   "components.analytics.attributionInventoryTable.headers.credits": [],
-  "components.analytics.attributionInventoryTable.truncatedNotice": [
-    "{{scanned}}",
-    "{{total}}"
-  ],
   "components.analytics.attributionInventoryTable.failedToLoad": [
     "{{message}}"
   ],
@@ -13918,11 +14024,6 @@
   "components.analytics.readinessAddCriterionCell.addCriterion": [],
   "components.analytics.readinessCriterionCell.openSession": [],
   "components.analytics.readinessCriterionCell.notApplied": [],
-  "components.analytics.readinessCriterionRow.fix": [],
-  "components.analytics.readinessCriterionRow.whyPassed": [],
-  "components.analytics.readinessCriterionRow.whySkipped": [],
-  "components.analytics.readinessCriterionRow.whyFailed": [],
-  "components.analytics.readinessCriterionRow.remediationSession": [],
   "components.analytics.readinessProgressSection.levelOverTime": [],
   "components.analytics.readinessProgressSection.all": [],
   "components.analytics.deleteReadinessReportsModal.title_one": [],
@@ -13998,7 +14099,6 @@
   "components.analytics.graphTooltip.level": [
     "{{level}}"
   ],
-  "components.analytics.attributionScopeToggle.attributedWorkOnly": [],
   "components.analytics.effectivenessMetricStrip.definition": [],
   "components.analytics.effectivenessMetricStrip.details": [],
   "components.analytics.effectivenessMetricStrip.unavailable": [],
@@ -14020,24 +14120,6 @@
   "components.analytics.tagFilterDropdown.description": [],
   "components.analytics.tagFilterDropdown.noTags": [],
   "components.analytics.tagFilterDropdown.clearAll": [],
-  "components.analytics.sessionAttribution.fscAmount": [
-    "{{amount}}"
-  ],
-  "components.analytics.sessionAttribution.sessionTitleRedacted": [],
-  "components.analytics.sessionAttribution.issue": [],
-  "components.analytics.sessionAttribution.prCount": [
-    "{{total}}"
-  ],
-  "components.analytics.sessionAttribution.issueCount": [
-    "{{total}}"
-  ],
-  "components.analytics.sessionAttribution.viewRepoReadiness": [
-    "{{repo}}"
-  ],
-  "components.analytics.sessionAttribution.statusCount": [
-    "{{count}}",
-    "{{status}}"
-  ],
   "components.analytics.sortOptions.dateDescending": [],
   "components.analytics.sortOptions.dateAscending": [],
   "components.analytics.sortOptions.fscDescending": [],
@@ -14104,6 +14186,7 @@
   "components.announcements.largeAnnouncementDialog.close": [],
   "components.announcements.smallAnnouncementCard.learnMore": [],
   "components.app.droidHeader.droid": [],
+  "components.app.droidHeader.customLogo": [],
   "components.app.droidHeader.greeting": [],
   "components.app.missionControlOverlay.factory": [],
   "components.app.appLoading.loading": [],
@@ -14779,9 +14862,14 @@
   "components.billing.computeUpgradeModal.chooseCard": [],
   "components.billing.computeUpgradeModal.billingNote": [],
   "components.chat.browserTabs.limitReached": [],
-  "components.chat.browserTabs.label": [],
+  "components.chat.browserTabs.popupsBlocked_one": [
+    "{{count}}"
+  ],
+  "components.chat.browserTabs.popupsBlocked_other": [
+    "{{count}}"
+  ],
+  "components.chat.browserTabs.openBlockedPopups": [],
   "components.chat.browserTabs.newTab": [],
-  "components.chat.browserTabs.newRight": [],
   "components.chat.browserTabs.reload": [],
   "components.chat.browserTabs.duplicate": [],
   "components.chat.browserTabs.mute": [],
@@ -14798,14 +14886,20 @@
   "components.chat.browserTabs.unmuteTabs_other": [
     "{{count}}"
   ],
-  "components.chat.browserTabs.close": [],
-  "components.chat.browserTabs.closeOthers": [],
-  "components.chat.browserTabs.closeRight": [],
   "components.chat.browserTabs.loading": [
     "{{label}}"
   ],
+  "components.chat.browserTabs.droidUsingTab": [],
+  "components.chat.browserTabs.droidInSessionUsingTab": [
+    "{{session}}"
+  ],
+  "components.chat.browserTabs.droidInOtherSessionUsingTab": [],
   "components.chat.browserTabs.openInAnotherTile": [],
   "components.chat.browserTabs.showHere": [],
+  "components.chat.browserTabs.takeControl": [],
+  "components.chat.browserTabs.userInControl": [],
+  "components.chat.browserTabs.handBack": [],
+  "components.chat.browserTabs.stopBrowserUse": [],
   "components.chat.executeTool.runningCommand": [],
   "components.chat.executeTool.executingUpdates_one": [
     "{{count}}"
@@ -14831,8 +14925,8 @@
   "components.chat.automationTool.listLocalAutomations": [],
   "components.chat.automationTool.readAutomation": [],
   "components.chat.automationTool.runAutomation": [],
-  "components.chat.automationTool.editAutomationMemory": [],
-  "components.chat.automationTool.readAutomationMemory": [],
+  "components.chat.automationTool.editAutomationFiles": [],
+  "components.chat.automationTool.readAutomationFiles": [],
   "components.chat.automationTool.setAutomationRunOutcome": [],
   "components.chat.automationTool.runOutcomeSuccess": [],
   "components.chat.automationTool.runOutcomeFailure": [],
@@ -14910,9 +15004,6 @@
   "components.chat.subagentFocusPanel.transcriptLoadFailed": [],
   "components.chat.subagentFocusPanel.expand": [],
   "components.chat.subagentFocusPanel.close": [],
-  "components.chat.v2ExecuteToolResult.waitingForCommandOutput": [],
-  "components.chat.v2ExecuteToolResult.expandCommandOutput": [],
-  "components.chat.v2ToolContainer.error": [],
   "components.chat.archiveWorkingSessionModal.cancel": [],
   "components.chat.archiveWorkingSessionModal.stopAndArchive": [],
   "components.chat.archiveWorkingSessionModal.sessionIsStillRunning": [],
@@ -15095,6 +15186,7 @@
   "components.chat.sessionShareDialog.tryAgain": [],
   "components.chat.sessionShareDialog.dismiss": [],
   "components.chat.sessionShareDialog.creatingSharedSession": [],
+  "components.chat.sessionShareDialog.summarizingConversation": [],
   "components.chat.sessionShareDialog.gettingLinkReady": [],
   "components.chat.sessionShareDialog.sharedSessionReady": [],
   "components.chat.sessionShareDialog.codeChecking": [],
@@ -15119,11 +15211,19 @@
   ],
   "components.chat.sessionShareDialog.bringUnpushedChanges": [],
   "components.chat.sessionShareDialog.shareWithoutCode": [],
+  "components.chat.sessionShareDialog.shareFullHistory": [],
+  "components.chat.sessionShareDialog.shareSummary": [],
+  "components.chat.sessionShareDialog.shareSummaryDescription": [],
   "components.chat.sharedCopyMarker.named": [
     "{{name}}"
   ],
   "components.chat.sharedCopyMarker.you": [],
   "components.chat.sharedCopyMarker.unknown": [],
+  "components.chat.sharedCopyMarker.summary.named": [
+    "{{name}}"
+  ],
+  "components.chat.sharedCopyMarker.summary.you": [],
+  "components.chat.sharedCopyMarker.summary.unknown": [],
   "components.chat.mcpAddServer.registry": [],
   "components.chat.mcpAddServer.addNewMcpServer": [],
   "components.chat.mcpAddServer.serverName": [],
@@ -15205,23 +15305,6 @@
   "components.chat.mcpMain.addMcpServersToFile": [
     "{{factoryDirName}}"
   ],
-  "components.chat.mcpMain.disconnectConnector": [
-    "{{name}}"
-  ],
-  "components.chat.mcpMain.connectConnector": [
-    "{{name}}"
-  ],
-  "components.chat.mcpMain.noServersConfiguredYetAddOne": [],
-  "components.chat.mcpMain.noServersConfiguredYetAddToFile": [
-    "{{factoryDirName}}"
-  ],
-  "components.chat.mcpMain.noServersMatch": [
-    "{{query}}"
-  ],
-  "components.chat.mcpMain.addServersToFile": [
-    "{{factoryDirName}}"
-  ],
-  "components.chat.mcpMain.searchConnectorsAndServersUppercase": [],
   "components.chat.mcpRegistry.disabledByOrganizationPolicy": [],
   "components.chat.mcpRegistry.cancel": [],
   "components.chat.mcpRegistry.add": [],
@@ -15233,7 +15316,6 @@
   "components.chat.mcpRegistry.searchMcpRegistry2": [],
   "components.chat.mcpRegistry.loadingRegistry": [],
   "components.chat.mcpRegistry.addMcpServerManually": [],
-  "components.chat.mcpRegistry.search": [],
   "components.chat.mcpRegistry.noHttpServersFound": [],
   "components.chat.mcpRegistry.noServersFound": [],
   "components.chat.mcpTools.noParameters": [],
@@ -15259,9 +15341,7 @@
   "components.chat.pluginSettingsModal.noMarketplacesConfigured": [],
   "components.chat.pluginSettingsModal.remove": [],
   "components.chat.pluginSettingsModal.plugins": [],
-  "components.chat.pluginSettingsModal.searchAvailablePlugins": [],
   "components.chat.pluginSettingsModal.searchAvailablePlugins2": [],
-  "components.chat.pluginSettingsModal.searchInstalledPlugins": [],
   "components.chat.pluginSettingsModal.searchInstalledPlugins2": [],
   "components.chat.pluginSettingsModal.ownerRepoOrHttpsGithubCom": [
     "https://github.com/owner/repo"
@@ -15313,12 +15393,6 @@
   "components.chat.pluginSettingsModal.availableTab": [],
   "components.chat.pluginSettingsModal.installedTab": [],
   "components.chat.pluginSettingsModal.marketplacesTab": [],
-  "components.chat.pluginSettingsModal.updateMarketplace": [
-    "{{name}}"
-  ],
-  "components.chat.pluginSettingsModal.removeMarketplace": [
-    "{{name}}"
-  ],
   "components.chat.createSkillModal.cancel": [],
   "components.chat.createSkillModal.title": [],
   "components.chat.createSkillModal.description": [],
@@ -15355,10 +15429,8 @@
   "components.chat.skillsBrowser.failedToLoadDetails": [],
   "components.chat.skillsBrowser.references": [],
   "components.chat.skillsBrowser.assets": [],
-  "components.chat.skillsBrowser.selectASkillToViewDetails": [],
   "components.chat.skillsBrowser.skills": [],
   "components.chat.skillsBrowser.browseAndExploreAvailableSkills": [],
-  "components.chat.skillsBrowser.searchSkills": [],
   "components.chat.skillsBrowser.locationProject": [],
   "components.chat.skillsBrowser.locationPersonal": [],
   "components.chat.skillsBrowser.locationBuiltin": [],
@@ -15386,29 +15458,6 @@
   ],
   "components.chat.skillsBrowser.skillsNotSupportedForCloudTemplates": [],
   "components.chat.skillsBrowser.noSkillsFound": [],
-  "components.chat.skillsBrowser.filter.all": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.filter.org": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.filter.project": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.filter.personal": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.filter.automation": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.filter.builtin": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.filter.disabled": [
-    "{{total}}"
-  ],
-  "components.chat.skillsBrowser.noSkillsMatchFilters": [],
-  "components.chat.skillsBrowser.noSkillsAvailable": [],
   "components.chat.connectorAuthCard.connected": [],
   "components.chat.connectorAuthCard.waiting": [],
   "components.chat.connectorAuthCard.connect": [],
@@ -15442,9 +15491,15 @@
   "components.chat.emailDraftBlock.copy": [],
   "components.chat.emailDraftBlock.copied": [],
   "components.chat.emailDraftBlock.send": [],
-  "components.chat.emailDraftBlock.sendTooltip": [],
+  "components.chat.emailDraftBlock.sendTooltipMailApp": [],
+  "components.chat.emailDraftBlock.sendTooltipGmail": [],
+  "components.chat.emailDraftBlock.sendTooltipOutlook": [],
   "components.chat.emailDraftBlock.sendUnavailableWhileStreaming": [],
   "components.chat.emailDraftBlock.moreSendOptions": [],
+  "components.chat.emailDraftBlock.defaultTag": [],
+  "components.chat.emailDraftBlock.makeDefault": [
+    "{{app}}"
+  ],
   "components.chat.emailDraftBlock.mailApp": [],
   "components.chat.emailDraftBlock.mailAppDescription": [],
   "components.chat.emailDraftBlock.gmail": [],
@@ -15453,6 +15508,11 @@
   "components.chat.emailDraftBlock.outlookDescription": [],
   "components.chat.emailDraftBlock.revert": [],
   "components.chat.emailDraftBlock.revertTooltip": [],
+  "components.chat.droidMessageV3.ambientSkipped.explanation": [],
+  "components.chat.droidMessageV3.ambientSkipped.temporary": [],
+  "components.chat.droidMessageV3.ambientSkipped.label": [],
+  "components.chat.droidMessageV3.ambientSkipped.send": [],
+  "components.chat.droidMessageV3.ambientSkipped.sendAriaLabel": [],
   "components.chat.droidMessageV3.sharedAuthor.unknownMember": [],
   "components.chat.droidMessageV3.copyMessage": [],
   "components.chat.droidMessageV3.planning": [],
@@ -15555,6 +15615,7 @@
   "components.chat.systemActionMessageCardV3.copyContents": [],
   "components.chat.systemActionMessageCardV3.copied": [],
   "components.chat.reviewRequestMessageCard.title": [],
+  "components.chat.sharedCopySummaryCard.title": [],
   "components.chat.thinkingBlockDisplayV3.thinking": [],
   "components.chat.thinkingBlockDisplayV3.thinkingContentRedactedByProvider": [],
   "components.chat.thinkingBlockDisplayV3.collapseLabel": [
@@ -15806,12 +15867,32 @@
   "components.chat.browserSitePermissionPrompt.allow": [],
   "components.chat.browserSitePermissionPrompt.block": [],
   "components.chat.browserSitePermissionPrompt.unnamedComputer": [],
+  "components.chat.browserPageDialogPrompt.title": [
+    "{{origin}}"
+  ],
+  "components.chat.browserPageDialogPrompt.titleLocalFile": [],
+  "components.chat.browserPageDialogPrompt.titlePreview": [
+    "{{computer}}",
+    "{{port}}"
+  ],
+  "components.chat.browserPageDialogPrompt.titleUnknown": [],
+  "components.chat.browserPageDialogPrompt.ok": [],
+  "components.chat.browserPageDialogPrompt.cancel": [],
+  "components.chat.browserPageDialogPrompt.blockMore": [],
+  "components.chat.browserPageDialogPrompt.unnamedComputer": [],
+  "components.chat.browserPageDialogPrompt.answer": [],
+  "components.chat.browserPagePopup.label": [
+    "{{origin}}"
+  ],
+  "components.chat.browserPagePopup.close": [],
   "components.chat.browserLoadError.sendToDroid": [],
   "components.chat.browserLoadError.refresh": [],
   "components.chat.browserLoadError.fileCouldNotBeOpened": [],
   "components.chat.browserLoadError.siteCannotBeReached": [],
   "components.chat.browserLoadError.fileMayHaveMoved": [],
   "components.chat.browserLoadError.localServerNotResponding": [],
+  "components.chat.browserLoadError.pageCrashed": [],
+  "components.chat.browserLoadError.reloadToOpenAgain": [],
   "components.chat.browserOptionsMenu.browserOptions": [],
   "components.chat.browserOptionsMenu.takeScreenshot": [],
   "components.chat.browserOptionsMenu.forceReload": [],
@@ -15853,6 +15934,9 @@
   "components.chat.localhostSuggestions.all": [],
   "components.chat.localhostSuggestions.online": [],
   "components.chat.localhostSuggestions.local": [],
+  "components.chat.localhostSuggestions.thisSession": [],
+  "components.chat.localhostSuggestions.openedByDroid": [],
+  "components.chat.localhostSuggestions.mentionedInSession": [],
   "components.chat.chatComposer.recentPrompts": [],
   "components.chat.chatComposer.migration": [],
   "components.chat.chatComposer.typeYourMessage": [],
@@ -15963,9 +16047,6 @@
   ],
   "components.chat.chatComposerModelPickerV3.recent": [],
   "components.chat.chatComposerModelPickerV3.allModels": [],
-  "components.chat.chatComposerModelPickerV3.back": [],
-  "components.chat.chatComposerModelPickerV3.customModels": [],
-  "components.chat.chatComposerModelPickerV3.legacy": [],
   "components.chat.chatComposerModelPickerV3.showLegacy_one": [
     "{{count}}"
   ],
@@ -15979,31 +16060,35 @@
   ],
   "components.chat.chatComposerModelPickerV3.listLabel": [],
   "components.chat.chatComposerModelPickerV3.searchPlaceholder": [],
-  "components.chat.chatComposerModelPickerV3.results": [],
-  "components.chat.chatComposerModelPickerV3.suggested": [],
   "components.chat.chatComposerModelPickerV3.multiplierTitle": [],
-  "components.chat.chatComposerModelPickerV3.modelCount_one": [
-    "{{count}}"
+  "components.chat.chatComposerModelPickerV3.inferenceProvider": [],
+  "components.chat.chatComposerModelPickerV3.changeInferenceProvider": [
+    "{{model}}"
   ],
-  "components.chat.chatComposerModelPickerV3.modelCount_other": [
-    "{{count}}"
+  "components.chat.chatComposerModelPickerV3.factoryPlan": [],
+  "components.chat.chatComposerModelPickerV3.apiKey": [],
+  "components.chat.chatComposerModelPickerV3.servedBy": [
+    "{{model}}",
+    "{{provider}}"
   ],
+  "components.chat.chatComposerModelPickerV3.providerMenuHintLeft": [],
+  "components.chat.chatComposerModelPickerV3.providerMenuHintRight": [],
   "components.chat.chatComposerModelPickerV3.clearSearch": [],
   "components.chat.chatComposerModelPickerV3.setDefaults": [],
   "components.chat.chatComposerModelPickerV3.missionModelWarning": [],
-  "components.chat.chatComposerReasoningPickerV3.triggerLabel": [
-    "{{level}}"
+  "components.chat.chatComposerModelPickerV3.effort": [],
+  "components.chat.chatComposerModelPickerV3.effortSlider": [],
+  "components.chat.chatComposerModelPickerV3.triggerLabel": [
+    "{{effort}}",
+    "{{name}}"
   ],
-  "components.chat.chatComposerReasoningPickerV3.triggerLabelWithShortcut": [
-    "{{level}}",
+  "components.chat.chatComposerModelPickerV3.effortTitle": [
+    "{{effort}}"
+  ],
+  "components.chat.chatComposerModelPickerV3.effortTitleWithShortcut": [
+    "{{effort}}",
     "{{shortcut}}"
   ],
-  "components.chat.chatComposerReasoningPickerV3.sliderLabel": [],
-  "components.chat.chatComposerReasoningPickerV3.effort": [],
-  "components.chat.chatComposerReasoningPickerV3.cycleEffortHint": [
-    "{{shortcut}}"
-  ],
-  "components.chat.chatComposerReasoningPickerV3.cycleHintLabel": [],
   "components.chat.chatComposerModelDefaultsV3.title": [
     "{{mode}}"
   ],
@@ -16141,38 +16226,6 @@
   "components.chat.documentLightbox.loadingDocument": [],
   "components.chat.documentLightbox.loadFailed": [],
   "components.chat.documentLightbox.closePreview": [],
-  "components.chat.droidChatInput.stopAgent": [],
-  "components.chat.droidChatInput.sendMessage": [],
-  "components.chat.droidChatInput.showKeyboardShortcuts": [],
-  "components.chat.droidChatInput.attachFile": [],
-  "components.chat.droidChatInput.defaultPlaceholder": [],
-  "components.chat.droidChatInput.skippedUnsupported_one": [
-    "{{count}}"
-  ],
-  "components.chat.droidChatInput.skippedUnsupported_other": [
-    "{{count}}"
-  ],
-  "components.chat.droidChatInput.skippedTooLarge": [
-    "{{tooLargeCount}}"
-  ],
-  "components.chat.droidChatInput.skippedUnsupportedAndTooLarge_one": [
-    "{{count}}",
-    "{{tooLargeCount}}"
-  ],
-  "components.chat.droidChatInput.skippedUnsupportedAndTooLarge_other": [
-    "{{count}}",
-    "{{tooLargeCount}}"
-  ],
-  "components.chat.droidChatInput.attachedImage": [
-    "{{number}}"
-  ],
-  "components.chat.droidChatInput.removeImage": [
-    "{{number}}"
-  ],
-  "components.chat.droidChatInput.fileFallbackName": [],
-  "components.chat.droidChatInput.removeFile": [
-    "{{name}}"
-  ],
   "components.chat.droidSessionChat.authenticating": [],
   "components.chat.droidSessionChat.scrollToPinnedMessage": [],
   "components.chat.droidSessionChat.searchChatTranscript": [],
@@ -16437,26 +16490,6 @@
   "components.chat.sessionEnvironmentPanel.subagents.allDone_other": [
     "{{formattedCount}}"
   ],
-  "components.chat.sessionInfoTooltip.sessionDetails": [],
-  "components.chat.sessionInfoTooltip.copyAllSessionDetails": [],
-  "components.chat.sessionInfoTooltip.sessionId": [],
-  "components.chat.sessionInfoTooltip.previousSession": [],
-  "components.chat.sessionInfoTooltip.repository": [],
-  "components.chat.sessionInfoTooltip.workspace": [],
-  "components.chat.sessionInfoTooltip.directory": [],
-  "components.chat.sessionInfoTooltip.machine": [],
-  "components.chat.sessionInfoTooltip.session": [],
-  "components.chat.sessionInfoTooltip.cloudSync": [],
-  "components.chat.sessionInfoTooltip.computer": [],
-  "components.chat.sessionInfoTooltip.name": [],
-  "components.chat.sessionInfoTooltip.daemonVersion": [],
-  "components.chat.sessionInfoTooltip.updateAvailable": [],
-  "components.chat.sessionInfoTooltip.monitoring": [],
-  "components.chat.sessionInfoTooltip.open": [],
-  "components.chat.sessionInfoTooltip.usage": [],
-  "components.chat.sessionInfoTooltip.factoryStandardCredits": [],
-  "components.chat.sessionInfoTooltip.status": [],
-  "components.chat.sessionInfoTooltip.loading": [],
   "components.chat.sessionTitleHoverCard.computer": [],
   "components.chat.sessionTitleHoverCard.daemonVersion": [],
   "components.chat.sessionTitleHoverCard.updateAvailable": [],
@@ -16470,7 +16503,6 @@
   ],
   "components.chat.sessionTitleHoverCard.machineLabel.cloud": [],
   "components.chat.sessionTitleHoverCard.machineLabel.machine": [],
-  "components.chat.systemActionMessageCard.copyContents": [],
   "components.chat.btwPanel.newSideChat": [],
   "components.chat.btwPanel.sideChat": [],
   "components.chat.btwPanel.sideChatQuestion": [],
@@ -17255,6 +17287,8 @@
   "components.chat.filePreview.status.couldNotReadExcelWorkbook": [],
   "components.chat.filePreview.status.renderingExcelWorkbook": [],
   "components.chat.filePreview.status.readingExcelWorkbook": [],
+  "components.chat.filePreview.status.couldNotReadCsvFile": [],
+  "components.chat.filePreview.status.readingCsvFile": [],
   "components.chat.filePreview.status.invalidWorkbook": [],
   "components.chat.filePreview.status.couldNotRenderPowerPoint": [],
   "components.chat.filePreview.status.renderingPowerPoint": [],
@@ -17262,6 +17296,7 @@
     "{{fileName}}"
   ],
   "components.chat.filePreview.status.renderTimedOut": [],
+  "components.chat.filePreview.status.loadingVideo": [],
   "components.chat.filePreview.actions.copy": [],
   "components.chat.filePreview.actions.download": [],
   "components.chat.filePreview.actions.downloadAsMarkdown": [],
@@ -17270,6 +17305,26 @@
   "components.chat.filePreview.actions.downloadPdf": [],
   "components.chat.filePreview.actions.downloadWord": [],
   "components.chat.filePreview.actions.downloadExcel": [],
+  "components.chat.filePreview.actions.downloadCsv": [],
+  "components.chat.filePreview.video.label": [
+    "{{fileName}}"
+  ],
+  "components.chat.filePreview.video.cannotPlay": [],
+  "components.chat.filePreviewTooLarge.readout.overLimit": [
+    "{{limit}}"
+  ],
+  "components.chat.filePreviewTooLarge.readout.sizeAgainstLimit": [
+    "{{limit}}",
+    "{{size}}"
+  ],
+  "components.chat.filePreviewTooLarge.title.video": [],
+  "components.chat.filePreviewTooLarge.title.file": [],
+  "components.chat.filePreviewTooLarge.description.videoDownload": [],
+  "components.chat.filePreviewTooLarge.description.videoShowInFolder": [],
+  "components.chat.filePreviewTooLarge.description.videoOnMachine": [],
+  "components.chat.filePreviewTooLarge.description.fileDownload": [],
+  "components.chat.filePreviewTooLarge.description.fileShowInFolder": [],
+  "components.chat.filePreviewTooLarge.description.fileOnMachine": [],
   "components.chat.pdfPages.pageOfCount": [
     "{{pageCount}}",
     "{{page}}"
@@ -17282,8 +17337,6 @@
   "components.chat.pdfPages.unpinPageSidebar": [],
   "components.chat.pdfPages.pinPageSidebar": [],
   "components.chat.mcpSettingsModal.failedToAddServer": [],
-  "components.chat.mcpSettingsModal.backLabel.addNew": [],
-  "components.chat.mcpSettingsModal.backLabel.manage": [],
   "components.chat.mcpSettingsModal.serverNameAlreadyExists": [],
   "components.chat.mcpSettingsModal.mcpServersTitle": [],
   "components.chat.paneTab.closeTab": [
@@ -17537,6 +17590,9 @@
     "{{actionTooltip}}",
     "{{modifier}}"
   ],
+  "components.chat.revealInFileManager.showInFinder": [],
+  "components.chat.revealInFileManager.showInFileExplorer": [],
+  "components.chat.revealInFileManager.showInFolder": [],
   "components.chat.sessionFileDropField.dropToAttach": [],
   "components.chat.sessionFileDropField.dropFileCount_one": [
     "{{count}}"
@@ -17694,7 +17750,6 @@
   "components.chat.worktreeCreationMessageCard.createdCopiedBranch": [
     "{{branch}}"
   ],
-  "components.chat.missionTitle.mission": [],
   "components.chat.missionTitle.leadSession": [],
   "components.chat.missionTitle.leadSessionHint": [],
   "components.chat.originPullMessageCard.pulling": [],
@@ -18056,6 +18111,9 @@
   "components.docReview.hideComments": [],
   "components.docReview.newComment": [],
   "components.docReview.noComments": [],
+  "components.docReview.reply": [],
+  "components.docReview.replyPlaceholder": [],
+  "components.docReview.replyToThread": [],
   "components.docReview.retry": [],
   "components.docReview.showComments": [],
   "components.docReview.showCommentsWithCount": [
@@ -18427,7 +18485,6 @@
   "components.featureFlags.featureFlagMenu.searchFeatureFlags": [],
   "components.featureFlags.featureFlagMenu.noFeatureFlagsFound": [],
   "components.featureFlags.featureFlagMenu.feature": [],
-  "components.featureFlags.featureFlagMenu.statsigFfName": [],
   "components.featureFlags.featureFlagMenu.enabled": [],
   "components.featureFlags.featureFlagMenu.override": [],
   "components.featureFlags.featureFlagMenu.statsigFfName2": [],
@@ -18729,6 +18786,28 @@
     "<time>",
     "{{time}}"
   ],
+  "components.inbox.inboxReader.resolution.verb.opened.byActor": [
+    "</time>",
+    "<actor/>",
+    "<time>",
+    "{{time}}"
+  ],
+  "components.inbox.inboxReader.resolution.verb.opened.noActor": [
+    "</time>",
+    "<time>",
+    "{{time}}"
+  ],
+  "components.inbox.inboxReader.resolution.verb.ignored.byActor": [
+    "</time>",
+    "<actor/>",
+    "<time>",
+    "{{time}}"
+  ],
+  "components.inbox.inboxReader.resolution.verb.ignored.noActor": [
+    "</time>",
+    "<time>",
+    "{{time}}"
+  ],
   "components.inbox.inboxReader.resolution.verb.archived.noActor": [
     "</time>",
     "<time>",
@@ -18772,6 +18851,7 @@
   "components.inbox.itemType.workstreamError": [],
   "components.inbox.itemType.skillSuggestion": [],
   "components.inbox.itemType.message": [],
+  "components.inbox.itemType.workstreamInvite": [],
   "components.inbox.inboxQueueRow.ariaLabelSeparator": [],
   "components.inbox.inboxQueueRow.unread": [],
   "components.inbox.inboxQueueRow.now": [],
@@ -18834,6 +18914,11 @@
     "<verb>"
   ],
   "components.inbox.inboxQueueRow.verb.sentYouAMessage": [
+    "</verb>",
+    "<lead/>",
+    "<verb>"
+  ],
+  "components.inbox.inboxQueueRow.verb.addedYouToAWorkstream": [
     "</verb>",
     "<lead/>",
     "<verb>"
@@ -20213,7 +20298,6 @@
     "{{version}}"
   ],
   "components.layout.updateBadge.clickToRestartNow": [],
-  "components.layout.updateBadge.restartToUpdate": [],
   "components.layout.updateBadge.restartToUpdateAriaLabel": [
     "{{version}}"
   ],
@@ -20263,9 +20347,6 @@
   "components.layout.workstreamDataFlow.stageStates.unknown": [],
   "components.layout.workstreamDataFlow.stageStates.unconfigured": [],
   "components.layout.workstreamDataFlow.stageStates.degraded": [],
-  "components.layout.workstreamDataFlow.artifactSummary.waitingOnYou": [
-    "{{count}}"
-  ],
   "components.layout.workstreamDataFlow.artifactSummary.pendingSignals_one": [
     "{{count}}"
   ],
@@ -21820,7 +21901,6 @@
   "components.onboarding.welcome.openSignInPage": [],
   "components.onboarding.welcome.cancelSignIn": [],
   "components.onboarding.welcome.switchDeployment": [],
-  "components.onboarding.welcome.chooseOrganization": [],
   "components.onboarding.welcome.signedInAs": [
     "{{identity}}"
   ],
@@ -21831,7 +21911,6 @@
   "components.onboarding.welcome.domainPlaceholder": [],
   "components.onboarding.welcome.switching": [],
   "components.onboarding.welcome.continue": [],
-  "components.onboarding.welcome.chooseDesktopOrganization": [],
   "components.onboarding.welcome.signOut": [],
   "components.onboarding.welcome.signIntoPrivate": [],
   "components.onboarding.welcome.welcomeSubtitle": [],
@@ -21894,6 +21973,11 @@
   "components.onboarding.webEnvironmentSetup.connect.adminLinkLabel": [],
   "components.onboarding.webEnvironmentSetup.connect.copyLink": [],
   "components.onboarding.webEnvironmentSetup.connect.copied": [],
+  "components.onboarding.webEnvironmentSetup.connect.codeReview.title": [],
+  "components.onboarding.webEnvironmentSetup.connect.codeReview.installCancelledDescription": [],
+  "components.onboarding.webEnvironmentSetup.connect.codeReview.subtitle.connect": [],
+  "components.onboarding.webEnvironmentSetup.connect.codeReview.subtitle.install": [],
+  "components.onboarding.webEnvironmentSetup.connect.codeReview.subtitle.approval": [],
   "components.onboarding.webEnvironmentSetup.connect.subtitle.connect": [],
   "components.onboarding.webEnvironmentSetup.connect.subtitle.connectFreeHours": [],
   "components.onboarding.webEnvironmentSetup.connect.subtitle.waiting": [],
@@ -22021,6 +22105,11 @@
   ],
   "components.onboarding.scmConnectOnly.pick.emptyTitle": [],
   "components.onboarding.scmConnectOnly.pick.emptyDescription": [],
+  "components.onboarding.scmConnectOnly.codeReview.title": [
+    "{{provider}}"
+  ],
+  "components.onboarding.scmConnectOnly.codeReview.titleAny": [],
+  "components.onboarding.scmConnectOnly.codeReview.subtitle": [],
   "components.onboarding.byokSetup.title": [],
   "components.onboarding.byokSetup.subtitle": [],
   "components.onboarding.byokSetup.stepOfTotal": [
@@ -22159,6 +22248,19 @@
   "components.onboarding.desktopFirstPlanStage.cliCopiedTitle": [],
   "components.onboarding.desktopFirstPlanStage.cliCopiedDescription": [],
   "components.onboarding.desktopFirstPlanStage.copyFailed": [],
+  "components.onboarding.desktopFirstPlanStage.relay.opening": [],
+  "components.onboarding.desktopFirstPlanStage.relay.openingTitle": [],
+  "components.onboarding.desktopFirstPlanStage.relay.openingDescription": [],
+  "components.onboarding.desktopFirstPlanStage.relay.notOpenedTitle": [],
+  "components.onboarding.desktopFirstPlanStage.relay.notOpenedDescription": [],
+  "components.onboarding.desktopFirstPlanStage.relay.openItAgain": [],
+  "components.onboarding.desktopFirstPlanStage.relay.confirmTitle": [],
+  "components.onboarding.desktopFirstPlanStage.relay.confirmDescription": [],
+  "components.onboarding.desktopFirstPlanStage.relay.allSetTitle": [],
+  "components.onboarding.desktopFirstPlanStage.relay.allSetDescription": [],
+  "components.onboarding.desktopFirstPlanStage.relay.allSetOtherAccountDescription": [],
+  "components.onboarding.desktopFirstPlanStage.relay.cancelledTitle": [],
+  "components.onboarding.desktopFirstPlanStage.relay.cancelledDescription": [],
   "components.onboarding.addModelsStage.subscriptionsTitle": [],
   "components.onboarding.addModelsStage.subscriptionsDescription": [],
   "components.onboarding.addModelsStage.modelsTitle": [],
@@ -22171,7 +22273,6 @@
     "{{provider}}"
   ],
   "components.onboarding.addModelsStage.waiting": [],
-  "components.onboarding.addModelsStage.reopen": [],
   "components.onboarding.addModelsStage.reopenLabel": [
     "{{provider}}"
   ],
@@ -22246,7 +22347,8 @@
   "components.onboarding.addModelsChoosePlan.getPlan": [
     "{{plan}}"
   ],
-  "components.onboarding.addModelsChoosePlan.continueFree": [],
+  "components.onboarding.addModelsChoosePlan.backToProviders": [],
+  "components.onboarding.addModelsChoosePlan.skip": [],
   "components.onboarding.addModelsChoosePlan.needEnterprise": [],
   "components.onboarding.addModelsChoosePlan.checkoutOpen": [],
   "components.onboarding.addModelsChoosePlan.finishInBrowser": [],
@@ -22328,6 +22430,7 @@
   "components.settings.agentProfileAccess.specific": [],
   "components.settings.agentProfileAccess.help": [],
   "components.settings.agentProfileAccess.add": [],
+  "components.settings.agentProfileAccess.list": [],
   "components.settings.agentProfileAccess.search": [],
   "components.settings.agentProfileAccess.loading": [],
   "components.settings.agentProfileAccess.empty": [],
@@ -22340,10 +22443,10 @@
   "components.settings.agentProfileAccess.unknownUser": [
     "{{id}}"
   ],
-  "components.settings.agentProfileAccess.remove": [
-    "{{name}}"
+  "components.settings.agentProfileAccess.alsoViaGroup": [
+    "{{email}}"
   ],
-  "components.settings.agentProfileAccess.alsoViaGroup": [],
+  "components.settings.agentProfileAccess.viaGroup": [],
   "components.settings.agentProfileAccess.choose": [],
   "components.settings.agentProfileAccess.limits": [
     "{{groups}}",
@@ -22360,16 +22463,28 @@
   "components.settings.ownersPicker.unknownUser": [
     "{{id}}"
   ],
-  "components.settings.ownersPicker.remove": [
-    "{{name}}"
-  ],
   "components.settings.ownersPicker.limit": [
     "{{max}}"
   ],
   "components.settings.ownersPicker.managersOnly": [],
+  "components.settings.resourceLock.lock": [],
+  "components.settings.resourceLock.locked": [],
+  "components.settings.resourceLock.unlocked": [],
+  "components.settings.resourceLock.ownersAndAdminsOnly": [],
+  "components.settings.resourceLock.cancel": [],
+  "components.settings.resourceLock.lockAnyway": [],
+  "components.settings.resourceLock.confirmTitle": [],
+  "components.settings.resourceLock.confirmBody": [],
+  "components.settings.resourceLock.lockedNotice": [],
+  "components.settings.ownersSummary.managersOnly": [],
+  "components.settings.ownersSummary.label_one": [
+    "{{count}}"
+  ],
+  "components.settings.ownersSummary.label_other": [
+    "{{count}}"
+  ],
   "components.settings.agentProfileAssignments.title": [],
-  "components.settings.agentProfileAssignments.default": [],
-  "components.settings.agentProfileAssignments.defaultHelp": [],
+  "components.settings.agentProfileAssignments.noConnectedApps": [],
   "components.settings.agentProfileAssignments.view": [],
   "components.settings.agentProfileAssignments.unassigned": [],
   "components.settings.agentProfileAssignments.assigned_one": [
@@ -22743,7 +22858,6 @@
   "components.settings.branchSelector.newBranchName": [],
   "components.settings.branchSelector.branch": [],
   "components.settings.branchSelector.loadingBranches": [],
-  "components.settings.branchSelector.copy": [],
   "components.settings.branchSelector.baseBranch": [
     "</chip>",
     "<chip>",
@@ -23262,7 +23376,6 @@
   "components.settings.customModelEditorModal.refreshesEvery5MinutesByDefault": [],
   "components.settings.customModelEditorModal.theStoredCredentialIsHiddenAnd": [],
   "components.settings.customModelEditorModal.forLocalServersOrGatewaysThat": [],
-  "components.settings.customModelEditorModal.authenticationOptions": [],
   "components.settings.customModelEditorModal.advancedOptions": [],
   "components.settings.customModelEditorModal.changeProviderTo": [
     "{{provider}}"
@@ -23319,10 +23432,6 @@
   "components.settings.customModelEditorModal.bedrockAuth.environmentApiKey": [],
   "components.settings.customModelEditorModal.bedrockAuth.credentialsCommand": [],
   "components.settings.customModelEditorModal.bedrockAuth.credentialChain": [],
-  "components.settings.customModelEditorModal.additionalConfigurationPreserved": [
-    "</editJson>",
-    "<editJson>"
-  ],
   "components.settings.customModelEditorModal.organizationBedrockCredentials": [],
   "components.settings.customModelEditorModal.organizationCredentials": [
     "{MODEL_API_KEY}"
@@ -23635,6 +23744,14 @@
   "components.settings.appearanceModePicker.light": [],
   "components.settings.appearanceModePicker.dark": [],
   "components.settings.appearanceModePicker.theme": [],
+  "components.settings.newSessionBackgroundPicker.background": [],
+  "components.settings.newSessionBackgroundPicker.none": [],
+  "components.settings.newSessionBackgroundPicker.glow": [],
+  "components.settings.newSessionBackgroundPicker.rotor": [],
+  "components.settings.newSessionBackgroundPicker.ridgeline": [],
+  "components.settings.newSessionBackgroundPicker.hudson": [],
+  "components.settings.newSessionBackgroundPicker.hudsonDither": [],
+  "components.settings.newSessionBackgroundPicker.custom": [],
   "components.settings.bulkInviteConstants.role.user": [],
   "components.settings.bulkInviteConstants.role.manager": [],
   "components.settings.bulkInviteConstants.role.owner": [],
@@ -23824,21 +23941,8 @@
   "components.settings.sandboxEnvironmentsList.healthDetail.queued": [],
   "components.settings.sandboxEnvironmentsList.healthDetail.environmentUnavailable": [],
   "components.settings.sandboxEnvironmentsList.onboarding.title": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.description": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.repositoriesTitle": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.repositoriesDescription": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.setupScriptTitle": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.setupScriptDescription": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.environmentTitle": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.environmentDescription": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.snapshotTitle": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.snapshotDescription": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.createTemplate": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.browseIdeas": [],
-  "components.settings.sandboxEnvironmentsList.onboarding.startFromIdea": [],
   "components.settings.sandboxEnvironmentsList.noRepositories": [],
   "components.settings.sandboxEnvironmentsList.emptyValue": [],
-  "components.settings.sandboxEnvironmentsList.never": [],
   "components.settings.sandboxEnvironmentsList.facet.scope": [],
   "components.settings.sandboxEnvironmentsList.facet.environment": [],
   "components.settings.sandboxEnvironmentsList.facet.repository": [],
@@ -24241,6 +24345,10 @@
   "components.user.avatarStack.notViewing": [
     "{{name}}"
   ],
+  "components.user.memberList.remove": [],
+  "components.user.memberList.removeLabel": [
+    "{{name}}"
+  ],
   "components.workstreamSetup.orchestrator": [],
   "components.workstreamSetup.change": [],
   "components.workstreamSetup.suggested": [],
@@ -24292,6 +24400,7 @@
   "desktop.contextMenu.copyLink": [],
   "desktop.contextMenu.openLinkInNewTab": [],
   "desktop.contextMenu.openInBrowserPanel": [],
+  "desktop.contextMenu.openInBrowser": [],
   "desktop.contextMenu.copyImage": [],
   "desktop.contextMenu.learnSpelling": [],
   "desktop.contextMenu.noGuessesFound": [],
@@ -24455,5 +24564,22 @@
   "desktop.rendererRecovery.title": [],
   "desktop.rendererRecovery.message": [],
   "desktop.rendererRecovery.detail": [],
-  "desktop.rendererRecovery.reload": []
+  "desktop.rendererRecovery.reload": [],
+  "desktop.authRelay.continue": [],
+  "desktop.authRelay.confirmTitle": [],
+  "desktop.authRelay.confirmMessage": [
+    "{{email}}"
+  ],
+  "desktop.authRelay.confirmDetail": [],
+  "desktop.authRelay.waitingTitle": [],
+  "desktop.authRelay.waitingMessage": [],
+  "desktop.authRelay.waitingDetail": [
+    "{{email}}"
+  ],
+  "desktop.authRelay.linkExpired": [],
+  "desktop.authRelay.wrongAccount": [],
+  "desktop.authRelay.credentialsUnavailable": [],
+  "desktop.mailtoFailure.title": [],
+  "desktop.mailtoFailure.message": [],
+  "desktop.mailtoFailure.detail": []
 }
